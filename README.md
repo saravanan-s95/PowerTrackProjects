@@ -49,7 +49,7 @@ gcc --version
 1. Open the project folder:
 
 ```bash
-cd /home/eswar/lexical_analysis
+cd /home/riddhi/lexical_analysis
 ```
 
 2. Compile the lexical analyzer:
