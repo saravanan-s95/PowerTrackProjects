@@ -1,38 +1,39 @@
-# Lexical Analysis Project
+# Source to HTML Converter (S2HTML)
 
 ## What Is This Project?
 
-This project is a simple lexical analyzer written in C. It reads a C source file and breaks the program into tokens such as keywords, identifiers, operators, delimiters, string literals, character literals, and numeric literals.
+This project is a Source to HTML Converter developed in C. It reads a source code file and converts it into an HTML document while preserving the code structure and formatting.
 
-The analyzer also reports some common syntax-related warnings and errors, including:
-
-- Invalid file extension
-- Invalid identifiers
-- Invalid numeric literals
-- Unterminated string literals
-- Unterminated character literals
-- Unmatched braces, parentheses, and brackets
-- Double semicolons
-- Missing semicolons
-- Misplaced semicolons after function declarations or control statements
+The generated HTML file can be viewed in any web browser, making source code easier to read and share. The converter handles various source code elements and transforms them into a properly formatted HTML representation.
 
 ## Uses Of The Project
 
-This project is useful for learning the first phase of compiler design: lexical analysis. It can help students understand how source code is scanned and divided into meaningful tokens before parsing.
+This project is useful for understanding file processing, parsing, and HTML generation in C programming.
 
 Main uses include:
 
-- Demonstrating lexical analysis in compiler design
-- Identifying tokens in a C program
-- Checking simple lexical and syntax-style errors
-- Practicing C file handling and string processing
-- Understanding keywords, identifiers, literals, operators, and delimiters
+* Converting source code files into HTML format
+* Displaying source code in web browsers
+* Learning file handling in C
+* Understanding parser-based design
+* Practicing event-driven programming concepts
+* Generating readable and shareable code documentation
+
+## Features
+
+* Reads source code files as input
+* Generates corresponding HTML output
+* Preserves source code formatting
+* Handles comments, strings, and code structure
+* Creates browser-friendly HTML files
+* Modular implementation using multiple source files
 
 ## Project Files
 
-- `main.c`: Main lexical analyzer program.
-- `test.c`: Sample C input file used for testing.
-- `a.out`: Existing compiled output file.
+* `s2html_main.c` : Main program and execution flow.
+* `s2html_conv.c` : Source-to-HTML conversion functions.
+* `s2html_event.c` : Event handling and parser-related functions.
+* `README.md` : Project documentation.
 
 ## Requirements
 
@@ -44,50 +45,34 @@ Check GCC installation:
 gcc --version
 ```
 
-## How To Run The Project
+## How To Compile
 
-1. Open the project folder:
-
-```bash
-cd /home/riddhi/lexical_analysis
-```
-
-2. Compile the lexical analyzer:
+Compile the project using:
 
 ```bash
-gcc main.c -o lexical_analyzer
+gcc s2html_main.c s2html_conv.c s2html_event.c -o s2html
 ```
 
-3. Run the analyzer with a C source file:
+Open the generated HTML file in a web browser to view the formatted source code.
 
-```bash
-./lexical_analyzer test.c
-```
+## Learning Outcomes
 
-You can also analyze another C file:
+This project helps in understanding:
 
-```bash
-./lexical_analyzer your_file.c
-```
+* File handling in C
+* String processing
+* Parser and event-driven design
+* HTML generation techniques
+* Modular programming concepts
+* Software project organization
 
-## Example Output
+## Author
 
-The program prints a table with the line number, token, and token type.
-
-Example:
-
-```text
-Lexical analysis of: test.c
-
-Line   Token                          Type
------- ------------------------------ -------------------------
-1      #include<stdio.h>              Preprocessor Directive
-2      int                            Keyword
-2      main                           Identifier
-```
+**Name:** Riddhi Balaji Shitole
+**ID:** 25034f_036
 
 ## Notes
 
-- The input file must have a `.c` extension.
-- The analyzer is designed for basic C programs and educational use.
-- It performs lexical token classification and also includes simple error and warning checks.
+* The input file should be a valid source code file.
+* The generated HTML file can be opened in any modern web browser.
+* This project is intended for educational and learning purposes.
