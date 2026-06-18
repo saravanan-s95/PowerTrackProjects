@@ -1,52 +1,78 @@
-# 🚀 PowerTrack Projects
+# Source to HTML Converter (S2HTML)
 
-Welcome to the PowerTrack Projects Repository.
+## What Is This Project?
 
-## Purpose
-This repository is used for:
-- Project Submissions
-- Project Reviews
-- Feedback and Suggestions
-- Progress Tracking
+This project is a Source to HTML Converter developed in C. It reads a source code file and converts it into an HTML document while preserving the code structure and formatting.
 
-## Submission Guidelines
-1. Create a folder with your name.
-2. Upload all source files.
-3. Include project documentation.
-4. Follow the prescribed folder structure.
+The generated HTML file can be viewed in any web browser, making source code easier to read and share. The converter handles various source code elements and transforms them into a properly formatted HTML representation.
 
-## Feedback
-All feedback and review comments will be provided through GitHub.
+## Uses Of The Project
 
-## Repository Maintainer
-Saravanan S
+This project is useful for understanding file processing, parsing, and HTML generation in C programming.
 
+Main uses include:
 
-<h1 align="center">Hi 👋, I'm Saravanan</h1>
+* Converting source code files into HTML format
+* Displaying source code in web browsers
+* Learning file handling in C
+* Understanding parser-based design
+* Practicing event-driven programming concepts
+* Generating readable and shareable code documentation
 
-<p align="center">
-Embedded Systems | Linux | PIC | Arduino | STM32 | CAN Protocol
-</p>
+## Features
 
-<p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00C853&center=true&vCenter=true&width=600&lines=Assistant+Manager;Microcontroller+Enthusiast;PowerTrack+Mentor">
-</p>
+* Reads source code files as input
+* Generates corresponding HTML output
+* Preserves source code formatting
+* Handles comments, strings, and code structure
+* Creates browser-friendly HTML files
+* Modular implementation using multiple source files
 
+## Project Files
 
-## Skills
+* `s2html_main.c` : Main program and execution flow.
+* `s2html_conv.c` : Source-to-HTML conversion functions.
+* `s2html_event.c` : Event handling and parser-related functions.
+* `README.md` : Project documentation.
 
-![C](https://img.shields.io/badge/C-Language-blue)
-![Linux](https://img.shields.io/badge/Linux-Ubuntu-orange)
-![STM32](https://img.shields.io/badge/STM32-Microcontroller-green)
-![PIC](https://img.shields.io/badge/PIC18F4580-Embedded-red)
-![PIC](https://img.shields.io/badge/Arduino-Embedded-red)
-![CAN](https://img.shields.io/badge/CAN-Protocol-yellow)
-![Git](https://img.shields.io/badge/Git-VersionControl-black)
+## Requirements
 
-## GitHub Stats
+You need a C compiler installed, such as GCC.
 
-![Saravanan's GitHub stats](https://github-readme-stats.vercel.app/api?username=saravanan-s95&show_icons=true&theme=tokyonight)
+Check GCC installation:
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=saravanan-s95&theme=tokyonight)
+```bash
+gcc --version
+```
 
-![](https://komarev.com/ghpvc/?username=saravanan-s95&color=blue)
+## How To Compile
+
+Compile the project using:
+
+```bash
+gcc s2html_main.c s2html_conv.c s2html_event.c -o s2html
+```
+
+Open the generated HTML file in a web browser to view the formatted source code.
+
+## Learning Outcomes
+
+This project helps in understanding:
+
+* File handling in C
+* String processing
+* Parser and event-driven design
+* HTML generation techniques
+* Modular programming concepts
+* Software project organization
+
+## Author
+
+**Name:** Riddhi Balaji Shitole
+**ID:** 25034f_036
+
+## Notes
+
+* The input file should be a valid source code file.
+* The generated HTML file can be opened in any modern web browser.
+* This project is intended for educational and learning purposes.
