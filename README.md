@@ -1,52 +1,93 @@
-# 🚀 PowerTrack Projects
+# Lexical Analysis Project
 
-Welcome to the PowerTrack Projects Repository.
+## What Is This Project?
 
-## Purpose
-This repository is used for:
-- Project Submissions
-- Project Reviews
-- Feedback and Suggestions
-- Progress Tracking
+This project is a simple lexical analyzer written in C. It reads a C source file and breaks the program into tokens such as keywords, identifiers, operators, delimiters, string literals, character literals, and numeric literals.
 
-## Submission Guidelines
-1. Create a folder with your name.
-2. Upload all source files.
-3. Include project documentation.
-4. Follow the prescribed folder structure.
+The analyzer also reports some common syntax-related warnings and errors, including:
 
-## Feedback
-All feedback and review comments will be provided through GitHub.
+- Invalid file extension
+- Invalid identifiers
+- Invalid numeric literals
+- Unterminated string literals
+- Unterminated character literals
+- Unmatched braces, parentheses, and brackets
+- Double semicolons
+- Missing semicolons
+- Misplaced semicolons after function declarations or control statements
 
-## Repository Maintainer
-Saravanan S
+## Uses Of The Project
 
+This project is useful for learning the first phase of compiler design: lexical analysis. It can help students understand how source code is scanned and divided into meaningful tokens before parsing.
 
-<h1 align="center">Hi 👋, I'm Saravanan</h1>
+Main uses include:
 
-<p align="center">
-Embedded Systems | Linux | PIC | Arduino | STM32 | CAN Protocol
-</p>
+- Demonstrating lexical analysis in compiler design
+- Identifying tokens in a C program
+- Checking simple lexical and syntax-style errors
+- Practicing C file handling and string processing
+- Understanding keywords, identifiers, literals, operators, and delimiters
 
-<p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00C853&center=true&vCenter=true&width=600&lines=Assistant+Manager;Microcontroller+Enthusiast;PowerTrack+Mentor">
-</p>
+## Project Files
 
+- `main.c`: Main lexical analyzer program.
+- `test.c`: Sample C input file used for testing.
+- `a.out`: Existing compiled output file.
 
-## Skills
+## Requirements
 
-![C](https://img.shields.io/badge/C-Language-blue)
-![Linux](https://img.shields.io/badge/Linux-Ubuntu-orange)
-![STM32](https://img.shields.io/badge/STM32-Microcontroller-green)
-![PIC](https://img.shields.io/badge/PIC18F4580-Embedded-red)
-![PIC](https://img.shields.io/badge/Arduino-Embedded-red)
-![CAN](https://img.shields.io/badge/CAN-Protocol-yellow)
-![Git](https://img.shields.io/badge/Git-VersionControl-black)
+You need a C compiler installed, such as GCC.
 
-## GitHub Stats
+Check GCC installation:
 
-![Saravanan's GitHub stats](https://github-readme-stats.vercel.app/api?username=saravanan-s95&show_icons=true&theme=tokyonight)
+```bash
+gcc --version
+```
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=saravanan-s95&theme=tokyonight)
+## How To Run The Project
 
-![](https://komarev.com/ghpvc/?username=saravanan-s95&color=blue)
+1. Open the project folder:
+
+```bash
+cd /home/eswar/lexical_analysis
+```
+
+2. Compile the lexical analyzer:
+
+```bash
+gcc main.c -o lexical_analyzer
+```
+
+3. Run the analyzer with a C source file:
+
+```bash
+./lexical_analyzer test.c
+```
+
+You can also analyze another C file:
+
+```bash
+./lexical_analyzer your_file.c
+```
+
+## Example Output
+
+The program prints a table with the line number, token, and token type.
+
+Example:
+
+```text
+Lexical analysis of: test.c
+
+Line   Token                          Type
+------ ------------------------------ -------------------------
+1      #include<stdio.h>              Preprocessor Directive
+2      int                            Keyword
+2      main                           Identifier
+```
+
+## Notes
+
+- The input file must have a `.c` extension.
+- The analyzer is designed for basic C programs and educational use.
+- It performs lexical token classification and also includes simple error and warning checks.
