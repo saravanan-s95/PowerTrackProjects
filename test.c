@@ -1,16 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
+
+/* Test Comment */
+
 int main()
 {
-    int a = 10;
-    float b = 3.14;
-    char c = 'x';
-    char str[] = "Hello, World!";
-    if (a > 5) {
-        printf("a is greater than 5\n");
-    }
-    for (int i = 0; i < a; i++) {
-        printf("%d ", i);
-    }
-    printf("\n");
+    int num = 10;
+    char ch = 'A';
+
+    // Single line comment
+    printf("Hello World\n");
+
     return 0;
 }
+
