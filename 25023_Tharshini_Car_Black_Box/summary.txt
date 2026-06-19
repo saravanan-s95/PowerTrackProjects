@@ -1,0 +1,108 @@
+/*NAME        : THARSHINI S
+  DATE        : 17-10-2025
+  DESCRIPTION : LSB IMAGE STEGANOGRAPHY */     
+     
+     
+                                               Title -> LSB IMAGE STEGANOGRAPHY
+
+
+   Objective:
+        The main objective of this project is to implement a secure data hiding technique called Least Significant Bit (LSB) Image Steganography
+     using the C programming language. This project aims to conceal a secret file data within an image file (.bmp) in such a way that the hidden
+     information remains invisible to the human eye but can be extracted the hidden secret file later using a decoding process.The goal is to
+     enhance data confidentiality during file transfer and digital communication by embedding data securely within image pixels.
+
+
+    Resources :
+    Technologies and Tools Used,
+        Technologies and Tools Used
+          •	Programming Language: C
+          •	Compiler: GCC
+          •	IDE: Visual Studio Code
+          •	File Type Used: .bmp for image, .txt for secret text file
+          •	Header Files Used: encode.h, decode.h, types.h, common.h
+
+
+    Implementation :
+       This project implements two main functionalities:
+        •	Encoding hides a secret data inside an image.
+        •	Decoding extracts the concealed data from the stego image.
+
+      - The implementation of this project focuses on securely hiding and retrieving secret data within images using 
+        Least Significant Bit (LSB) manipulation in C.
+
+      - It begins with the "encoding phase" program reads the image and secret text, checks capacity and hide data bit
+        by bit into the image pixels then saves the modified image as a new stego file without changing its visual  
+        appearance.
+
+      - In the "decoding phase" program reads this stego image then verifies it using a predefined magic string and 
+        extracts the modified bits to reconstruct the original text file. 
+
+      - The entire process involves reading and writing files, performing bit-level operations, validating input data
+        and maintaining the image structure and ensuring that the hidden message remains invisible but securely stored.
+
+
+    Encoding process:
+       ./a.out -e beautiful.bmp secret.txt 
+       <<<<<Selected Encoding>>>>>
+       Read and validation of encode arguments are success!
+       Info : Files opened successfully...
+       width = 1024
+       height = 768
+       Secret data can fit into the given image file
+       Copied BMP header successfully
+       Encoded magic string successfully
+       .txt
+       Encoded secret file extension size successfully
+       Encoded secret file extension successfully
+       Encoded secret file size successfully
+       Encoded secret file data successfully
+       Copied remaining data successfully
+       Info : Encoding is success!
+
+    Decoding process:
+       ./a.out -d default.bmp decode.txt
+       <<<<<Selected Decoding>>>>>
+       Read and validation of decode arguments are success!
+       Info : Files opened successfully...
+       Magic string is matched
+       Magic string is decoded successfully
+       Decoded secret file extension size successfully
+       Decoded secret file extension successfully
+       Decoded secret file size is successfully
+       Decoded secret file data sucessfully
+       Info : Decoding is success!
+
+
+    Application :
+      •	Secure message or document transmission.
+      •	Confidential information sharing in digital communication.
+      •	Hidden watermarking and copyright information embedding.
+      •	Basic practice for cryptography and cyber security learners.
+
+      Example :In a photographic firm can include a watermark in its photographs so that if someone duplicates or 
+      shares the photo without permission, the agency can still verify ownership without altering the image's appearance.
+
+
+    Limitations :
+        This project only works with.bmp files which are uncompressed.And large secret files can't be encoded with limited 
+      image capacity.Additionally only text files are accepted as secret data.While steganography does not include 
+      encryption, thus adding it before embedding can improve security.
+
+    Conclusion :
+        This LSB image steganography successfully demonstrates how secret text can be hidden securely within images using simple
+      C programming.It provides a basic but effective way to protect confidential information by embedding data invisibly, making 
+      it a useful tool for secure communication and copyright protection. In the future, provide support for multiple file types 
+      like PNG,JPEG. This makes the steganography tool more useful for real-world applications.
+
+
+
+
+    
+
+   
+
+
+    
+
+                                            
