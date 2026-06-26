@@ -1,0 +1,16 @@
+# ninja log v7
+1	139	1778449892598982540	build.ninja	f6368d655ee8b827
+1	139	1778449892598982540	/home/krubro/MPLABProjects/Car_Black_Box/_build/Car_Black_Box/default/cmake_install.cmake	f6368d655ee8b827
+3	78	1778449892610404380	CMakeFiles/Car_Black_Box_default_default_XC8_compile.dir/home/krubro/MPLABProjects/Car_Black_Box/menu.c.p1	94c2a8c80e0ac61d
+5	78	1778449892612470144	CMakeFiles/Car_Black_Box_default_default_XC8_compile.dir/home/krubro/MPLABProjects/Car_Black_Box/view_logs.c.p1	6f1146a9cf007482
+3	79	1778449892610221046	CMakeFiles/Car_Black_Box_default_default_XC8_compile.dir/home/krubro/MPLABProjects/Car_Black_Box/main.c.p1	ce604bb6ad77714f
+3	79	1778449892610813510	CMakeFiles/Car_Black_Box_default_default_XC8_compile.dir/home/krubro/MPLABProjects/Car_Black_Box/set_password.c.p1	9c3783f1f47cf848
+4	82	1778449892611576386	CMakeFiles/Car_Black_Box_default_default_XC8_compile.dir/home/krubro/MPLABProjects/Car_Black_Box/state.c.p1	c4c9ae289ecb972e
+2	82	1778449892609457751	CMakeFiles/Car_Black_Box_default_default_XC8_compile.dir/home/krubro/MPLABProjects/Car_Black_Box/events.c.p1	bb311e59a6c91466
+5	83	1778449892612064925	CMakeFiles/Car_Black_Box_default_default_XC8_compile.dir/home/krubro/MPLABProjects/Car_Black_Box/timer.c.p1	1782c1c417c55a01
+4	84	1778449892611044824	CMakeFiles/Car_Black_Box_default_default_XC8_compile.dir/home/krubro/MPLABProjects/Car_Black_Box/set_time.c.p1	125854190bfe88ee
+1	84	1778449892608717294	CMakeFiles/Car_Black_Box_default_default_XC8_compile.dir/home/krubro/MPLABProjects/Car_Black_Box/dashboard.c.p1	206295c5bfbfb7b4
+2	85	1778449892609056862	CMakeFiles/Car_Black_Box_default_default_XC8_compile.dir/home/krubro/MPLABProjects/Car_Black_Box/eeprom.c.p1	a61d27e54b6f3843
+1	85	1778449892607508900	CMakeFiles/Car_Black_Box_default_default_XC8_compile.dir/home/krubro/MPLABProjects/Car_Black_Box/blackbox_drivers.c.p1	2a50b1143304643
+2	87	1778449892609704500	CMakeFiles/Car_Black_Box_default_default_XC8_compile.dir/home/krubro/MPLABProjects/Car_Black_Box/login.c.p1	c5bdb0dd2ff9827f
+87	2978	1778449892693419310	/home/krubro/MPLABProjects/Car_Black_Box/out/Car_Black_Box/default.elf	38c0cdaf0b7f84d6
