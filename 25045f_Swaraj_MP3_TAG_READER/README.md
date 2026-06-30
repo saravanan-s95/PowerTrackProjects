@@ -13,5 +13,15 @@ This project is developed in C language to read and edit ID3 tags of MP3 files.
 - Display Help Menu
 
 ## Compile
+
 ```bash
 gcc main.c view.c edit.c -o mp3_tag
+```
+
+## Run
+
+```bash
+./mp3_tag -h
+./mp3_tag -v sample.mpeg
+./mp3_tag -e -t "New Title" sample.mpeg
+```
