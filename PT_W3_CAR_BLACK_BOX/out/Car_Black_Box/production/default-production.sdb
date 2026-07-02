@@ -1,0 +1,1292 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"32 /home/krubro/MPLABProjects/Car_Black_Box/dashboard.c
+[e E1067 . `uc
+EVENT_NONE 0
+EVENT_SW1 1
+EVENT_SW2 2
+EVENT_SW3 3
+EVENT_SW4 4
+EVENT_SW5 5
+EVENT_SW6 6
+]
+"35
+[e E2 . `uc
+GR 0
+GN 1
+G1 2
+G2 3
+G3 4
+G4 5
+]
+"10 /home/krubro/MPLABProjects/Car_Black_Box/events.c
+[e E1067 . `uc
+EVENT_NONE 0
+EVENT_SW1 1
+EVENT_SW2 2
+EVENT_SW3 3
+EVENT_SW4 4
+EVENT_SW5 5
+EVENT_SW6 6
+]
+"49 /home/krubro/MPLABProjects/Car_Black_Box/login.c
+[e E1139 . `uc
+PHASE_ENTERING 0
+PHASE_FAIL 1
+PHASE_LOCKOUT 2
+PHASE_SUCCESS 3
+PHASE_LOCKED 4
+]
+"150
+[e E1067 . `uc
+EVENT_NONE 0
+EVENT_SW1 1
+EVENT_SW2 2
+EVENT_SW3 3
+EVENT_SW4 4
+EVENT_SW5 5
+EVENT_SW6 6
+]
+"190
+[e E1096 . `uc
+DASHBOARD 0
+LOGIN 1
+MENU 2
+VIEW_LOGS 3
+CLEAR_LOGS 4
+DOWNLOAD_LOGS 5
+SET_TIME 6
+CHANGE_PASSWORD 7
+]
+"22 /home/krubro/MPLABProjects/Car_Black_Box/main.c
+[e E2 . `uc
+GR 0
+GN 1
+G1 2
+G2 3
+G3 4
+G4 5
+]
+"48
+[e E1067 . `uc
+EVENT_NONE 0
+EVENT_SW1 1
+EVENT_SW2 2
+EVENT_SW3 3
+EVENT_SW4 4
+EVENT_SW5 5
+EVENT_SW6 6
+]
+"70
+[e E1096 . `uc
+DASHBOARD 0
+LOGIN 1
+MENU 2
+VIEW_LOGS 3
+CLEAR_LOGS 4
+DOWNLOAD_LOGS 5
+SET_TIME 6
+CHANGE_PASSWORD 7
+]
+"42 /home/krubro/MPLABProjects/Car_Black_Box/menu.c
+[e E1096 . `uc
+DASHBOARD 0
+LOGIN 1
+MENU 2
+VIEW_LOGS 3
+CLEAR_LOGS 4
+DOWNLOAD_LOGS 5
+SET_TIME 6
+CHANGE_PASSWORD 7
+]
+"58
+[e E1067 . `uc
+EVENT_NONE 0
+EVENT_SW1 1
+EVENT_SW2 2
+EVENT_SW3 3
+EVENT_SW4 4
+EVENT_SW5 5
+EVENT_SW6 6
+]
+"40 /home/krubro/MPLABProjects/Car_Black_Box/set_password.c
+[e E1139 . `uc
+CP_ENTER_NEW 0
+CP_RE_ENTER 1
+CP_MATCH 2
+CP_MISMATCH 3
+]
+"67
+[e E1067 . `uc
+EVENT_NONE 0
+EVENT_SW1 1
+EVENT_SW2 2
+EVENT_SW3 3
+EVENT_SW4 4
+EVENT_SW5 5
+EVENT_SW6 6
+]
+"86
+[e E1096 . `uc
+DASHBOARD 0
+LOGIN 1
+MENU 2
+VIEW_LOGS 3
+CLEAR_LOGS 4
+DOWNLOAD_LOGS 5
+SET_TIME 6
+CHANGE_PASSWORD 7
+]
+"68 /home/krubro/MPLABProjects/Car_Black_Box/set_time.c
+[e E2 . `uc
+GR 0
+GN 1
+G1 2
+G2 3
+G3 4
+G4 5
+]
+"82
+[e E1067 . `uc
+EVENT_NONE 0
+EVENT_SW1 1
+EVENT_SW2 2
+EVENT_SW3 3
+EVENT_SW4 4
+EVENT_SW5 5
+EVENT_SW6 6
+]
+"100
+[e E1096 . `uc
+DASHBOARD 0
+LOGIN 1
+MENU 2
+VIEW_LOGS 3
+CLEAR_LOGS 4
+DOWNLOAD_LOGS 5
+SET_TIME 6
+CHANGE_PASSWORD 7
+]
+"10 /home/krubro/MPLABProjects/Car_Black_Box/state.c
+[e E1096 . `uc
+DASHBOARD 0
+LOGIN 1
+MENU 2
+VIEW_LOGS 3
+CLEAR_LOGS 4
+DOWNLOAD_LOGS 5
+SET_TIME 6
+CHANGE_PASSWORD 7
+]
+"66 /home/krubro/MPLABProjects/Car_Black_Box/view_logs.c
+[e E1067 . `uc
+EVENT_NONE 0
+EVENT_SW1 1
+EVENT_SW2 2
+EVENT_SW3 3
+EVENT_SW4 4
+EVENT_SW5 5
+EVENT_SW6 6
+]
+"76
+[e E1096 . `uc
+DASHBOARD 0
+LOGIN 1
+MENU 2
+VIEW_LOGS 3
+CLEAR_LOGS 4
+DOWNLOAD_LOGS 5
+SET_TIME 6
+CHANGE_PASSWORD 7
+]
+"20 /home/krubro/MPLABProjects/Car_Black_Box/blackbox_drivers.c
+[v _initUART initUART `(v  1 e 1 0 ]
+"68
+[v _uart_putchar uart_putchar `(v  1 e 1 0 ]
+"74
+[v _uart_puts uart_puts `(v  1 e 1 0 ]
+"88
+[v _i2c_wait_for_idle i2c_wait_for_idle `(v  1 s 1 i2c_wait_for_idle ]
+"93
+[v _initI2C initI2C `(v  1 e 1 0 ]
+"102
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+"103
+[v _i2c_repeat_start i2c_repeat_start `(v  1 e 1 0 ]
+"104
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+"106
+[v _i2c_write i2c_write `(i  1 e 2 0 ]
+"114
+[v _i2c_read i2c_read `(uc  1 e 1 0 ]
+"130
+[v _clcd_write clcd_write `(v  1 s 1 clcd_write ]
+"140
+[v _init_display_controller init_display_controller `(v  1 s 1 init_display_controller ]
+"151
+[v _init_clcd init_clcd `(v  1 e 1 0 ]
+"159
+[v _clcd_putch clcd_putch `(v  1 e 1 0 ]
+"165
+[v _clcd_print clcd_print `(v  1 e 1 0 ]
+"175
+[v _clcd_clear clcd_clear `(v  1 e 1 0 ]
+"185
+[v _init_rtc init_rtc `(v  1 e 1 0 ]
+"191
+[v _ds1307_i2c_read ds1307_i2c_read `(uc  1 e 1 0 ]
+"204
+[v _ds1307_i2c_write ds1307_i2c_write `(v  1 e 1 0 ]
+"217
+[v _init_digital_keypad init_digital_keypad `(v  1 e 1 0 ]
+"223
+[v _read_digital_keypad read_digital_keypad `(uc  1 e 1 0 ]
+"251
+[v _initADC initADC `(v  1 e 1 0 ]
+"260
+[v _read_adc read_adc `(us  1 e 2 0 ]
+"21 /home/krubro/MPLABProjects/Car_Black_Box/dashboard.c
+[v _invalidate_dashboard_cache invalidate_dashboard_cache `(v  1 e 1 0 ]
+"32
+[v _dashboard_update dashboard_update `(v  1 e 1 0 ]
+"91
+[v _dashboard_render dashboard_render `(v  1 e 1 0 ]
+"28 /home/krubro/MPLABProjects/Car_Black_Box/eeprom.c
+[v _get_device_addr get_device_addr `(uc  1 s 1 get_device_addr ]
+"41
+[v _ack_poll ack_poll `(uc  1 s 1 ack_poll ]
+"59
+[v _eeprom_write_byte eeprom_write_byte `(uc  1 e 1 0 ]
+"70
+[v _eeprom_read_byte eeprom_read_byte `(uc  1 e 1 0 ]
+"89
+[v _read_head read_head `(uc  1 s 1 read_head ]
+"90
+[v _read_count read_count `(uc  1 s 1 read_count ]
+"102
+[v _bcd_to_ascii bcd_to_ascii `(v  1 s 1 bcd_to_ascii ]
+"109
+[v _speed_to_ascii speed_to_ascii `(v  1 s 1 speed_to_ascii ]
+"116
+[v _write_slot write_slot `(uc  1 s 1 write_slot ]
+"159
+[v _eeprom_write_log eeprom_write_log `(uc  1 e 1 0 ]
+"189
+[v _eeprom_read_log eeprom_read_log `(v  1 e 1 0 ]
+"209
+[v _eeprom_get_entry_count eeprom_get_entry_count `(uc  1 e 1 0 ]
+"215
+[v _eeprom_clear_log eeprom_clear_log `(uc  1 e 1 0 ]
+"10 /home/krubro/MPLABProjects/Car_Black_Box/events.c
+[v _translate_key translate_key `(E1067  1 e 1 0 ]
+"68 /home/krubro/MPLABProjects/Car_Black_Box/login.c
+[v _login_load_password login_load_password `(v  1 e 1 0 ]
+"100
+[v _login_set_password login_set_password `(v  1 e 1 0 ]
+"111
+[v _is_logged_in is_logged_in `(uc  1 e 1 0 ]
+"113
+[v _do_logout do_logout `(v  1 e 1 0 ]
+"123
+[v _pass_match pass_match `(i  1 s 2 pass_match ]
+"135
+[v _login_reset login_reset `(v  1 e 1 0 ]
+"150
+[v _login_update login_update `(v  1 e 1 0 ]
+"237
+[v _login_render login_render `(v  1 e 1 0 ]
+"24 /home/krubro/MPLABProjects/Car_Black_Box/main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+"36
+[v _log_entry_from_sys log_entry_from_sys `(v  1 s 1 log_entry_from_sys ]
+"46
+[v _main main `(v  1 e 1 0 ]
+"50 /home/krubro/MPLABProjects/Car_Black_Box/menu.c
+[v _menu_reset menu_reset `(v  1 e 1 0 ]
+"58
+[v _menu_update menu_update `(v  1 e 1 0 ]
+"114
+[v _menu_render menu_render `(v  1 e 1 0 ]
+"52 /home/krubro/MPLABProjects/Car_Black_Box/set_password.c
+[v _set_password_reset set_password_reset `(v  1 e 1 0 ]
+"67
+[v _set_password_update set_password_update `(v  1 e 1 0 ]
+"163
+[v _set_password_render set_password_render `(v  1 e 1 0 ]
+"54 /home/krubro/MPLABProjects/Car_Black_Box/set_time.c
+[v _bcd_to_dec bcd_to_dec `(uc  1 s 1 bcd_to_dec ]
+"60
+[v _dec_to_bcd dec_to_bcd `(uc  1 s 1 dec_to_bcd ]
+"65
+[v _set_time_reset set_time_reset `(v  1 e 1 0 ]
+"82
+[v _set_time_update set_time_update `(v  1 e 1 0 ]
+"166
+[v _set_time_render set_time_render `(v  1 e 1 0 ]
+"18 /home/krubro/MPLABProjects/Car_Black_Box/state.c
+[v _set_status set_status `(v  1 e 1 0 ]
+"27
+[v _get_status get_status `(E1096  1 e 1 0 ]
+"34 /home/krubro/MPLABProjects/Car_Black_Box/timer.c
+[v _init_timers init_timers `(v  1 e 1 0 ]
+"53
+[v _reset_blink_tick reset_blink_tick `(v  1 e 1 0 ]
+"56
+[v _reset_timeout_tick reset_timeout_tick `(v  1 e 1 0 ]
+"76
+[v _isr isr `II(v  1 e 1 0 ]
+"26 /home/krubro/MPLABProjects/Car_Black_Box/view_logs.c
+[v _gear_label gear_label `(*.25DCuc  1 s 1 gear_label ]
+"41
+[v _print_two_digits print_two_digits `(v  1 s 1 print_two_digits ]
+"55
+[v _view_logs_reset view_logs_reset `(v  1 e 1 0 ]
+"66
+[v _view_logs_update view_logs_update `(v  1 e 1 0 ]
+"105
+[v _view_logs_render view_logs_render `(v  1 e 1 0 ]
+"162
+[v _download_logs download_logs `(v  1 e 1 0 ]
+"215
+[v _clear_logs clear_logs `(v  1 e 1 0 ]
+"5 /opt/microchip/xc8/v3.10/pic/sources/c99/common/__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"4 /opt/microchip/xc8/v3.10/pic/sources/c99/common/lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 /opt/microchip/xc8/v3.10/pic/sources/c99/common/lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"5 /opt/microchip/xc8/v3.10/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 /opt/microchip/xc8/v3.10/pic/sources/c99/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 /opt/microchip/xc8/v3.10/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 /opt/microchip/xc8/v3.10/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 /opt/microchip/xc8/v3.10/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 /opt/microchip/xc8/v3.10/pic/sources/c99/common/Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"4 /opt/microchip/xc8/v3.10/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 /opt/microchip/xc8/v3.10/pic/sources/c99/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"43 /home/krubro/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8/pic/include/proc/pic16f877a.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"200
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"324
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"625
+[v _TMR1L TMR1L `VEuc  1 e 1 @14 ]
+"632
+[v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
+"639
+[v _T1CON T1CON `VEuc  1 e 1 @16 ]
+"792
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"1043
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1136
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1143
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+"1239
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"1359
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1483
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1738
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1807
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"2064
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2206
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2362
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"2365
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"2368
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2371
+[v _ADCS0 ADCS0 `VEb  1 e 0 @254 ]
+"2374
+[v _ADCS1 ADCS1 `VEb  1 e 0 @255 ]
+"2377
+[v _ADCS2 ADCS2 `VEb  1 e 0 @1278 ]
+"2383
+[v _ADFM ADFM `VEb  1 e 0 @1279 ]
+"2392
+[v _ADON ADON `VEb  1 e 0 @248 ]
+"2404
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2470
+[v _CHS0 CHS0 `VEb  1 e 0 @251 ]
+"2473
+[v _CHS1 CHS1 `VEb  1 e 0 @252 ]
+"2476
+[v _CHS2 CHS2 `VEb  1 e 0 @253 ]
+"2503
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2557
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2560
+[v _GO GO `VEb  1 e 0 @250 ]
+"2605
+[v _PCFG0 PCFG0 `VEb  1 e 0 @1272 ]
+"2608
+[v _PCFG1 PCFG1 `VEb  1 e 0 @1273 ]
+"2611
+[v _PCFG2 PCFG2 `VEb  1 e 0 @1274 ]
+"2614
+[v _PCFG3 PCFG3 `VEb  1 e 0 @1275 ]
+"2617
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2620
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2725
+[v _RCEN RCEN `VEb  1 e 0 @1163 ]
+"2764
+[v _RE1 RE1 `VEb  1 e 0 @73 ]
+"2767
+[v _RE2 RE2 `VEb  1 e 0 @74 ]
+"2779
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"2791
+[v _R_nW R_nW `VEb  1 e 0 @1186 ]
+"2794
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"2800
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2806
+[v _SSPEN SSPEN `VEb  1 e 0 @165 ]
+"2815
+[v _SSPM0 SSPM0 `VEb  1 e 0 @160 ]
+"2818
+[v _SSPM1 SSPM1 `VEb  1 e 0 @161 ]
+"2821
+[v _SSPM2 SSPM2 `VEb  1 e 0 @162 ]
+"2824
+[v _SSPM3 SSPM3 `VEb  1 e 0 @163 ]
+"2830
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2866
+[v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
+"2869
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"2875
+[v _TMR1IE TMR1IE `VEb  1 e 0 @1120 ]
+"2878
+[v _TMR1IF TMR1IF `VEb  1 e 0 @96 ]
+"2956
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2959
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"2998
+[v _TRISE1 TRISE1 `VEb  1 e 0 @1097 ]
+"3001
+[v _TRISE2 TRISE2 `VEb  1 e 0 @1098 ]
+"3019
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"3025
+[v _TXIF TXIF `VEb  1 e 0 @100 ]
+"3058
+[v _nDONE nDONE `VEb  1 e 0 @250 ]
+"15 /home/krubro/MPLABProjects/Car_Black_Box/dashboard.c
+[v _gear_labels gear_labels `DC[6]*.25DCuc  1 s 12 gear_labels ]
+"17
+[v _prev_speed prev_speed `uc  1 s 1 prev_speed ]
+"18
+[v _prev_gear_render prev_gear_render `uc  1 s 1 prev_gear_render ]
+"19
+[v _prev_flags_render prev_flags_render `uc  1 s 1 prev_flags_render ]
+"43 /home/krubro/MPLABProjects/Car_Black_Box/login.c
+[v _lockout_durations lockout_durations `DC[4]uc  1 s 4 lockout_durations ]
+"44
+[v _default_pass default_pass `DC[4]uc  1 s 4 default_pass ]
+"47
+[v _my_pass my_pass `[4]uc  1 s 4 my_pass ]
+"49
+[v _phase phase `E1139  1 s 1 phase ]
+"50
+[v _fail_count fail_count `uc  1 s 1 fail_count ]
+"51
+[v _digit_count digit_count `uc  1 s 1 digit_count ]
+"52
+[v _entered entered `[5]uc  1 s 5 entered ]
+"53
+[v _cursor_visible cursor_visible `uc  1 s 1 cursor_visible ]
+"54
+[v _screen_ready screen_ready `uc  1 s 1 screen_ready ]
+"55
+[v _cooldown_ticks cooldown_ticks `uc  1 s 1 cooldown_ticks ]
+"56
+[v _lockout_secs_remaining lockout_secs_remaining `uc  1 s 1 lockout_secs_remaining ]
+"57
+[v _logged_in_flag logged_in_flag `uc  1 s 1 logged_in_flag ]
+[s S159 . 7 `uc 1 hours 1 0 `uc 1 minutes 1 1 `uc 1 seconds 1 2 `E2 1 gear 1 3 `uc 1 speed 1 4 `uc 1 flags 1 5 `uc 1 log_pending 1 6 ]
+"22 /home/krubro/MPLABProjects/Car_Black_Box/main.c
+[v _sys sys `S159  1 e 7 0 ]
+"31 /home/krubro/MPLABProjects/Car_Black_Box/menu.c
+[v _labels labels `DC[6]*.25DCuc  1 s 12 labels ]
+"42
+[v _destinations destinations `DC[5]E1096  1 s 5 destinations ]
+"47
+[v _selection selection `uc  1 s 1 selection ]
+"48
+[v _last_drawn last_drawn `uc  1 s 1 last_drawn ]
+"40 /home/krubro/MPLABProjects/Car_Black_Box/set_password.c
+[v _phase@set_password$F656 phase `E1139  1 s 1 phase ]
+"41
+[v _new_pass new_pass `[4]uc  1 s 4 new_pass ]
+"42
+[v _re_pass re_pass `[4]uc  1 s 4 re_pass ]
+"43
+[v _digit_count@set_password$F659 digit_count `uc  1 s 1 digit_count ]
+"44
+[v _cursor_visible@set_password$F660 cursor_visible `uc  1 s 1 cursor_visible ]
+"45
+[v _screen_ready@set_password$F661 screen_ready `uc  1 s 1 screen_ready ]
+"46
+[v _cooldown_ticks@set_password$F662 cooldown_ticks `uc  1 s 1 cooldown_ticks ]
+"46 /home/krubro/MPLABProjects/Car_Black_Box/set_time.c
+[v _field_max field_max `DC[3]uc  1 s 3 field_max ]
+"48
+[v _time_copy time_copy `[3]uc  1 s 3 time_copy ]
+"49
+[v _active_field active_field `uc  1 s 1 active_field ]
+"50
+[v _blink_state blink_state `uc  1 s 1 blink_state ]
+"51
+[v _screen_ready@set_time$F739 screen_ready `uc  1 s 1 screen_ready ]
+"10 /home/krubro/MPLABProjects/Car_Black_Box/state.c
+[v _current_state current_state `E1096  1 s 1 current_state ]
+"13
+[v _state_names state_names `DC[8]*.25DCuc  1 s 16 state_names ]
+"27 /home/krubro/MPLABProjects/Car_Black_Box/timer.c
+[v _blink_tick blink_tick `VEuc  1 e 1 0 ]
+"28
+[v _timeout_tick timeout_tick `VEui  1 e 2 0 ]
+"51 /home/krubro/MPLABProjects/Car_Black_Box/view_logs.c
+[v _log_index log_index `uc  1 s 1 log_index ]
+"52
+[v _needs_draw needs_draw `uc  1 s 1 needs_draw ]
+"53
+[v _empty_shown empty_shown `uc  1 s 1 empty_shown ]
+"46 /home/krubro/MPLABProjects/Car_Black_Box/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+[s S217 . 6 `uc 1 hours 1 0 `uc 1 minutes 1 1 `uc 1 seconds 1 2 `uc 1 speed 1 3 `uc 1 gear 1 4 `uc 1 flags 1 5 ]
+"49
+[v main@pending_entry pending_entry `S217  1 a 6 0 ]
+"48
+[v main@evt evt `E1067  1 a 1 6 ]
+"170
+} 0
+"66 /home/krubro/MPLABProjects/Car_Black_Box/view_logs.c
+[v _view_logs_update view_logs_update `(v  1 e 1 0 ]
+{
+[v view_logs_update@evt evt `E1067  1 p 1 wreg ]
+"68
+[v view_logs_update@count count `uc  1 a 1 10 ]
+"66
+[v view_logs_update@evt evt `E1067  1 p 1 wreg ]
+"68
+[v view_logs_update@evt evt `E1067  1 p 1 11 ]
+"99
+} 1
+"55
+[v _view_logs_reset view_logs_reset `(v  1 e 1 0 ]
+{
+"60
+} 0
+"105
+[v _view_logs_render view_logs_render `(v  1 e 1 0 ]
+{
+"108
+[v view_logs_render@buf buf `[12]uc  1 a 12 20 ]
+"109
+[v view_logs_render@gl gl `*.25DCuc  1 a 2 32 ]
+"107
+[v view_logs_render@count count `uc  1 a 1 34 ]
+"156
+} 0
+"10 /home/krubro/MPLABProjects/Car_Black_Box/events.c
+[v _translate_key translate_key `(E1067  1 e 1 0 ]
+{
+[v translate_key@key key `uc  1 p 1 wreg ]
+[v translate_key@key key `uc  1 p 1 wreg ]
+[v translate_key@key key `uc  1 p 1 6 ]
+"22
+} 1
+"82 /home/krubro/MPLABProjects/Car_Black_Box/set_time.c
+[v _set_time_update set_time_update `(v  1 e 1 0 ]
+{
+[v set_time_update@evt evt `E1067  1 p 1 wreg ]
+[v set_time_update@evt evt `E1067  1 p 1 wreg ]
+"85
+[v set_time_update@evt evt `E1067  1 p 1 14 ]
+"160
+} 1
+"65
+[v _set_time_reset set_time_reset `(v  1 e 1 0 ]
+{
+"76
+} 0
+"54
+[v _bcd_to_dec bcd_to_dec `(uc  1 s 1 bcd_to_dec ]
+{
+[v bcd_to_dec@bcd bcd `uc  1 p 1 wreg ]
+[v bcd_to_dec@bcd bcd `uc  1 p 1 wreg ]
+"57
+[v bcd_to_dec@bcd bcd `uc  1 p 1 7 ]
+"58
+} 1
+"60
+[v _dec_to_bcd dec_to_bcd `(uc  1 s 1 dec_to_bcd ]
+{
+[v dec_to_bcd@dec dec `uc  1 p 1 wreg ]
+[v dec_to_bcd@dec dec `uc  1 p 1 wreg ]
+"62
+[v dec_to_bcd@dec dec `uc  1 p 1 9 ]
+"63
+} 1
+"166
+[v _set_time_render set_time_render `(v  1 e 1 0 ]
+{
+"184
+[v set_time_render@col col `uc  1 a 1 4 ]
+"168
+[v set_time_render@f f `uc  1 a 1 5 ]
+"198
+} 0
+"4 /opt/microchip/xc8/v3.10/pic/sources/c99/common/Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 p 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 3 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 p 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 2 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 p 1 4 ]
+"51
+} 1
+"67 /home/krubro/MPLABProjects/Car_Black_Box/set_password.c
+[v _set_password_update set_password_update `(v  1 e 1 0 ]
+{
+[v set_password_update@evt evt `E1067  1 p 1 wreg ]
+"141
+[v set_password_update@k k `uc  1 a 1 11 ]
+"142
+[v set_password_update@match match `uc  1 a 1 10 ]
+"110
+[v set_password_update@val val `uc  1 a 1 9 ]
+"67
+[v set_password_update@evt evt `E1067  1 p 1 wreg ]
+"70
+[v set_password_update@evt evt `E1067  1 p 1 12 ]
+"156
+} 1
+"163
+[v _set_password_render set_password_render `(v  1 e 1 0 ]
+{
+"165
+[v set_password_render@k k `uc  1 a 1 13 ]
+"222
+} 0
+"52
+[v _set_password_reset set_password_reset `(v  1 e 1 0 ]
+{
+"61
+} 0
+"100 /home/krubro/MPLABProjects/Car_Black_Box/login.c
+[v _login_set_password login_set_password `(v  1 e 1 0 ]
+{
+"102
+[v login_set_password@k k `uc  1 a 1 4 ]
+"100
+[v login_set_password@new_pass new_pass `*.4DCuc  1 p 1 2 ]
+"105
+} 0
+"223 /home/krubro/MPLABProjects/Car_Black_Box/blackbox_drivers.c
+[v _read_digital_keypad read_digital_keypad `(uc  1 e 1 0 ]
+{
+[v read_digital_keypad@trigger_method trigger_method `uc  1 p 1 wreg ]
+"232
+[v read_digital_keypad@i i `ui  1 a 2 4 ]
+"223
+[v read_digital_keypad@trigger_method trigger_method `uc  1 p 1 wreg ]
+"225
+[v read_digital_keypad@once once `uc  1 s 1 once ]
+"227
+[v read_digital_keypad@trigger_method trigger_method `uc  1 p 1 3 ]
+"245
+} 1
+"58 /home/krubro/MPLABProjects/Car_Black_Box/menu.c
+[v _menu_update menu_update `(v  1 e 1 0 ]
+{
+[v menu_update@evt evt `E1067  1 p 1 wreg ]
+[v menu_update@evt evt `E1067  1 p 1 wreg ]
+"61
+[v menu_update@evt evt `E1067  1 p 1 9 ]
+"111
+} 1
+"50
+[v _menu_reset menu_reset `(v  1 e 1 0 ]
+{
+"55
+} 0
+"113 /home/krubro/MPLABProjects/Car_Black_Box/login.c
+[v _do_logout do_logout `(v  1 e 1 0 ]
+{
+"117
+} 0
+"114 /home/krubro/MPLABProjects/Car_Black_Box/menu.c
+[v _menu_render menu_render `(v  1 e 1 0 ]
+{
+"129
+} 0
+"150 /home/krubro/MPLABProjects/Car_Black_Box/login.c
+[v _login_update login_update `(v  1 e 1 0 ]
+{
+[v login_update@evt evt `E1067  1 p 1 wreg ]
+"167
+[v login_update@dur dur `uc  1 a 1 13 ]
+"166
+[v login_update@elapsed elapsed `uc  1 a 1 12 ]
+"150
+[v login_update@evt evt `E1067  1 p 1 wreg ]
+"152
+[v login_update@evt evt `E1067  1 p 1 14 ]
+"230
+} 1
+"123
+[v _pass_match pass_match `(i  1 s 2 pass_match ]
+{
+"125
+[v pass_match@k k `uc  1 a 1 5 ]
+"129
+} 0
+"21 /home/krubro/MPLABProjects/Car_Black_Box/dashboard.c
+[v _invalidate_dashboard_cache invalidate_dashboard_cache `(v  1 e 1 0 ]
+{
+"26
+} 0
+"237 /home/krubro/MPLABProjects/Car_Black_Box/login.c
+[v _login_render login_render `(v  1 e 1 0 ]
+{
+"268
+[v login_render@tries_left tries_left `uc  1 a 1 9 ]
+"239
+[v login_render@k k `uc  1 a 1 12 ]
+"298
+[v login_render@last_shown last_shown `uc  1 s 1 last_shown ]
+"334
+} 0
+"135
+[v _login_reset login_reset `(v  1 e 1 0 ]
+{
+"144
+} 0
+"56 /home/krubro/MPLABProjects/Car_Black_Box/timer.c
+[v _reset_timeout_tick reset_timeout_tick `(v  1 e 1 0 ]
+{
+"61
+} 0
+"53
+[v _reset_blink_tick reset_blink_tick `(v  1 e 1 0 ]
+{
+} 0
+"36 /home/krubro/MPLABProjects/Car_Black_Box/main.c
+[v _log_entry_from_sys log_entry_from_sys `(v  1 s 1 log_entry_from_sys ]
+{
+[s S217 . 6 `uc 1 hours 1 0 `uc 1 minutes 1 1 `uc 1 seconds 1 2 `uc 1 speed 1 3 `uc 1 gear 1 4 `uc 1 flags 1 5 ]
+[v log_entry_from_sys@e e `*.39S217  1 p 2 2 ]
+"44
+} 0
+"111 /home/krubro/MPLABProjects/Car_Black_Box/login.c
+[v _is_logged_in is_logged_in `(uc  1 e 1 0 ]
+{
+} 0
+"24 /home/krubro/MPLABProjects/Car_Black_Box/main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+{
+"34
+} 0
+"68 /home/krubro/MPLABProjects/Car_Black_Box/login.c
+[v _login_load_password login_load_password `(v  1 e 1 0 ]
+{
+"70
+[v login_load_password@k k `uc  1 a 1 5 ]
+"71
+[v login_load_password@all_ff all_ff `uc  1 a 1 4 ]
+"93
+} 0
+"34 /home/krubro/MPLABProjects/Car_Black_Box/timer.c
+[v _init_timers init_timers `(v  1 e 1 0 ]
+{
+"51
+} 0
+"185 /home/krubro/MPLABProjects/Car_Black_Box/blackbox_drivers.c
+[v _init_rtc init_rtc `(v  1 e 1 0 ]
+{
+"187
+[v init_rtc@sec_reg sec_reg `uc  1 a 1 7 ]
+"189
+} 0
+"204
+[v _ds1307_i2c_write ds1307_i2c_write `(v  1 e 1 0 ]
+{
+[v ds1307_i2c_write@data data `uc  1 p 1 wreg ]
+[v ds1307_i2c_write@data data `uc  1 p 1 wreg ]
+[v ds1307_i2c_write@address address `uc  1 p 1 5 ]
+"206
+[v ds1307_i2c_write@data data `uc  1 p 1 6 ]
+"211
+} 1
+"217
+[v _init_digital_keypad init_digital_keypad `(v  1 e 1 0 ]
+{
+"221
+} 0
+"151
+[v _init_clcd init_clcd `(v  1 e 1 0 ]
+{
+"157
+} 0
+"140
+[v _init_display_controller init_display_controller `(v  1 s 1 init_display_controller ]
+{
+"149
+} 0
+"20
+[v _initUART initUART `(v  1 e 1 0 ]
+{
+[v initUART@baud baud `ul  1 p 4 25 ]
+"28
+} 0
+"93
+[v _initI2C initI2C `(v  1 e 1 0 ]
+{
+[v initI2C@baud baud `ul  1 p 4 25 ]
+"100
+} 0
+"251
+[v _initADC initADC `(v  1 e 1 0 ]
+{
+"258
+} 0
+"27 /home/krubro/MPLABProjects/Car_Black_Box/state.c
+[v _get_status get_status `(E1096  1 e 1 0 ]
+{
+"30
+} 0
+"159 /home/krubro/MPLABProjects/Car_Black_Box/eeprom.c
+[v _eeprom_write_log eeprom_write_log `(uc  1 e 1 0 ]
+{
+"161
+[v eeprom_write_log@head head `uc  1 a 1 32 ]
+"162
+[v eeprom_write_log@count count `uc  1 a 1 31 ]
+[s S217 . 6 `uc 1 hours 1 0 `uc 1 minutes 1 1 `uc 1 seconds 1 2 `uc 1 speed 1 3 `uc 1 gear 1 4 `uc 1 flags 1 5 ]
+"159
+[v eeprom_write_log@entry entry `*.39DCS217  1 p 2 29 ]
+"178
+} 0
+"116
+[v _write_slot write_slot `(uc  1 s 1 write_slot ]
+{
+[v write_slot@slot_index slot_index `uc  1 p 1 wreg ]
+"118
+[v write_slot@rec rec `[11]uc  1 a 11 13 ]
+"119
+[v write_slot@addr addr `ui  1 a 2 24 ]
+"135
+[v write_slot@i i `uc  1 a 1 28 ]
+"116
+[v write_slot@slot_index slot_index `uc  1 p 1 wreg ]
+[s S217 . 6 `uc 1 hours 1 0 `uc 1 minutes 1 1 `uc 1 seconds 1 2 `uc 1 speed 1 3 `uc 1 gear 1 4 `uc 1 flags 1 5 ]
+[v write_slot@entry entry `*.39DCS217  1 p 2 6 ]
+"119
+[v write_slot@slot_index slot_index `uc  1 p 1 12 ]
+"142
+} 1
+"109
+[v _speed_to_ascii speed_to_ascii `(v  1 s 1 speed_to_ascii ]
+{
+[v speed_to_ascii@spd spd `uc  1 p 1 wreg ]
+[v speed_to_ascii@spd spd `uc  1 p 1 wreg ]
+[v speed_to_ascii@h h `*.4uc  1 p 1 3 ]
+[v speed_to_ascii@t t `*.4uc  1 p 1 4 ]
+[v speed_to_ascii@u u `*.4uc  1 p 1 5 ]
+"111
+[v speed_to_ascii@spd spd `uc  1 p 1 9 ]
+"114
+} 1
+"102
+[v _bcd_to_ascii bcd_to_ascii `(v  1 s 1 bcd_to_ascii ]
+{
+[v bcd_to_ascii@bcd bcd `uc  1 p 1 wreg ]
+[v bcd_to_ascii@bcd bcd `uc  1 p 1 wreg ]
+[v bcd_to_ascii@hi hi `*.4uc  1 p 1 2 ]
+[v bcd_to_ascii@lo lo `*.4uc  1 p 1 3 ]
+"104
+[v bcd_to_ascii@bcd bcd `uc  1 p 1 5 ]
+"106
+} 1
+"162 /home/krubro/MPLABProjects/Car_Black_Box/view_logs.c
+[v _download_logs download_logs `(v  1 e 1 0 ]
+{
+"166
+[v download_logs@buf buf `[12]uc  1 a 12 20 ]
+"167
+[v download_logs@gl gl `*.25DCuc  1 a 2 32 ]
+"165
+[v download_logs@k k `uc  1 a 1 35 ]
+"164
+[v download_logs@count count `uc  1 a 1 34 ]
+"209
+} 0
+"18 /home/krubro/MPLABProjects/Car_Black_Box/state.c
+[v _set_status set_status `(v  1 e 1 0 ]
+{
+[v set_status@new_state new_state `E1096  1 p 1 wreg ]
+[v set_status@new_state new_state `E1096  1 p 1 wreg ]
+"20
+[v set_status@new_state new_state `E1096  1 p 1 5 ]
+"25
+} 1
+"41 /home/krubro/MPLABProjects/Car_Black_Box/view_logs.c
+[v _print_two_digits print_two_digits `(v  1 s 1 print_two_digits ]
+{
+[v print_two_digits@val val `uc  1 p 1 wreg ]
+[v print_two_digits@val val `uc  1 p 1 wreg ]
+[v print_two_digits@addr addr `uc  1 p 1 4 ]
+"43
+[v print_two_digits@val val `uc  1 p 1 5 ]
+"45
+} 1
+"159 /home/krubro/MPLABProjects/Car_Black_Box/blackbox_drivers.c
+[v _clcd_putch clcd_putch `(v  1 e 1 0 ]
+{
+[v clcd_putch@data data `DCuc  1 p 1 wreg ]
+[v clcd_putch@data data `DCuc  1 p 1 wreg ]
+[v clcd_putch@addr addr `uc  1 p 1 3 ]
+"161
+[v clcd_putch@data data `DCuc  1 p 1 9 ]
+"163
+} 1
+"26 /home/krubro/MPLABProjects/Car_Black_Box/view_logs.c
+[v _gear_label gear_label `(*.25DCuc  1 s 1 gear_label ]
+{
+[v gear_label@g g `uc  1 p 1 wreg ]
+[v gear_label@g g `uc  1 p 1 wreg ]
+[v gear_label@g g `uc  1 p 1 4 ]
+"39
+} 1
+"189 /home/krubro/MPLABProjects/Car_Black_Box/eeprom.c
+[v _eeprom_read_log eeprom_read_log `(v  1 e 1 0 ]
+{
+[v eeprom_read_log@index index `uc  1 p 1 wreg ]
+"201
+[v eeprom_read_log@addr addr `ui  1 a 2 9 ]
+"193
+[v eeprom_read_log@i i `uc  1 a 1 15 ]
+"192
+[v eeprom_read_log@count count `uc  1 a 1 14 ]
+"191
+[v eeprom_read_log@head head `uc  1 a 1 13 ]
+"200
+[v eeprom_read_log@slot slot `uc  1 a 1 12 ]
+"199
+[v eeprom_read_log@oldest oldest `uc  1 a 1 11 ]
+"189
+[v eeprom_read_log@index index `uc  1 p 1 wreg ]
+[v eeprom_read_log@buf buf `*.4uc  1 p 1 3 ]
+"191
+[v eeprom_read_log@index index `uc  1 p 1 8 ]
+"207
+} 1
+"89
+[v _read_head read_head `(uc  1 s 1 read_head ]
+{
+} 0
+"15 /opt/microchip/xc8/v3.10/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 6 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 2 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 4 ]
+"53
+} 0
+"5 /opt/microchip/xc8/v3.10/pic/sources/c99/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 6 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 2 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 4 ]
+"25
+} 0
+"209 /home/krubro/MPLABProjects/Car_Black_Box/eeprom.c
+[v _eeprom_get_entry_count eeprom_get_entry_count `(uc  1 e 1 0 ]
+{
+"211
+[v eeprom_get_entry_count@count count `uc  1 a 1 7 ]
+"213
+} 0
+"90
+[v _read_count read_count `(uc  1 s 1 read_count ]
+{
+} 0
+"70
+[v _eeprom_read_byte eeprom_read_byte `(uc  1 e 1 0 ]
+{
+"74
+[v eeprom_read_byte@dev_r dev_r `uc  1 a 1 2 ]
+"73
+[v eeprom_read_byte@dev_w dev_w `uc  1 a 1 1 ]
+"72
+[v eeprom_read_byte@data data `uc  1 a 1 0 ]
+"70
+[v eeprom_read_byte@addr addr `ui  1 p 2 7 ]
+"83
+} 0
+"5 /opt/microchip/xc8/v3.10/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 7 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 4 ]
+"30
+} 0
+"32 /home/krubro/MPLABProjects/Car_Black_Box/dashboard.c
+[v _dashboard_update dashboard_update `(v  1 e 1 0 ]
+{
+[v dashboard_update@evt evt `E1067  1 p 1 wreg ]
+[v dashboard_update@evt evt `E1067  1 p 1 wreg ]
+"34
+[v dashboard_update@prev_flags_uart prev_flags_uart `uc  1 s 1 prev_flags_uart ]
+"35
+[v dashboard_update@prev_gear_uart prev_gear_uart `E2  1 s 1 prev_gear_uart ]
+"38
+[v dashboard_update@evt evt `E1067  1 p 1 29 ]
+"85
+} 1
+"260 /home/krubro/MPLABProjects/Car_Black_Box/blackbox_drivers.c
+[v _read_adc read_adc `(us  1 e 2 0 ]
+{
+[v read_adc@channel channel `uc  1 p 1 wreg ]
+[v read_adc@channel channel `uc  1 p 1 wreg ]
+"262
+[v read_adc@channel channel `uc  1 p 1 5 ]
+"266
+} 1
+"191
+[v _ds1307_i2c_read ds1307_i2c_read `(uc  1 e 1 0 ]
+{
+[v ds1307_i2c_read@address address `uc  1 p 1 wreg ]
+"193
+[v ds1307_i2c_read@data data `uc  1 a 1 8 ]
+"191
+[v ds1307_i2c_read@address address `uc  1 p 1 wreg ]
+"194
+[v ds1307_i2c_read@address address `uc  1 p 1 7 ]
+"202
+} 1
+"103
+[v _i2c_repeat_start i2c_repeat_start `(v  1 e 1 0 ]
+{
+} 0
+"114
+[v _i2c_read i2c_read `(uc  1 e 1 0 ]
+{
+[v i2c_read@ack ack `uc  1 p 1 wreg ]
+"116
+[v i2c_read@data data `uc  1 a 1 3 ]
+"114
+[v i2c_read@ack ack `uc  1 p 1 wreg ]
+"117
+[v i2c_read@ack ack `uc  1 p 1 2 ]
+"124
+} 1
+"15 /opt/microchip/xc8/v3.10/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 8 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 0 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
+"129
+} 0
+"5 /opt/microchip/xc8/v3.10/pic/sources/c99/common/__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 20 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 24 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 12 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 16 ]
+"30
+} 0
+"91 /home/krubro/MPLABProjects/Car_Black_Box/dashboard.c
+[v _dashboard_render dashboard_render `(v  1 e 1 0 ]
+{
+"93
+[v dashboard_render@time_buf time_buf `[9]uc  1 a 9 6 ]
+"94
+[v dashboard_render@speed_buf speed_buf `[4]uc  1 a 4 15 ]
+"141
+} 0
+"4 /opt/microchip/xc8/v3.10/pic/sources/c99/common/lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+{
+[v ___lbmod@dividend dividend `uc  1 p 1 wreg ]
+"6
+[v ___lbmod@rem rem `uc  1 a 1 2 ]
+"7
+[v ___lbmod@counter counter `uc  1 a 1 1 ]
+"4
+[v ___lbmod@dividend dividend `uc  1 p 1 wreg ]
+[v ___lbmod@divisor divisor `uc  1 p 1 6 ]
+"9
+[v ___lbmod@dividend dividend `uc  1 p 1 0 ]
+"18
+} 1
+"4 /opt/microchip/xc8/v3.10/pic/sources/c99/common/lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+{
+[v ___lbdiv@dividend dividend `uc  1 p 1 wreg ]
+"6
+[v ___lbdiv@quotient quotient `uc  1 a 1 5 ]
+"7
+[v ___lbdiv@counter counter `uc  1 a 1 4 ]
+"4
+[v ___lbdiv@dividend dividend `uc  1 p 1 wreg ]
+[v ___lbdiv@divisor divisor `uc  1 p 1 2 ]
+"9
+[v ___lbdiv@dividend dividend `uc  1 p 1 3 ]
+"26
+} 1
+"215 /home/krubro/MPLABProjects/Car_Black_Box/view_logs.c
+[v _clear_logs clear_logs `(v  1 e 1 0 ]
+{
+"222
+} 0
+"74 /home/krubro/MPLABProjects/Car_Black_Box/blackbox_drivers.c
+[v _uart_puts uart_puts `(v  1 e 1 0 ]
+{
+[v uart_puts@str str `*.25DCuc  1 p 2 0 ]
+"82
+} 0
+"68
+[v _uart_putchar uart_putchar `(v  1 e 1 0 ]
+{
+[v uart_putchar@ch ch `uc  1 p 1 wreg ]
+[v uart_putchar@ch ch `uc  1 p 1 wreg ]
+[v uart_putchar@ch ch `uc  1 p 1 9 ]
+"72
+} 1
+"215 /home/krubro/MPLABProjects/Car_Black_Box/eeprom.c
+[v _eeprom_clear_log eeprom_clear_log `(uc  1 e 1 0 ]
+{
+"220
+} 0
+"59
+[v _eeprom_write_byte eeprom_write_byte `(uc  1 e 1 0 ]
+{
+"61
+[v eeprom_write_byte@dev dev `uc  1 a 1 3 ]
+"59
+[v eeprom_write_byte@addr addr `ui  1 p 2 0 ]
+[v eeprom_write_byte@data data `uc  1 p 1 2 ]
+"68
+} 0
+"28
+[v _get_device_addr get_device_addr `(uc  1 s 1 get_device_addr ]
+{
+[v get_device_addr@addr addr `ui  1 p 2 2 ]
+[v get_device_addr@base base `uc  1 p 1 4 ]
+"35
+} 0
+"41
+[v _ack_poll ack_poll `(uc  1 s 1 ack_poll ]
+{
+[v ack_poll@dev_addr dev_addr `uc  1 p 1 wreg ]
+"43
+[v ack_poll@attempts attempts `uc  1 a 1 9 ]
+"41
+[v ack_poll@dev_addr dev_addr `uc  1 p 1 wreg ]
+"43
+[v ack_poll@dev_addr dev_addr `uc  1 p 1 8 ]
+"53
+} 1
+"106 /home/krubro/MPLABProjects/Car_Black_Box/blackbox_drivers.c
+[v _i2c_write i2c_write `(i  1 e 2 0 ]
+{
+[v i2c_write@data data `uc  1 p 1 wreg ]
+[v i2c_write@data data `uc  1 p 1 wreg ]
+"108
+[v i2c_write@data data `uc  1 p 1 6 ]
+"112
+} 1
+"104
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+{
+} 0
+"102
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+{
+} 0
+"88
+[v _i2c_wait_for_idle i2c_wait_for_idle `(v  1 s 1 i2c_wait_for_idle ]
+{
+"91
+} 0
+"165
+[v _clcd_print clcd_print `(v  1 e 1 0 ]
+{
+[v clcd_print@str str `*.26DCuc  1 p 2 6 ]
+[v clcd_print@addr addr `uc  1 p 1 8 ]
+"173
+} 0
+"175
+[v _clcd_clear clcd_clear `(v  1 e 1 0 ]
+{
+"179
+} 0
+"130
+[v _clcd_write clcd_write `(v  1 s 1 clcd_write ]
+{
+[v clcd_write@byte byte `uc  1 p 1 wreg ]
+[v clcd_write@byte byte `uc  1 p 1 wreg ]
+[v clcd_write@mode mode `uc  1 p 1 2 ]
+"132
+[v clcd_write@byte byte `uc  1 p 1 5 ]
+"138
+} 1
+"76 /home/krubro/MPLABProjects/Car_Black_Box/timer.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"92
+} 0
