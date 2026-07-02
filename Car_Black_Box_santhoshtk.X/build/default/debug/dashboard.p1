@@ -1,0 +1,1209 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"66 ./external_eeprom.h
+[; ;./external_eeprom.h: 66: unsigned char read_external_eeprom(unsigned char address1);
+[v _read_external_eeprom `(uc ~T0 @X0 0 ef1`uc ]
+"65
+[; ;./external_eeprom.h: 65: void write_external_eeprom(unsigned char address1, unsigned char data);
+[v _write_external_eeprom `(v ~T0 @X0 0 ef2`uc`uc ]
+"45 dashboard.c
+[; ;dashboard.c: 45: extern char time[9];
+[v _time `uc ~T0 @X0 -> 0 `x e ]
+"35 ./clcd.h
+[; ;./clcd.h: 35: void clcd_print(const char *str, unsigned char addr);
+[v _clcd_print `(v ~T0 @X0 0 ef2`*Cuc`uc ]
+"19 ./ds1307.h
+[; ;./ds1307.h: 19: void get_time(unsigned char *clock_reg);
+[v _get_time `(v ~T0 @X0 0 ef1`*uc ]
+"20
+[; ;./ds1307.h: 20: void display_time(unsigned char *clock_reg);
+[v _display_time `(v ~T0 @X0 0 ef1`*uc ]
+"13 ./adc.h
+[; ;./adc.h: 13: unsigned short read_adc(unsigned char channel);
+[v _read_adc `(us ~T0 @X0 0 ef1`uc ]
+"36 ./clcd.h
+[; ;./clcd.h: 36: void clear_screen(void);
+[v _clear_screen `(v ~T0 @X0 0 ef ]
+"31 ./digital_keypad.h
+[; ;./digital_keypad.h: 31: unsigned char read_digital_keypad(unsigned char mode);
+[v _read_digital_keypad `(uc ~T0 @X0 0 ef1`uc ]
+"30 ./main.h
+[; ;./main.h: 30: void view_log(void);
+[v _view_log `(v ~T0 @X0 0 ef ]
+"31
+[; ;./main.h: 31: void clear_log(void);
+[v _clear_log `(v ~T0 @X0 0 ef ]
+"32
+[; ;./main.h: 32: void download_log(void);
+[v _download_log `(v ~T0 @X0 0 ef ]
+"33
+[; ;./main.h: 33: void set_time(void);
+[v _set_time `(v ~T0 @X0 0 ef ]
+[v F972 `(v ~T0 @X0 1 tf1`ul ]
+"92 /home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/pic.h
+[v __delay `JF972 ~T0 @X0 0 e ]
+[p i __delay ]
+"13 ./uart.h
+[; ;./uart.h: 13: void put_s(const char *s);
+[v _put_s `(v ~T0 @X0 0 ef1`*Cuc ]
+"12
+[; ;./uart.h: 12: void put_char(unsigned char data);
+[v _put_char `(v ~T0 @X0 0 ef1`uc ]
+"34 ./clcd.h
+[; ;./clcd.h: 34: void clcd_putch(const char data, unsigned char addr);
+[v _clcd_putch `(v ~T0 @X0 0 ef2`Cuc`uc ]
+"54 /home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8/pic/include/proc/pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"18 dashboard.c
+[; ;dashboard.c: 18: unsigned char clock_reg[3], speed[3] = {0};
+[v _clock_reg `uc ~T0 @X0 -> 3 `i e ]
+[v _speed `uc ~T0 @X0 -> 3 `i e ]
+[i _speed
+:U ..
+-> -> 0 `i `uc
+..
+]
+"19
+[; ;dashboard.c: 19: const char *event[] = {
+[v _event `*Cuc ~T0 @X0 -> 8 `i e ]
+[i _event
+:U ..
+:s 1C
+:s 2C
+:s 3C
+:s 4C
+:s 5C
+:s 6C
+:s 7C
+:s 8C
+..
+]
+"29
+[; ;dashboard.c: 29: const unsigned char *menu_options[5] = {
+[v _menu_options `*Cuc ~T0 @X0 -> 5 `i e ]
+[i _menu_options
+:U ..
+:s 9C
+:s 10C
+:s 11C
+:s 12C
+:s 13C
+..
+]
+"37
+[; ;dashboard.c: 37: int pos = 0;
+[v _pos `i ~T0 @X0 1 e ]
+[i _pos
+-> 0 `i
+]
+"39
+[; ;dashboard.c: 39: unsigned int adc_val;
+[v _adc_val `ui ~T0 @X0 1 e ]
+"40
+[; ;dashboard.c: 40: unsigned int event_count;
+[v _event_count `ui ~T0 @X0 1 e ]
+"41
+[; ;dashboard.c: 41: char logs[17];
+[v _logs `uc ~T0 @X0 -> 17 `i e ]
+"49
+[; ;dashboard.c: 49: char *read_event(unsigned int addr){
+[v _read_event `(*uc ~T0 @X0 1 ef1`ui ]
+{
+[e :U _read_event ]
+[v _addr `ui ~T0 @X0 1 r1 ]
+[f ]
+"50
+[; ;dashboard.c: 50:  static char event[11];
+[v F1365 `uc ~T0 @X0 -> 11 `i s event ]
+"52
+[; ;dashboard.c: 52:  for(unsigned int i = 0; i < 10; i++){
+{
+[v _i `ui ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 10 `i `ui 102  ]
+[e $U 103  ]
+[e :U 102 ]
+{
+"53
+[; ;dashboard.c: 53:   event[i] = read_external_eeprom(addr + i);
+[e = *U + &U F1365 * -> _i `ux -> -> # *U &U F1365 `ui `ux -> ( _read_external_eeprom (1 -> + _addr _i `uc `uc ]
+"54
+[; ;dashboard.c: 54:  }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 10 `i `ui 102  ]
+[e :U 103 ]
+}
+"56
+[; ;dashboard.c: 56:  return event;
+[e ) &U F1365 ]
+[e $UE 101  ]
+"57
+[; ;dashboard.c: 57: }
+[e :UE 101 ]
+}
+"61
+[; ;dashboard.c: 61: void write_event(void){
+[v _write_event `(v ~T0 @X0 1 ef ]
+{
+[e :U _write_event ]
+[f ]
+"63
+[; ;dashboard.c: 63:  static unsigned int address = 0x00;
+[v F1368 `ui ~T0 @X0 1 s address ]
+[i F1368
+-> -> 0 `i `ui
+]
+"69
+[; ;dashboard.c: 69:  if(address == 100) address = 0x00;
+[e $ ! == F1368 -> -> 100 `i `ui 106  ]
+[e = F1368 -> -> 0 `i `ui ]
+[e :U 106 ]
+"72
+[; ;dashboard.c: 72:  for(unsigned int i = 0; i < 8; i++){
+{
+[v _i `ui ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 8 `i `ui 107  ]
+[e $U 108  ]
+[e :U 107 ]
+{
+"73
+[; ;dashboard.c: 73:   if(i == 2 || i == 5) continue;
+[e $ ! || == _i -> -> 2 `i `ui == _i -> -> 5 `i `ui 110  ]
+[e $U 109  ]
+[e $U 111  ]
+"74
+[; ;dashboard.c: 74:   else write_external_eeprom(address++, time[i]);
+[e :U 110 ]
+[e ( _write_external_eeprom (2 , -> ++ F1368 -> -> 1 `i `ui `uc -> *U + &U _time * -> _i `ux -> -> # *U &U _time `ui `ux `uc ]
+[e :U 111 ]
+"75
+[; ;dashboard.c: 75:  }
+}
+[e :U 109 ]
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 8 `i `ui 107  ]
+[e :U 108 ]
+}
+"78
+[; ;dashboard.c: 78:  write_external_eeprom(address++, event[pos][0]);
+[e ( _write_external_eeprom (2 , -> ++ F1368 -> -> 1 `i `ui `uc -> *U + *U + &U _event * -> -> _pos `ui `ux -> -> # *U &U _event `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U *U + &U _event * -> -> _pos `ui `ux -> -> # *U &U _event `ui `ux `ui `ux `uc ]
+"79
+[; ;dashboard.c: 79:  write_external_eeprom(address++, event[pos][1]);
+[e ( _write_external_eeprom (2 , -> ++ F1368 -> -> 1 `i `ui `uc -> *U + *U + &U _event * -> -> _pos `ui `ux -> -> # *U &U _event `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U *U + &U _event * -> -> _pos `ui `ux -> -> # *U &U _event `ui `ux `ui `ux `uc ]
+"82
+[; ;dashboard.c: 82:  write_external_eeprom(address++, speed[0]);
+[e ( _write_external_eeprom (2 , -> ++ F1368 -> -> 1 `i `ui `uc *U + &U _speed * -> -> -> 0 `i `ui `ux -> -> # *U &U _speed `ui `ux ]
+"83
+[; ;dashboard.c: 83:  write_external_eeprom(address++, speed[1]);
+[e ( _write_external_eeprom (2 , -> ++ F1368 -> -> 1 `i `ui `uc *U + &U _speed * -> -> -> 1 `i `ui `ux -> -> # *U &U _speed `ui `ux ]
+"85
+[; ;dashboard.c: 85:  event_count = (event_count + 1) % 10;
+[e = _event_count % + _event_count -> -> 1 `i `ui -> -> 10 `i `ui ]
+"86
+[; ;dashboard.c: 86: }
+[e :UE 105 ]
+}
+"89
+[; ;dashboard.c: 89: void dashboard(unsigned char key) {
+[v _dashboard `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _dashboard ]
+[v _key `uc ~T0 @X0 1 r1 ]
+[f ]
+"91
+[; ;dashboard.c: 91:  clcd_print(" TIME     EV  SP", (0x80 + 0));
+[e ( _clcd_print (2 , :s 14C -> + -> 128 `i -> 0 `i `uc ]
+"95
+[; ;dashboard.c: 95:  get_time(clock_reg);
+[e ( _get_time (1 &U _clock_reg ]
+"96
+[; ;dashboard.c: 96:  display_time(clock_reg);
+[e ( _display_time (1 &U _clock_reg ]
+"100
+[; ;dashboard.c: 100:  if(key == 0x3E){
+[e $ ! == -> _key `i -> 62 `i 113  ]
+{
+"103
+[; ;dashboard.c: 103:   if(pos == 7){
+[e $ ! == _pos -> 7 `i 114  ]
+{
+"104
+[; ;dashboard.c: 104:    pos = 1;
+[e = _pos -> 1 `i ]
+"105
+[; ;dashboard.c: 105:   }
+}
+[e $U 115  ]
+"106
+[; ;dashboard.c: 106:   else if(pos < 6){
+[e :U 114 ]
+[e $ ! < _pos -> 6 `i 116  ]
+{
+"107
+[; ;dashboard.c: 107:    pos++;
+[e ++ _pos -> 1 `i ]
+"108
+[; ;dashboard.c: 108:    write_event();
+[e ( _write_event ..  ]
+"109
+[; ;dashboard.c: 109:   }
+}
+[e :U 116 ]
+[e :U 115 ]
+"110
+[; ;dashboard.c: 110:  }
+}
+[e $U 117  ]
+"112
+[; ;dashboard.c: 112:  else if(key == 0x3D){
+[e :U 113 ]
+[e $ ! == -> _key `i -> 61 `i 118  ]
+{
+"114
+[; ;dashboard.c: 114:   if(pos == 7){
+[e $ ! == _pos -> 7 `i 119  ]
+{
+"115
+[; ;dashboard.c: 115:    pos = 1;
+[e = _pos -> 1 `i ]
+"116
+[; ;dashboard.c: 116:   }
+}
+[e $U 120  ]
+"117
+[; ;dashboard.c: 117:   else if(pos > 1){
+[e :U 119 ]
+[e $ ! > _pos -> 1 `i 121  ]
+{
+"118
+[; ;dashboard.c: 118:    pos--;
+[e -- _pos -> 1 `i ]
+"119
+[; ;dashboard.c: 119:    write_event();
+[e ( _write_event ..  ]
+"120
+[; ;dashboard.c: 120:   }
+}
+[e :U 121 ]
+[e :U 120 ]
+"121
+[; ;dashboard.c: 121:  }
+}
+[e $U 122  ]
+"124
+[; ;dashboard.c: 124:  else if(key == 0x3B){
+[e :U 118 ]
+[e $ ! == -> _key `i -> 59 `i 123  ]
+{
+"125
+[; ;dashboard.c: 125:   pos = 7;
+[e = _pos -> 7 `i ]
+"126
+[; ;dashboard.c: 126:   write_event();
+[e ( _write_event ..  ]
+"127
+[; ;dashboard.c: 127:  }
+}
+[e :U 123 ]
+[e :U 122 ]
+[e :U 117 ]
+"130
+[; ;dashboard.c: 130:  clcd_print(event[pos], (0xC0 + 10));
+[e ( _clcd_print (2 , *U + &U _event * -> -> _pos `ui `ux -> -> # *U &U _event `ui `ux -> + -> 192 `i -> 10 `i `uc ]
+"134
+[; ;dashboard.c: 134:  adc_val = read_adc(0x00);
+[e = _adc_val -> ( _read_adc (1 -> -> 0 `i `uc `ui ]
+"137
+[; ;dashboard.c: 137:  adc_val = adc_val / 10.23;
+[e = _adc_val -> / -> _adc_val `d .10.23 `ui ]
+"140
+[; ;dashboard.c: 140:  if(adc_val == 100) adc_val--;
+[e $ ! == _adc_val -> -> 100 `i `ui 124  ]
+[e -- _adc_val -> -> 1 `i `ui ]
+[e :U 124 ]
+"142
+[; ;dashboard.c: 142:  speed[0] = (adc_val / 10) + '0';
+[e = *U + &U _speed * -> -> -> 0 `i `ui `ux -> -> # *U &U _speed `ui `ux -> + / _adc_val -> -> 10 `i `ui -> 48 `ui `uc ]
+"143
+[; ;dashboard.c: 143:  speed[1] = (adc_val % 10) + '0';
+[e = *U + &U _speed * -> -> -> 1 `i `ui `ux -> -> # *U &U _speed `ui `ux -> + % _adc_val -> -> 10 `i `ui -> 48 `ui `uc ]
+"144
+[; ;dashboard.c: 144:  speed[2] = '\0';
+[e = *U + &U _speed * -> -> -> 2 `i `ui `ux -> -> # *U &U _speed `ui `ux -> -> 0 `ui `uc ]
+"146
+[; ;dashboard.c: 146:  clcd_print(speed, (0xC0 + 14));
+[e ( _clcd_print (2 , -> &U _speed `*Cuc -> + -> 192 `i -> 14 `i `uc ]
+"147
+[; ;dashboard.c: 147: }
+[e :UE 112 ]
+}
+"150
+[; ;dashboard.c: 150: void print_star(unsigned int position){
+[v _print_star `(v ~T0 @X0 1 ef1`ui ]
+{
+[e :U _print_star ]
+[v _position `ui ~T0 @X0 1 r1 ]
+[f ]
+"151
+[; ;dashboard.c: 151:  if(position == 0){
+[e $ ! == _position -> -> 0 `i `ui 126  ]
+{
+"152
+[; ;dashboard.c: 152:   clcd_print("* ", (0x80 + 0));
+[e ( _clcd_print (2 , :s 15C -> + -> 128 `i -> 0 `i `uc ]
+"153
+[; ;dashboard.c: 153:   clcd_print("  ", (0xC0 + 0));
+[e ( _clcd_print (2 , :s 16C -> + -> 192 `i -> 0 `i `uc ]
+"154
+[; ;dashboard.c: 154:  }
+}
+[e $U 127  ]
+"155
+[; ;dashboard.c: 155:  else{
+[e :U 126 ]
+{
+"156
+[; ;dashboard.c: 156:   clcd_print("* ", (0xC0 + 0));
+[e ( _clcd_print (2 , :s 17C -> + -> 192 `i -> 0 `i `uc ]
+"157
+[; ;dashboard.c: 157:   clcd_print("  ", (0x80 + 0));
+[e ( _clcd_print (2 , :s 18C -> + -> 128 `i -> 0 `i `uc ]
+"158
+[; ;dashboard.c: 158:  }
+}
+[e :U 127 ]
+"159
+[; ;dashboard.c: 159: }
+[e :UE 125 ]
+}
+"162
+[; ;dashboard.c: 162: void main_menu(void){
+[v _main_menu `(v ~T0 @X0 1 ef ]
+{
+[e :U _main_menu ]
+[f ]
+"164
+[; ;dashboard.c: 164:  unsigned int menu_index = 0;
+[v _menu_index `ui ~T0 @X0 1 a ]
+[e = _menu_index -> -> 0 `i `ui ]
+"165
+[; ;dashboard.c: 165:  unsigned char star = 0;
+[v _star `uc ~T0 @X0 1 a ]
+[e = _star -> -> 0 `i `uc ]
+"166
+[; ;dashboard.c: 166:  unsigned char key;
+[v _key `uc ~T0 @X0 1 a ]
+"168
+[; ;dashboard.c: 168:  clear_screen();
+[e ( _clear_screen ..  ]
+"170
+[; ;dashboard.c: 170:  while(1){
+[e :U 130 ]
+{
+"172
+[; ;dashboard.c: 172:   print_star(star);
+[e ( _print_star (1 -> _star `ui ]
+"173
+[; ;dashboard.c: 173:   clcd_print(menu_options[menu_index], (0x80 + 2));
+[e ( _clcd_print (2 , -> *U + &U _menu_options * -> _menu_index `ux -> -> # *U &U _menu_options `ui `ux `*Cuc -> + -> 128 `i -> 2 `i `uc ]
+"174
+[; ;dashboard.c: 174:   clcd_print(menu_options[menu_index + 1], (0xC0 + 2));
+[e ( _clcd_print (2 , -> *U + &U _menu_options * -> + _menu_index -> -> 1 `i `ui `ux -> -> # *U &U _menu_options `ui `ux `*Cuc -> + -> 192 `i -> 2 `i `uc ]
+"176
+[; ;dashboard.c: 176:   key = read_digital_keypad(1);
+[e = _key ( _read_digital_keypad (1 -> -> 1 `i `uc ]
+"178
+[; ;dashboard.c: 178:   if(key == 0x3E){
+[e $ ! == -> _key `i -> 62 `i 132  ]
+{
+"179
+[; ;dashboard.c: 179:    if(star == 1){
+[e $ ! == -> _star `i -> 1 `i 133  ]
+{
+"180
+[; ;dashboard.c: 180:     star = 0;
+[e = _star -> -> 0 `i `uc ]
+"181
+[; ;dashboard.c: 181:    }
+}
+[e $U 134  ]
+"182
+[; ;dashboard.c: 182:    else if(menu_index > 0) menu_index--;
+[e :U 133 ]
+[e $ ! > _menu_index -> -> 0 `i `ui 135  ]
+[e -- _menu_index -> -> 1 `i `ui ]
+[e :U 135 ]
+[e :U 134 ]
+"183
+[; ;dashboard.c: 183:   }
+}
+[e $U 136  ]
+"185
+[; ;dashboard.c: 185:   else if(key == 0x3D){
+[e :U 132 ]
+[e $ ! == -> _key `i -> 61 `i 137  ]
+{
+"187
+[; ;dashboard.c: 187:    if(star == 0){
+[e $ ! == -> _star `i -> 0 `i 138  ]
+{
+"188
+[; ;dashboard.c: 188:     star = 1;
+[e = _star -> -> 1 `i `uc ]
+"189
+[; ;dashboard.c: 189:    }
+}
+[e $U 139  ]
+"190
+[; ;dashboard.c: 190:    else if(menu_index < 5 - 2) menu_index++;
+[e :U 138 ]
+[e $ ! < _menu_index -> - -> 5 `i -> 2 `i `ui 140  ]
+[e ++ _menu_index -> -> 1 `i `ui ]
+[e :U 140 ]
+[e :U 139 ]
+"191
+[; ;dashboard.c: 191:   }
+}
+[e $U 141  ]
+"194
+[; ;dashboard.c: 194:   else if(key == 0x37){
+[e :U 137 ]
+[e $ ! == -> _key `i -> 55 `i 142  ]
+{
+"196
+[; ;dashboard.c: 196:    unsigned int selected_menu = menu_index + star;
+[v _selected_menu `ui ~T0 @X0 1 a ]
+[e = _selected_menu + _menu_index -> _star `ui ]
+"197
+[; ;dashboard.c: 197:    clear_screen();
+[e ( _clear_screen ..  ]
+"199
+[; ;dashboard.c: 199:    if(selected_menu == 0){
+[e $ ! == _selected_menu -> -> 0 `i `ui 143  ]
+{
+"200
+[; ;dashboard.c: 200:     view_log();
+[e ( _view_log ..  ]
+"201
+[; ;dashboard.c: 201:    }
+}
+[e $U 144  ]
+"202
+[; ;dashboard.c: 202:    else if(selected_menu == 1){
+[e :U 143 ]
+[e $ ! == _selected_menu -> -> 1 `i `ui 145  ]
+{
+"203
+[; ;dashboard.c: 203:     clear_log();
+[e ( _clear_log ..  ]
+"204
+[; ;dashboard.c: 204:    }
+}
+[e $U 146  ]
+"205
+[; ;dashboard.c: 205:    else if(selected_menu == 2){
+[e :U 145 ]
+[e $ ! == _selected_menu -> -> 2 `i `ui 147  ]
+{
+"206
+[; ;dashboard.c: 206:     download_log();
+[e ( _download_log ..  ]
+"207
+[; ;dashboard.c: 207:    }
+}
+[e $U 148  ]
+"208
+[; ;dashboard.c: 208:    else if(selected_menu == 3){
+[e :U 147 ]
+[e $ ! == _selected_menu -> -> 3 `i `ui 149  ]
+{
+"209
+[; ;dashboard.c: 209:     set_time();
+[e ( _set_time ..  ]
+"210
+[; ;dashboard.c: 210:    }
+}
+[e $U 150  ]
+"211
+[; ;dashboard.c: 211:    else if(selected_menu == 4){
+[e :U 149 ]
+[e $ ! == _selected_menu -> -> 4 `i `ui 151  ]
+{
+"213
+[; ;dashboard.c: 213:    }
+}
+[e :U 151 ]
+[e :U 150 ]
+[e :U 148 ]
+[e :U 146 ]
+[e :U 144 ]
+"215
+[; ;dashboard.c: 215:   }
+}
+[e $U 152  ]
+"217
+[; ;dashboard.c: 217:   else if(key == 0x2F){
+[e :U 142 ]
+[e $ ! == -> _key `i -> 47 `i 153  ]
+{
+"218
+[; ;dashboard.c: 218:    clear_screen();
+[e ( _clear_screen ..  ]
+"219
+[; ;dashboard.c: 219:    return;
+[e $UE 128  ]
+"220
+[; ;dashboard.c: 220:   }
+}
+[e :U 153 ]
+[e :U 152 ]
+[e :U 141 ]
+[e :U 136 ]
+"221
+[; ;dashboard.c: 221:  }
+}
+[e :U 129 ]
+[e $U 130  ]
+[e :U 131 ]
+"222
+[; ;dashboard.c: 222: }
+[e :UE 128 ]
+}
+"225
+[; ;dashboard.c: 225: void read_and_format_log(unsigned char index){
+[v _read_and_format_log `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _read_and_format_log ]
+[v _index `uc ~T0 @X0 1 r1 ]
+[f ]
+"227
+[; ;dashboard.c: 227:  char *log = read_event(index * 10);
+[v _log `*uc ~T0 @X0 1 a ]
+[e = _log ( _read_event (1 -> * -> _index `i -> 10 `i `ui ]
+"228
+[; ;dashboard.c: 228:  unsigned int col = 0;
+[v _col `ui ~T0 @X0 1 a ]
+[e = _col -> -> 0 `i `ui ]
+"230
+[; ;dashboard.c: 230:  for(unsigned int i = 0; i < 16; i++){
+{
+[v _i `ui ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 155  ]
+[e $U 156  ]
+[e :U 155 ]
+{
+"232
+[; ;dashboard.c: 232:   if(i == 0) logs[i] = index + '0';
+[e $ ! == _i -> -> 0 `i `ui 158  ]
+[e = *U + &U _logs * -> _i `ux -> -> # *U &U _logs `ui `ux -> + -> _index `ui -> 48 `ui `uc ]
+[e $U 159  ]
+"234
+[; ;dashboard.c: 234:   else if(i == 4 || i == 7) logs[i] = ':';
+[e :U 158 ]
+[e $ ! || == _i -> -> 4 `i `ui == _i -> -> 7 `i `ui 160  ]
+[e = *U + &U _logs * -> _i `ux -> -> # *U &U _logs `ui `ux -> -> 58 `ui `uc ]
+[e $U 161  ]
+"236
+[; ;dashboard.c: 236:   else if(i == 1 || i == 10 || i == 13) logs[i] = ' ';
+[e :U 160 ]
+[e $ ! || || == _i -> -> 1 `i `ui == _i -> -> 10 `i `ui == _i -> -> 13 `i `ui 162  ]
+[e = *U + &U _logs * -> _i `ux -> -> # *U &U _logs `ui `ux -> -> 32 `ui `uc ]
+[e $U 163  ]
+"238
+[; ;dashboard.c: 238:   else{
+[e :U 162 ]
+{
+"239
+[; ;dashboard.c: 239:    logs[i] = log[col++];
+[e = *U + &U _logs * -> _i `ux -> -> # *U &U _logs `ui `ux *U + _log * -> ++ _col -> -> 1 `i `ui `ux -> -> # *U _log `ui `ux ]
+"240
+[; ;dashboard.c: 240:   }
+}
+[e :U 163 ]
+[e :U 161 ]
+[e :U 159 ]
+"241
+[; ;dashboard.c: 241:  }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 16 `i `ui 155  ]
+[e :U 156 ]
+}
+"243
+[; ;dashboard.c: 243:  logs[16] = '\0';
+[e = *U + &U _logs * -> -> -> 16 `i `ui `ux -> -> # *U &U _logs `ui `ux -> -> 0 `ui `uc ]
+"244
+[; ;dashboard.c: 244: }
+[e :UE 154 ]
+}
+"247
+[; ;dashboard.c: 247: void view_log(void){
+[v _view_log `(v ~T0 @X0 1 ef ]
+{
+[e :U _view_log ]
+[f ]
+"250
+[; ;dashboard.c: 250:  char *log;
+[v _log `*uc ~T0 @X0 1 a ]
+"251
+[; ;dashboard.c: 251:  unsigned int curr_log = 0;
+[v _curr_log `ui ~T0 @X0 1 a ]
+[e = _curr_log -> -> 0 `i `ui ]
+"252
+[; ;dashboard.c: 252:  unsigned int key;
+[v _key `ui ~T0 @X0 1 a ]
+"255
+[; ;dashboard.c: 255:  read_and_format_log(curr_log);
+[e ( _read_and_format_log (1 -> _curr_log `uc ]
+"257
+[; ;dashboard.c: 257:  while(1){
+[e :U 166 ]
+{
+"260
+[; ;dashboard.c: 260:   if(event_count == 0){
+[e $ ! == _event_count -> -> 0 `i `ui 168  ]
+{
+"261
+[; ;dashboard.c: 261:    clcd_print("No Logs", (0x80 + 0));
+[e ( _clcd_print (2 , :s 19C -> + -> 128 `i -> 0 `i `uc ]
+"262
+[; ;dashboard.c: 262:    clcd_print("Available", (0xC0 + 0));
+[e ( _clcd_print (2 , :s 20C -> + -> 192 `i -> 0 `i `uc ]
+"263
+[; ;dashboard.c: 263:   }
+}
+[e $U 169  ]
+"265
+[; ;dashboard.c: 265:   else{
+[e :U 168 ]
+{
+"266
+[; ;dashboard.c: 266:    clcd_print("# TIME     EV SP", (0x80 + 0));
+[e ( _clcd_print (2 , :s 21C -> + -> 128 `i -> 0 `i `uc ]
+"267
+[; ;dashboard.c: 267:    clcd_print(logs, (0xC0 + 0));
+[e ( _clcd_print (2 , -> &U _logs `*Cuc -> + -> 192 `i -> 0 `i `uc ]
+"268
+[; ;dashboard.c: 268:   }
+}
+[e :U 169 ]
+"271
+[; ;dashboard.c: 271:   key = read_digital_keypad(1);
+[e = _key -> ( _read_digital_keypad (1 -> -> 1 `i `uc `ui ]
+"273
+[; ;dashboard.c: 273:   if(key == 0x3E){
+[e $ ! == _key -> -> 62 `i `ui 170  ]
+{
+"274
+[; ;dashboard.c: 274:    if(curr_log > 0) curr_log--;
+[e $ ! > _curr_log -> -> 0 `i `ui 171  ]
+[e -- _curr_log -> -> 1 `i `ui ]
+[e :U 171 ]
+"275
+[; ;dashboard.c: 275:    read_and_format_log(curr_log);
+[e ( _read_and_format_log (1 -> _curr_log `uc ]
+"276
+[; ;dashboard.c: 276:   }
+}
+[e $U 172  ]
+"278
+[; ;dashboard.c: 278:   else if(key == 0x3D){
+[e :U 170 ]
+[e $ ! == _key -> -> 61 `i `ui 173  ]
+{
+"279
+[; ;dashboard.c: 279:    if(curr_log < event_count - 1) curr_log++;
+[e $ ! < _curr_log - _event_count -> -> 1 `i `ui 174  ]
+[e ++ _curr_log -> -> 1 `i `ui ]
+[e :U 174 ]
+"280
+[; ;dashboard.c: 280:    read_and_format_log(curr_log);
+[e ( _read_and_format_log (1 -> _curr_log `uc ]
+"281
+[; ;dashboard.c: 281:   }
+}
+[e $U 175  ]
+"282
+[; ;dashboard.c: 282:   else if(key == 0x2F){
+[e :U 173 ]
+[e $ ! == _key -> -> 47 `i `ui 176  ]
+{
+"284
+[; ;dashboard.c: 284:    return;
+[e $UE 164  ]
+"285
+[; ;dashboard.c: 285:   }
+}
+[e :U 176 ]
+[e :U 175 ]
+[e :U 172 ]
+"287
+[; ;dashboard.c: 287:  }
+}
+[e :U 165 ]
+[e $U 166  ]
+[e :U 167 ]
+"289
+[; ;dashboard.c: 289: }
+[e :UE 164 ]
+}
+"292
+[; ;dashboard.c: 292: void clear_log(void){
+[v _clear_log `(v ~T0 @X0 1 ef ]
+{
+[e :U _clear_log ]
+[f ]
+"293
+[; ;dashboard.c: 293:  event_count = 0;
+[e = _event_count -> -> 0 `i `ui ]
+"294
+[; ;dashboard.c: 294:  clcd_print("Clearing Logs...", (0x80 + 0));
+[e ( _clcd_print (2 , :s 22C -> + -> 128 `i -> 0 `i `uc ]
+"295
+[; ;dashboard.c: 295:  _delay((unsigned long)((500)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"296
+[; ;dashboard.c: 296:  return;
+[e $UE 177  ]
+"297
+[; ;dashboard.c: 297: }
+[e :UE 177 ]
+}
+"300
+[; ;dashboard.c: 300: void download_log(void){
+[v _download_log `(v ~T0 @X0 1 ef ]
+{
+[e :U _download_log ]
+[f ]
+"302
+[; ;dashboard.c: 302:  clcd_print("Logs are", (0x80 + 0));
+[e ( _clcd_print (2 , :s 23C -> + -> 128 `i -> 0 `i `uc ]
+"303
+[; ;dashboard.c: 303:  clcd_print("Downloading...", (0xC0 + 0));
+[e ( _clcd_print (2 , :s 24C -> + -> 192 `i -> 0 `i `uc ]
+"306
+[; ;dashboard.c: 306:  put_s("# TIME     EV SP\n");
+[e ( _put_s (1 :s 25C ]
+"309
+[; ;dashboard.c: 309:  for(unsigned int i = 0; i < event_count; i++){
+{
+[v _i `ui ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `ui ]
+[e $U 182  ]
+[e :U 179 ]
+{
+"310
+[; ;dashboard.c: 310:   read_and_format_log(i);
+[e ( _read_and_format_log (1 -> _i `uc ]
+"311
+[; ;dashboard.c: 311:   put_s(logs);
+[e ( _put_s (1 -> &U _logs `*Cuc ]
+"312
+[; ;dashboard.c: 312:   put_char('\n');
+[e ( _put_char (1 -> -> 10 `ui `uc ]
+"314
+[; ;dashboard.c: 314:   _delay((unsigned long)((500)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"315
+[; ;dashboard.c: 315:  }
+}
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 182 ]
+[e $ < _i _event_count 179  ]
+[e :U 180 ]
+}
+"317
+[; ;dashboard.c: 317:  return;
+[e $UE 178  ]
+"318
+[; ;dashboard.c: 318: }
+[e :UE 178 ]
+}
+"320
+[; ;dashboard.c: 320: void display_indicator(unsigned int pos){
+[v _display_indicator `(v ~T0 @X0 1 ef1`ui ]
+{
+[e :U _display_indicator ]
+[v _pos `ui ~T0 @X0 1 r1 ]
+[f ]
+"321
+[; ;dashboard.c: 321:  if(pos == 0){
+[e $ ! == _pos -> -> 0 `i `ui 184  ]
+{
+"323
+[; ;dashboard.c: 323:   clcd_print("  ", (0xC0 + 4));
+[e ( _clcd_print (2 , :s 26C -> + -> 192 `i -> 4 `i `uc ]
+"324
+[; ;dashboard.c: 324:  }
+}
+[e $U 185  ]
+"325
+[; ;dashboard.c: 325:  else if(pos == 1){
+[e :U 184 ]
+[e $ ! == _pos -> -> 1 `i `ui 186  ]
+{
+"327
+[; ;dashboard.c: 327:   clcd_print("  ", (0xC0 + 7));
+[e ( _clcd_print (2 , :s 27C -> + -> 192 `i -> 7 `i `uc ]
+"328
+[; ;dashboard.c: 328:  }
+}
+[e $U 187  ]
+"329
+[; ;dashboard.c: 329:  else if(pos == 2){
+[e :U 186 ]
+[e $ ! == _pos -> -> 2 `i `ui 188  ]
+{
+"331
+[; ;dashboard.c: 331:   clcd_print("  ", (0xC0 + 10));
+[e ( _clcd_print (2 , :s 28C -> + -> 192 `i -> 10 `i `uc ]
+"332
+[; ;dashboard.c: 332:  }
+}
+[e :U 188 ]
+[e :U 187 ]
+[e :U 185 ]
+"334
+[; ;dashboard.c: 334: }
+[e :UE 183 ]
+}
+"336
+[; ;dashboard.c: 336: void set_time(void){
+[v _set_time `(v ~T0 @X0 1 ef ]
+{
+[e :U _set_time ]
+[f ]
+"339
+[; ;dashboard.c: 339:  unsigned int hour = ((time[0] - '0') * 10) + (time[1] - '0');
+[v _hour `ui ~T0 @X0 1 a ]
+[e = _hour + * - -> *U + &U _time * -> -> -> 0 `i `ui `ux -> -> # *U &U _time `ui `ux `ui -> 48 `ui -> -> 10 `i `ui - -> *U + &U _time * -> -> -> 1 `i `ui `ux -> -> # *U &U _time `ui `ux `ui -> 48 `ui ]
+"340
+[; ;dashboard.c: 340:  unsigned int min = ((time[3] - '0') * 10) + (time[4] - '0');
+[v _min `ui ~T0 @X0 1 a ]
+[e = _min + * - -> *U + &U _time * -> -> -> 3 `i `ui `ux -> -> # *U &U _time `ui `ux `ui -> 48 `ui -> -> 10 `i `ui - -> *U + &U _time * -> -> -> 4 `i `ui `ux -> -> # *U &U _time `ui `ux `ui -> 48 `ui ]
+"341
+[; ;dashboard.c: 341:  unsigned int sec = ((time[6] - '0') * 10) + (time[7] - '0');
+[v _sec `ui ~T0 @X0 1 a ]
+[e = _sec + * - -> *U + &U _time * -> -> -> 6 `i `ui `ux -> -> # *U &U _time `ui `ux `ui -> 48 `ui -> -> 10 `i `ui - -> *U + &U _time * -> -> -> 7 `i `ui `ux -> -> # *U &U _time `ui `ux `ui -> 48 `ui ]
+"342
+[; ;dashboard.c: 342:  unsigned int indicator = 0;
+[v _indicator `ui ~T0 @X0 1 a ]
+[e = _indicator -> -> 0 `i `ui ]
+"343
+[; ;dashboard.c: 343:  unsigned char key;
+[v _key `uc ~T0 @X0 1 a ]
+"345
+[; ;dashboard.c: 345:  clcd_print("    HH:MM:SS    ", (0x80 + 0));
+[e ( _clcd_print (2 , :s 29C -> + -> 128 `i -> 0 `i `uc ]
+"347
+[; ;dashboard.c: 347:  while(1){
+[e :U 191 ]
+{
+"350
+[; ;dashboard.c: 350:   clcd_putch((hour / 10) + '0', (0xC0 + 4));
+[e ( _clcd_putch (2 , -> + / _hour -> -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 4 `i `uc ]
+"351
+[; ;dashboard.c: 351:   clcd_putch((hour % 10) + '0', (0xC0 + 5));
+[e ( _clcd_putch (2 , -> + % _hour -> -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 5 `i `uc ]
+"352
+[; ;dashboard.c: 352:   clcd_putch(':', (0xC0 + 6));
+[e ( _clcd_putch (2 , -> -> 58 `ui `uc -> + -> 192 `i -> 6 `i `uc ]
+"355
+[; ;dashboard.c: 355:   clcd_putch((min / 10) + '0', (0xC0 + 7));
+[e ( _clcd_putch (2 , -> + / _min -> -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 7 `i `uc ]
+"356
+[; ;dashboard.c: 356:   clcd_putch((min % 10) + '0', (0xC0 + 8));
+[e ( _clcd_putch (2 , -> + % _min -> -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 8 `i `uc ]
+"357
+[; ;dashboard.c: 357:   clcd_putch(':', (0xC0 + 9));
+[e ( _clcd_putch (2 , -> -> 58 `ui `uc -> + -> 192 `i -> 9 `i `uc ]
+"360
+[; ;dashboard.c: 360:   clcd_putch((sec / 10) + '0', (0xC0 + 10));
+[e ( _clcd_putch (2 , -> + / _sec -> -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 10 `i `uc ]
+"361
+[; ;dashboard.c: 361:   clcd_putch((sec % 10) + '0', (0xC0 + 11));
+[e ( _clcd_putch (2 , -> + % _sec -> -> 10 `i `ui -> 48 `ui `uc -> + -> 192 `i -> 11 `i `uc ]
+"363
+[; ;dashboard.c: 363:   display_indicator(indicator);
+[e ( _display_indicator (1 _indicator ]
+"367
+[; ;dashboard.c: 367:   key = read_digital_keypad(1);
+[e = _key ( _read_digital_keypad (1 -> -> 1 `i `uc ]
+"369
+[; ;dashboard.c: 369:   if(key == 0x3E){
+[e $ ! == -> _key `i -> 62 `i 193  ]
+{
+"370
+[; ;dashboard.c: 370:    if(indicator == 0) hour = (hour + 1) % 24;
+[e $ ! == _indicator -> -> 0 `i `ui 194  ]
+[e = _hour % + _hour -> -> 1 `i `ui -> -> 24 `i `ui ]
+[e :U 194 ]
+"372
+[; ;dashboard.c: 372:    if(indicator == 1) min = (min + 1) % 60;
+[e $ ! == _indicator -> -> 1 `i `ui 195  ]
+[e = _min % + _min -> -> 1 `i `ui -> -> 60 `i `ui ]
+[e :U 195 ]
+"374
+[; ;dashboard.c: 374:    if(indicator == 2) sec = (sec + 1) % 60;
+[e $ ! == _indicator -> -> 2 `i `ui 196  ]
+[e = _sec % + _sec -> -> 1 `i `ui -> -> 60 `i `ui ]
+[e :U 196 ]
+"375
+[; ;dashboard.c: 375:   }
+}
+[e $U 197  ]
+"377
+[; ;dashboard.c: 377:   else if(key == 0x3D){
+[e :U 193 ]
+[e $ ! == -> _key `i -> 61 `i 198  ]
+{
+"378
+[; ;dashboard.c: 378:    indicator = (indicator + 1) % 3;
+[e = _indicator % + _indicator -> -> 1 `i `ui -> -> 3 `i `ui ]
+"379
+[; ;dashboard.c: 379:   }
+}
+[e $U 199  ]
+"381
+[; ;dashboard.c: 381:   else if(key == 0x37){
+[e :U 198 ]
+[e $ ! == -> _key `i -> 55 `i 200  ]
+{
+"384
+[; ;dashboard.c: 384:   }
+}
+[e $U 201  ]
+"386
+[; ;dashboard.c: 386:   else if(key == 0x2F){
+[e :U 200 ]
+[e $ ! == -> _key `i -> 47 `i 202  ]
+{
+"388
+[; ;dashboard.c: 388:    return;
+[e $UE 189  ]
+"389
+[; ;dashboard.c: 389:   }
+}
+[e :U 202 ]
+[e :U 201 ]
+[e :U 199 ]
+[e :U 197 ]
+"390
+[; ;dashboard.c: 390:  }
+}
+[e :U 190 ]
+[e $U 191  ]
+[e :U 192 ]
+"391
+[; ;dashboard.c: 391: }
+[e :UE 189 ]
+}
+[a 19C 78 111 32 76 111 103 115 0 ]
+[a 23C 76 111 103 115 32 97 114 101 0 ]
+[a 20C 65 118 97 105 108 97 98 108 101 0 ]
+[a 7C 71 82 0 ]
+[a 21C 35 32 84 73 77 69 32 32 32 32 32 69 86 32 83 80 0 ]
+[a 14C 32 84 73 77 69 32 32 32 32 32 69 86 32 32 83 80 0 ]
+[a 1C 79 78 0 ]
+[a 2C 71 78 0 ]
+[a 6C 71 52 0 ]
+[a 5C 71 51 0 ]
+[a 4C 71 50 0 ]
+[a 3C 71 49 0 ]
+[a 22C 67 108 101 97 114 105 110 103 32 76 111 103 115 46 46 46 0 ]
+[a 24C 68 111 119 110 108 111 97 100 105 110 103 46 46 46 0 ]
+[a 8C 67 32 0 ]
+[a 15C 42 32 0 ]
+[a 17C 42 32 0 ]
+[a 11C 68 111 119 110 108 111 97 100 32 76 111 103 32 32 0 ]
+[a 13C 67 104 97 110 103 101 32 80 97 115 115 32 32 32 0 ]
+[a 29C 32 32 32 32 72 72 58 77 77 58 83 83 32 32 32 32 0 ]
+[a 10C 67 108 101 97 114 32 76 111 103 32 32 32 32 32 0 ]
+[a 9C 86 105 101 119 32 76 111 103 32 32 32 32 32 32 0 ]
+[a 12C 83 101 116 32 84 105 109 101 32 32 32 32 32 32 0 ]
+[a 16C 32 32 0 ]
+[a 18C 32 32 0 ]
+[a 26C 32 32 0 ]
+[a 27C 32 32 0 ]
+[a 28C 32 32 0 ]
+[a 25C 35 32 84 73 77 69 32 32 32 32 32 69 86 32 83 80 10 0 ]

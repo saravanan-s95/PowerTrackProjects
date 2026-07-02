@@ -1,0 +1,6 @@
+{
+    "mplab.clangd.compileCommandsDir": "${workspaceFolder}/_build/25014_Car_Black_Box/default",
+    "mplab.clangd.path": "/opt/microchip/xc8/v3.10/bin/xc8-clangd",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "cmake.sourceDirectory": "/home/santhoshtk/Desktop/EMERTXE/MC/25014_Car_Black__Box.X/25014_Car_Black_Box.X/cmake/25014_Car_Black_Box/default"
+}

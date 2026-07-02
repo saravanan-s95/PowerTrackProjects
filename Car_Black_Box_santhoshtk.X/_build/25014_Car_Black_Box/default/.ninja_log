@@ -1,0 +1,14 @@
+# ninja log v7
+3	79	1782932372830769067	CMakeFiles/A_25014_Car_Black_Box_default_default_XC8_compile.dir/home/santhoshtk/Desktop/EMERTXE/MC/25014_Car_Black__Box.X/25014_Car_Black_Box.X/main.c.p1	c557422a11c8d5f6
+1	81	1782932372829589960	CMakeFiles/A_25014_Car_Black_Box_default_default_XC8_compile.dir/home/santhoshtk/Desktop/EMERTXE/MC/25014_Car_Black__Box.X/25014_Car_Black_Box.X/auth.c.p1	3eb5ecdd857be914
+2	81	1782932372830263931	CMakeFiles/A_25014_Car_Black_Box_default_default_XC8_compile.dir/home/santhoshtk/Desktop/EMERTXE/MC/25014_Car_Black__Box.X/25014_Car_Black_Box.X/external_eeprom.c.p1	f86a05960f4db4bf
+2	88	1782932372830502240	CMakeFiles/A_25014_Car_Black_Box_default_default_XC8_compile.dir/home/santhoshtk/Desktop/EMERTXE/MC/25014_Car_Black__Box.X/25014_Car_Black_Box.X/isr.c.p1	6e9e0cc0b8f75e17
+2	89	1782932372830371039	CMakeFiles/A_25014_Car_Black_Box_default_default_XC8_compile.dir/home/santhoshtk/Desktop/EMERTXE/MC/25014_Car_Black__Box.X/25014_Car_Black_Box.X/i2c.c.p1	18ebade6da1b1bb6
+3	89	1782932372830912625	CMakeFiles/A_25014_Car_Black_Box_default_default_XC8_compile.dir/home/santhoshtk/Desktop/EMERTXE/MC/25014_Car_Black__Box.X/25014_Car_Black_Box.X/timers.c.p1	2364e3591674bd03
+2	93	1782932372830133276	CMakeFiles/A_25014_Car_Black_Box_default_default_XC8_compile.dir/home/santhoshtk/Desktop/EMERTXE/MC/25014_Car_Black__Box.X/25014_Car_Black_Box.X/ds1307.c.p1	34b8ecea7bd7b5d
+1	94	1782932372828357766	CMakeFiles/A_25014_Car_Black_Box_default_default_XC8_compile.dir/home/santhoshtk/Desktop/EMERTXE/MC/25014_Car_Black__Box.X/25014_Car_Black_Box.X/adc.c.p1	42d1742838250ede
+2	94	1782932372829988473	CMakeFiles/A_25014_Car_Black_Box_default_default_XC8_compile.dir/home/santhoshtk/Desktop/EMERTXE/MC/25014_Car_Black__Box.X/25014_Car_Black_Box.X/digital_keypad.c.p1	763f90c099cb2e72
+2	95	1782932372829740817	CMakeFiles/A_25014_Car_Black_Box_default_default_XC8_compile.dir/home/santhoshtk/Desktop/EMERTXE/MC/25014_Car_Black__Box.X/25014_Car_Black_Box.X/clcd.c.p1	ce636cc4ea49295
+3	95	1782932372831061271	CMakeFiles/A_25014_Car_Black_Box_default_default_XC8_compile.dir/home/santhoshtk/Desktop/EMERTXE/MC/25014_Car_Black__Box.X/25014_Car_Black_Box.X/uart.c.p1	98c19025fbba0523
+2	95	1782932372829849186	CMakeFiles/A_25014_Car_Black_Box_default_default_XC8_compile.dir/home/santhoshtk/Desktop/EMERTXE/MC/25014_Car_Black__Box.X/25014_Car_Black_Box.X/dashboard.c.p1	c1122ae7b66a6527
+95	1015	1782932372923040909	/home/santhoshtk/Desktop/EMERTXE/MC/25014_Car_Black__Box.X/25014_Car_Black_Box.X/out/25014_Car_Black_Box/default.elf	a012ed33866cad00
