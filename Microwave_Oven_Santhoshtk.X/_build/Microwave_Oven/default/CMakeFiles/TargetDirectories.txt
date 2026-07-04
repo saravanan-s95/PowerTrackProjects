@@ -1,0 +1,4 @@
+/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/_build/Microwave_Oven/default/CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir
+/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/_build/Microwave_Oven/default/CMakeFiles/Microwave_Oven_default_image_5SuR20Gv.dir
+/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/_build/Microwave_Oven/default/CMakeFiles/edit_cache.dir
+/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/_build/Microwave_Oven/default/CMakeFiles/rebuild_cache.dir

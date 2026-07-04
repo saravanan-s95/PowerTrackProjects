@@ -1,0 +1,56 @@
+[
+{
+  "directory": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/_build/Microwave_Oven/default",
+  "command": "/opt/microchip/xc8/v3.10/bin/xc8-cc -DXPRJ_default=default -D__16F877A__ -D__DEBUG=1 -I/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/cmake/Microwave_Oven/default/../../.. -c -mcpu=16F877A -mdfp=/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/buzzer.c.p1 -c /home/santhoshtk/MPLABXProjects/Microwave_Oven.X/buzzer.c",
+  "file": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/buzzer.c",
+  "output": "CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/buzzer.c.p1"
+},
+{
+  "directory": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/_build/Microwave_Oven/default",
+  "command": "/opt/microchip/xc8/v3.10/bin/xc8-cc -DXPRJ_default=default -D__16F877A__ -D__DEBUG=1 -I/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/cmake/Microwave_Oven/default/../../.. -c -mcpu=16F877A -mdfp=/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/clcd.c.p1 -c /home/santhoshtk/MPLABXProjects/Microwave_Oven.X/clcd.c",
+  "file": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/clcd.c",
+  "output": "CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/clcd.c.p1"
+},
+{
+  "directory": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/_build/Microwave_Oven/default",
+  "command": "/opt/microchip/xc8/v3.10/bin/xc8-cc -DXPRJ_default=default -D__16F877A__ -D__DEBUG=1 -I/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/cmake/Microwave_Oven/default/../../.. -c -mcpu=16F877A -mdfp=/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/dashboard.c.p1 -c /home/santhoshtk/MPLABXProjects/Microwave_Oven.X/dashboard.c",
+  "file": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/dashboard.c",
+  "output": "CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/dashboard.c.p1"
+},
+{
+  "directory": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/_build/Microwave_Oven/default",
+  "command": "/opt/microchip/xc8/v3.10/bin/xc8-cc -DXPRJ_default=default -D__16F877A__ -D__DEBUG=1 -I/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/cmake/Microwave_Oven/default/../../.. -c -mcpu=16F877A -mdfp=/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/fan.c.p1 -c /home/santhoshtk/MPLABXProjects/Microwave_Oven.X/fan.c",
+  "file": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/fan.c",
+  "output": "CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/fan.c.p1"
+},
+{
+  "directory": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/_build/Microwave_Oven/default",
+  "command": "/opt/microchip/xc8/v3.10/bin/xc8-cc -DXPRJ_default=default -D__16F877A__ -D__DEBUG=1 -I/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/cmake/Microwave_Oven/default/../../.. -c -mcpu=16F877A -mdfp=/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/isr.c.p1 -c /home/santhoshtk/MPLABXProjects/Microwave_Oven.X/isr.c",
+  "file": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/isr.c",
+  "output": "CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/isr.c.p1"
+},
+{
+  "directory": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/_build/Microwave_Oven/default",
+  "command": "/opt/microchip/xc8/v3.10/bin/xc8-cc -DXPRJ_default=default -D__16F877A__ -D__DEBUG=1 -I/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/cmake/Microwave_Oven/default/../../.. -c -mcpu=16F877A -mdfp=/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/main.c.p1 -c /home/santhoshtk/MPLABXProjects/Microwave_Oven.X/main.c",
+  "file": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/main.c",
+  "output": "CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/main.c.p1"
+},
+{
+  "directory": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/_build/Microwave_Oven/default",
+  "command": "/opt/microchip/xc8/v3.10/bin/xc8-cc -DXPRJ_default=default -D__16F877A__ -D__DEBUG=1 -I/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/cmake/Microwave_Oven/default/../../.. -c -mcpu=16F877A -mdfp=/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/matrix_keypad.c.p1 -c /home/santhoshtk/MPLABXProjects/Microwave_Oven.X/matrix_keypad.c",
+  "file": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/matrix_keypad.c",
+  "output": "CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/matrix_keypad.c.p1"
+},
+{
+  "directory": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/_build/Microwave_Oven/default",
+  "command": "/opt/microchip/xc8/v3.10/bin/xc8-cc -DXPRJ_default=default -D__16F877A__ -D__DEBUG=1 -I/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/cmake/Microwave_Oven/default/../../.. -c -mcpu=16F877A -mdfp=/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/operating_modes.c.p1 -c /home/santhoshtk/MPLABXProjects/Microwave_Oven.X/operating_modes.c",
+  "file": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/operating_modes.c",
+  "output": "CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/operating_modes.c.p1"
+},
+{
+  "directory": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/_build/Microwave_Oven/default",
+  "command": "/opt/microchip/xc8/v3.10/bin/xc8-cc -DXPRJ_default=default -D__16F877A__ -D__DEBUG=1 -I/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/cmake/Microwave_Oven/default/../../.. -c -mcpu=16F877A -mdfp=/home/santhoshtk/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/timers.c.p1 -c /home/santhoshtk/MPLABXProjects/Microwave_Oven.X/timers.c",
+  "file": "/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/timers.c",
+  "output": "CMakeFiles/Microwave_Oven_default_default_XC8_compile.dir/home/santhoshtk/MPLABXProjects/Microwave_Oven.X/timers.c.p1"
+}
+]
