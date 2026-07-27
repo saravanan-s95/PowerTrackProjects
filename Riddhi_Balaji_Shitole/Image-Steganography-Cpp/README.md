@@ -108,13 +108,15 @@ Extract Secret Data
         ↓
 Generate Output File
 
-##  Build Instructions
-Using g++
+## Build Instructions
 
-Compile manually
+### Using g++
 
-bash
+Compile manually:
+
+```bash
 g++ *.cpp -o stego
+```
 
 ## Running the Project
 
