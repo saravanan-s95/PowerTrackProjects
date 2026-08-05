@@ -1,0 +1,75 @@
+
+# Red-Black Tree (C Implementation)
+
+A menu-driven C program implementing a **Red-Black Tree (RBT)** — a self-balancing binary search tree that maintains balance through node coloring (red/black) and rotation rules, guaranteeing O(log n) time complexity for insertion, deletion, and search operations.
+
+## Overview
+
+This project provides an interactive command-line interface to build and manipulate a Red-Black Tree. The driver program (`main.c`) repeatedly displays a menu, reads the data structure (`rbt.h`), and calls the corresponding tree operation based on user input.
+
+## Features / Supported Operations
+
+| # | Operation        | Description                                              |
+|---|------------------|-----------------------------------------------------------|
+| 1 | Insert           | Inserts a new integer into the tree, rebalancing as needed. Reports `SUCCESS`, `DUPLICATE`, or failure. |
+| 2 | Delete           | Deletes a specified integer from the tree, reporting `NOELEMENT` if not found.
+| 3 | Find Minimum     | Finds and displays the minimum value in the tree.        |
+| 4 | Delete Minimum   | Deletes the node with the minimum value from the tree.   |
+| 5 | Find Maximum     | Finds and displays the maximum value in the tree.        |
+| 6 | Delete Maximum   | Deletes the node with the maximum value from the tree.   |
+| 7 | Inorder          | Prints the tree contents via inorder traversal (sorted order). |
+| 8 | Postorder        | Prints the tree contents via postorder traversal.        |
+| 9 | Preorder         | Prints the tree contents via preorder traversal.          |
+
+After every insert/delete-type operation, the tree is printed via `print_tree()` for visual verification. The program loops on a menu until the user chooses not to continue (`Y`/`N` prompt).
+
+## Build Instructions
+
+```bash
+gcc main.c rbt.c -o rbt
+```
+
+## Usage
+
+Run the compiled binary:
+
+```bash
+./rbt
+```
+
+You'll see a menu like:
+
+```
+1. Insert
+2. Delete
+3. Find Minimum
+4. Delete Minimum
+5. Find Maximum
+6. Delete Maximum
+7. Inoder
+8. Postorder
+ 9. Preorder
+Enter your choice:
+```
+
+Enter the number corresponding to the operation you want to perform, follow the prompts, and choose `y`/`Y` to continue or `n`/`N` to exit after each operation.
+
+### Example Session
+
+```
+Enter your choice: 1
+Enter the data to be inserted into the RB Tree: 25
+INFO : Data Inserted Successfully
+[tree printed]
+Want to continue? Press [yY | nN]: y
+
+Enter your choice: 7
+[inorder traversal printed]
+Want to continue? Press [yY | nN]: n
+```
+
+# 👩‍💻 Author
+
+**Swati Pathak**
+
+Bachelor of Engineering (Electronics & Communication)
