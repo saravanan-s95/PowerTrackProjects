@@ -1,0 +1,112 @@
+👤NAME        : THARSHINI S
+📅DATE        : 09-12-2025
+📝DESCRIPTION : INVERTED SEARCH - PROJECT SUMMARY
+
+📖INTRODUCTION:
+ In this project, Inverted Search I created a mini search engine that stores words from multiple text files
+and allows users to search where those words appear. It works like a dictionary that maps each word to the 
+list of files in which it is found. This helps in quick lookup, fast searching, and organized data handling.
+
+🎯OBJECTIVE:
+ The main objective of my project is to build a searchable database of words that have been taken from various 
+text files and store them efficiently using hashing and linked lists. It allows the user to create, update, 
+search, display and save the database, it also helps me to understand the important concepts like file handling,
+dynamic memory allocation and data structures such as linked lists.
+
+💡APPLICATIONS:
+ This concept is widely used in many real-world applications including search engines like Google for indexing 
+webpages, text editors for finding repeated words, plagiarism detection systems and various data analysis and 
+document processing tasks that need fast and efficient text lookup.
+
+🛠️RESOURCES:
+ The project uses the C programming language along with data structures like hash tables and linked lists, and
+it is built using the GCC compiler with a Makefile on a Linux terminal. Its main data source is processing 
+several .txt input files.
+
+⚙️IMPLEMENTATION:
+ Through the command line, the user provides one or more .txt files, each which checked for issues like empty files,
+repeated inputs and invalid extensions. The words are then extracted, converted to lowercase and stored in a hash table 
+where each word node keeps a linked list of file names and their occurrence counts. The program prevents duplicate database
+creation and supports dynamic database updates by allowing additional files to be indexed after the initial database is created.
+The program provides menu options as,
+->Create database
+->Update database
+->Search a word
+->Display database
+->Save database to file
+->Exit 
+The database is dynamically maintained throughout the program.
+
+⚠️LIMITATIONS AND CHALLENGES:
+ Only .txt files are supported. Large files may take longer due to manual memory handling.
+Repeated files need to be monitored to avoid duplicating entries. The project currently supports indexing of alphabets, numbers 
+and symbol based tokens, but it can be improved in the future by supporting additional file formats and adding advanced search functions 
+like phrase or prefix searches.
+
+💻SAMPLE EXECUTION:
+./out file1.txt file2.txt
+
+---------------INVERTED SEARCH MENU---------------
+1.Create Database
+2.Update Database
+3.Search a Word
+4.Display Database
+5.Save Database to File
+6.Exit
+---------------------------------------------------
+Enter your choice: 1
+File 'file2.txt' processed successfully.
+File 'file1.txt' processed successfully.
+Database created successfully.
+Do you want to continue? (y/n): y
+
+---------------INVERTED SEARCH MENU---------------
+1.Create Database
+2.Update Database
+3.Search a Word
+4.Display Database
+5.Save Database to File
+6.Exit
+---------------------------------------------------
+Enter your choice: 1
+Database already created!
+Do you want to continue? (y/n): y
+
+---------------INVERTED SEARCH MENU---------------
+1.Create Database
+2.Update Database
+3.Search a Word
+4.Display Database
+5.Save Database to File
+6.Exit
+---------------------------------------------------
+Enter your choice: 4
+
+---------------DATABASE CONTENTS---------------
+[33]    [!!!   ]        1  File: file2.txt  1
+[35]    [#$    ]        1  File: file2.txt  1
+[49]    [123   ]        1  File: file2.txt  1
+[104]   [hi    ]        1  File: file2.txt  1
+[104]   [hello ]        2  File: file1.txt  1 File: file2.txt  1
+[119]   [world ]        1  File: file1.txt  1
+---------------------------------------------------
+Do you want to continue? (y/n): y
+
+---------------INVERTED SEARCH MENU---------------
+1.Create Database
+2.Update Database
+3.Search a Word
+4.Display Database
+5.Save Database to File
+6.Exit
+---------------------------------------------------
+Enter your choice: 6
+Inverted Search is signing off...
+
+
+🔗CONCLUSION:
+ In conclusion, this project helped me understand how search engines and indexing systems work internally. I learned how to use 
+file handling, hashing, linked lists and dynamic memory allocation to build a practical and efficient searching tool.
+Overall, the project improved my problem-solving skills and strengthened my understanding of data structures.
+
+  
