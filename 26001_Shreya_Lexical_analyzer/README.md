@@ -4,7 +4,7 @@ A C-based command-line application to display lexeme-token pair of .c file.
 
 ## Features
 
-I.  Displays the following lexemes and matching token names.
+1.  Displays the following lexemes and matching token names.
     1.	KEYWORD
     2.	IDENTIFIER
     3.	INTEGER_CONSTANT
@@ -28,7 +28,7 @@ I.  Displays the following lexemes and matching token names.
     21.	SEMICOLON
     22.	COMMA
     23. TERNARY_OPERATOR
-II. Skips single and multiline comments
+2. Skips single and multiline comments
 
 
 ## Build
