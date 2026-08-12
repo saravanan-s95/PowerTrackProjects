@@ -1,0 +1,524 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"22 /home/krubro/MPLABProjects/Car_Black_Box/main.c
+[c E2 0 1 2 3 4 5 .. ]
+[n E2 . GR GN G1 G2 G3 G4  ]
+"62 /home/krubro/MPLABProjects/Car_Black_Box/main_config.h
+[s S2 `uc 1 `uc 1 `uc 1 `E2 1 `uc 1 `uc 1 `uc 1 ]
+[n S2 . hours minutes seconds gear speed flags log_pending ]
+"62 /home/krubro/MPLABProjects/Car_Black_Box/blackbox_drivers.h
+[v _init_clcd `(v ~T0 @X0 0 ef ]
+"98
+[v _init_digital_keypad `(v ~T0 @X0 0 ef ]
+"20
+[v _initUART `(v ~T0 @X0 0 ef1`ul ]
+"30
+[v _initI2C `(v ~T0 @X0 0 ef1`ul ]
+"77
+[v _init_rtc `(v ~T0 @X0 0 ef ]
+"108
+[v _initADC `(v ~T0 @X0 0 ef ]
+"21 /home/krubro/MPLABProjects/Car_Black_Box/timer.h
+[v _init_timers `(v ~T0 @X0 0 ef ]
+"32 /home/krubro/MPLABProjects/Car_Black_Box/login.h
+[v _login_load_password `(v ~T0 @X0 0 ef ]
+"43 /home/krubro/MPLABProjects/Car_Black_Box/main_config.h
+[s S1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S1 . hours minutes seconds speed gear flags ]
+[p mainexit ]
+"48 /home/krubro/MPLABProjects/Car_Black_Box/main.c
+[c E1067 0 1 2 3 4 5 6 .. ]
+[n E1067 . EVENT_NONE EVENT_SW1 EVENT_SW2 EVENT_SW3 EVENT_SW4 EVENT_SW5 EVENT_SW6  ]
+"24 /home/krubro/MPLABProjects/Car_Black_Box/blackbox_drivers.h
+[v _uart_puts `(v ~T0 @X0 0 ef1`*Cuc ]
+"27 /home/krubro/MPLABProjects/Car_Black_Box/events.h
+[v _translate_key `(E1067 ~T0 @X0 0 ef1`uc ]
+"99 /home/krubro/MPLABProjects/Car_Black_Box/blackbox_drivers.h
+[v _read_digital_keypad `(uc ~T0 @X0 0 ef1`uc ]
+"27 /home/krubro/MPLABProjects/Car_Black_Box/login.h
+[v _is_logged_in `(uc ~T0 @X0 0 ef ]
+"14 /home/krubro/MPLABProjects/Car_Black_Box/menu.h
+[v _menu_reset `(v ~T0 @X0 0 ef ]
+"70 /home/krubro/MPLABProjects/Car_Black_Box/main.c
+[c E1096 0 1 2 3 4 5 6 7 .. ]
+[n E1096 . DASHBOARD LOGIN MENU VIEW_LOGS CLEAR_LOGS DOWNLOAD_LOGS SET_TIME CHANGE_PASSWORD  ]
+"23 /home/krubro/MPLABProjects/Car_Black_Box/state.h
+[v _set_status `(v ~T0 @X0 0 ef1`E1096 ]
+"25 /home/krubro/MPLABProjects/Car_Black_Box/login.h
+[v _login_reset `(v ~T0 @X0 0 ef ]
+"17 /home/krubro/MPLABProjects/Car_Black_Box/dashboard.h
+[v _dashboard_update `(v ~T0 @X0 0 ef1`E1067 ]
+"23
+[v _invalidate_dashboard_cache `(v ~T0 @X0 0 ef ]
+"23 /home/krubro/MPLABProjects/Car_Black_Box/login.h
+[v _login_update `(v ~T0 @X0 0 ef1`E1067 ]
+"12 /home/krubro/MPLABProjects/Car_Black_Box/menu.h
+[v _menu_update `(v ~T0 @X0 0 ef1`E1067 ]
+"12 /home/krubro/MPLABProjects/Car_Black_Box/view_logs.h
+[v _view_logs_update `(v ~T0 @X0 0 ef1`E1067 ]
+"25 /home/krubro/MPLABProjects/Car_Black_Box/set_password.h
+[v _set_password_update `(v ~T0 @X0 0 ef1`E1067 ]
+"36 /home/krubro/MPLABProjects/Car_Black_Box/set_time.h
+[v _set_time_update `(v ~T0 @X0 0 ef1`E1067 ]
+"24 /home/krubro/MPLABProjects/Car_Black_Box/state.h
+[v _get_status `(E1096 ~T0 @X0 0 ef ]
+"20 /home/krubro/MPLABProjects/Car_Black_Box/dashboard.h
+[v _dashboard_render `(v ~T0 @X0 0 ef ]
+"24 /home/krubro/MPLABProjects/Car_Black_Box/login.h
+[v _login_render `(v ~T0 @X0 0 ef ]
+"13 /home/krubro/MPLABProjects/Car_Black_Box/menu.h
+[v _menu_render `(v ~T0 @X0 0 ef ]
+"13 /home/krubro/MPLABProjects/Car_Black_Box/view_logs.h
+[v _view_logs_render `(v ~T0 @X0 0 ef ]
+"26 /home/krubro/MPLABProjects/Car_Black_Box/set_password.h
+[v _set_password_render `(v ~T0 @X0 0 ef ]
+"37 /home/krubro/MPLABProjects/Car_Black_Box/set_time.h
+[v _set_time_render `(v ~T0 @X0 0 ef ]
+"17 /home/krubro/MPLABProjects/Car_Black_Box/view_logs.h
+[v _clear_logs `(v ~T0 @X0 0 ef ]
+"16
+[v _download_logs `(v ~T0 @X0 0 ef ]
+"67 /home/krubro/MPLABProjects/Car_Black_Box/eeprom.h
+[v _eeprom_write_log `(uc ~T0 @X0 0 ef1`*CS1 ]
+"11 /home/krubro/MPLABProjects/Car_Black_Box/main_config.h
+[p x FOSC    =  HS ]
+"12
+[p x WDTE    =  OFF ]
+"13
+[p x PWRTE  =  OFF ]
+"14
+[p x BOREN  =  ON ]
+"15
+[p x LVP      =  OFF ]
+"16
+[p x CPD      =  OFF ]
+"17
+[p x WRT      =  OFF ]
+"18
+[p x CP        =  OFF ]
+"38 /home/krubro/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8/pic/include/proc/pic16f877a.h
+[; <" INDF equ 00h ;# ">
+"45
+[; <" TMR0 equ 01h ;# ">
+"52
+[; <" PCL equ 02h ;# ">
+"59
+[; <" STATUS equ 03h ;# ">
+"145
+[; <" FSR equ 04h ;# ">
+"152
+[; <" PORTA equ 05h ;# ">
+"202
+[; <" PORTB equ 06h ;# ">
+"264
+[; <" PORTC equ 07h ;# ">
+"326
+[; <" PORTD equ 08h ;# ">
+"388
+[; <" PORTE equ 09h ;# ">
+"420
+[; <" PCLATH equ 0Ah ;# ">
+"440
+[; <" INTCON equ 0Bh ;# ">
+"518
+[; <" PIR1 equ 0Ch ;# ">
+"580
+[; <" PIR2 equ 0Dh ;# ">
+"620
+[; <" TMR1 equ 0Eh ;# ">
+"627
+[; <" TMR1L equ 0Eh ;# ">
+"634
+[; <" TMR1H equ 0Fh ;# ">
+"641
+[; <" T1CON equ 010h ;# ">
+"716
+[; <" TMR2 equ 011h ;# ">
+"723
+[; <" T2CON equ 012h ;# ">
+"794
+[; <" SSPBUF equ 013h ;# ">
+"801
+[; <" SSPCON equ 014h ;# ">
+"871
+[; <" CCPR1 equ 015h ;# ">
+"878
+[; <" CCPR1L equ 015h ;# ">
+"885
+[; <" CCPR1H equ 016h ;# ">
+"892
+[; <" CCP1CON equ 017h ;# ">
+"950
+[; <" RCSTA equ 018h ;# ">
+"1045
+[; <" TXREG equ 019h ;# ">
+"1052
+[; <" RCREG equ 01Ah ;# ">
+"1059
+[; <" CCPR2 equ 01Bh ;# ">
+"1066
+[; <" CCPR2L equ 01Bh ;# ">
+"1073
+[; <" CCPR2H equ 01Ch ;# ">
+"1080
+[; <" CCP2CON equ 01Dh ;# ">
+"1138
+[; <" ADRESH equ 01Eh ;# ">
+"1145
+[; <" ADCON0 equ 01Fh ;# ">
+"1241
+[; <" OPTION_REG equ 081h ;# ">
+"1311
+[; <" TRISA equ 085h ;# ">
+"1361
+[; <" TRISB equ 086h ;# ">
+"1423
+[; <" TRISC equ 087h ;# ">
+"1485
+[; <" TRISD equ 088h ;# ">
+"1547
+[; <" TRISE equ 089h ;# ">
+"1604
+[; <" PIE1 equ 08Ch ;# ">
+"1666
+[; <" PIE2 equ 08Dh ;# ">
+"1706
+[; <" PCON equ 08Eh ;# ">
+"1740
+[; <" SSPCON2 equ 091h ;# ">
+"1802
+[; <" PR2 equ 092h ;# ">
+"1809
+[; <" SSPADD equ 093h ;# ">
+"1816
+[; <" SSPSTAT equ 094h ;# ">
+"1985
+[; <" TXSTA equ 098h ;# ">
+"2066
+[; <" SPBRG equ 099h ;# ">
+"2073
+[; <" CMCON equ 09Ch ;# ">
+"2143
+[; <" CVRCON equ 09Dh ;# ">
+"2208
+[; <" ADRESL equ 09Eh ;# ">
+"2215
+[; <" ADCON1 equ 09Fh ;# ">
+"2274
+[; <" EEDATA equ 010Ch ;# ">
+"2281
+[; <" EEADR equ 010Dh ;# ">
+"2288
+[; <" EEDATH equ 010Eh ;# ">
+"2295
+[; <" EEADRH equ 010Fh ;# ">
+"2302
+[; <" EECON1 equ 018Ch ;# ">
+"2347
+[; <" EECON2 equ 018Dh ;# ">
+"22 /home/krubro/MPLABProjects/Car_Black_Box/main.c
+[v _sys `S2 ~T0 @X0 1 e ]
+[i _sys
+:U ..
+:U ..
+-> -> 0 `i `uc
+..
+..
+]
+"24
+[v _init_config `(v ~T0 @X0 1 sf ]
+"25
+{
+[e :U _init_config ]
+[f ]
+"26
+[e ( _init_clcd ..  ]
+"27
+[e ( _init_digital_keypad ..  ]
+"28
+[e ( _initUART (1 -> 9600 `ul ]
+"29
+[e ( _initI2C (1 -> 100000 `ul ]
+"30
+[e ( _init_rtc ..  ]
+"31
+[e ( _initADC ..  ]
+"32
+[e ( _init_timers ..  ]
+"33
+[e ( _login_load_password ..  ]
+"34
+[e :UE 101 ]
+}
+"36
+[v _log_entry_from_sys `(v ~T0 @X0 1 sf1`*S1 ]
+"37
+{
+[e :U _log_entry_from_sys ]
+"36
+[v _e `*S1 ~T0 @X0 1 r1 ]
+"37
+[f ]
+"38
+[e = . *U _e 0 . _sys 0 ]
+"39
+[e = . *U _e 1 . _sys 1 ]
+"40
+[e = . *U _e 2 . _sys 2 ]
+"41
+[e = . *U _e 3 . _sys 4 ]
+"42
+[e = . *U _e 4 -> . _sys 3 `uc ]
+"43
+[e = . *U _e 5 . _sys 5 ]
+"44
+[e :UE 102 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"46
+[v _main `(v ~T0 @X0 1 ef ]
+"47
+{
+[e :U _main ]
+[f ]
+"48
+[v _evt `E1067 ~T0 @X0 1 a ]
+"49
+[v _pending_entry `S1 ~T0 @X0 1 a ]
+"51
+[e ( _init_config ..  ]
+"53
+[e ( _uart_puts (1 :s 1C ]
+"54
+[e ( _uart_puts (1 :s 2C ]
+"56
+[e :U 105 ]
+"57
+{
+"59
+[e = _evt ( _translate_key (1 ( _read_digital_keypad (1 -> -> 0 `i `uc ]
+"62
+[e $U 108  ]
+"63
+{
+"64
+[e :U 109 ]
+"65
+[e $ ! == -> _evt `ui -> . `E1067 4 `ui 110  ]
+"66
+{
+"67
+[e $ ! != -> ( _is_logged_in ..  `i -> 0 `i 111  ]
+"68
+{
+"69
+[e ( _menu_reset ..  ]
+"70
+[e ( _set_status (1 . `E1096 2 ]
+"71
+}
+[e $U 112  ]
+"72
+[e :U 111 ]
+"73
+{
+"74
+[e ( _login_reset ..  ]
+"75
+[e ( _set_status (1 . `E1096 1 ]
+"76
+}
+[e :U 112 ]
+"77
+[e = _evt . `E1067 0 ]
+"78
+}
+[e $U 113  ]
+"79
+[e :U 110 ]
+"80
+{
+"81
+[e ( _dashboard_update (1 _evt ]
+"82
+}
+[e :U 113 ]
+"83
+[e $U 107  ]
+"85
+[e :U 114 ]
+"86
+[e $ ! == -> _evt `ui -> . `E1067 1 `ui 115  ]
+"87
+{
+"88
+[e ( _uart_puts (1 :s 3C ]
+"89
+[e ( _login_reset ..  ]
+"90
+[e ( _invalidate_dashboard_cache ..  ]
+"91
+[e ( _set_status (1 . `E1096 0 ]
+"92
+[e = _evt . `E1067 0 ]
+"93
+}
+[e $U 116  ]
+"94
+[e :U 115 ]
+"95
+{
+"96
+[e ( _login_update (1 _evt ]
+"97
+}
+[e :U 116 ]
+"98
+[e $U 107  ]
+"100
+[e :U 117 ]
+"101
+[e ( _menu_update (1 _evt ]
+"102
+[e $U 107  ]
+"104
+[e :U 118 ]
+"105
+[e ( _view_logs_update (1 _evt ]
+"106
+[e $U 107  ]
+"108
+[e :U 119 ]
+"109
+[e ( _set_password_update (1 _evt ]
+"110
+[e $U 107  ]
+"112
+[e :U 120 ]
+"113
+[e ( _set_time_update (1 _evt ]
+"114
+[e $U 107  ]
+"116
+[e :U 121 ]
+"117
+[e :U 122 ]
+"118
+[e $U 107  ]
+"119
+}
+[e $U 107  ]
+[e :U 108 ]
+[e [\ -> ( _get_status ..  `ui , $ -> . `E1096 0 `ui 109
+ , $ -> . `E1096 1 `ui 114
+ , $ -> . `E1096 2 `ui 117
+ , $ -> . `E1096 3 `ui 118
+ , $ -> . `E1096 7 `ui 119
+ , $ -> . `E1096 6 `ui 120
+ , $ -> . `E1096 4 `ui 121
+ , $ -> . `E1096 5 `ui 122
+ 107 ]
+[e :U 107 ]
+"122
+[e $U 124  ]
+"123
+{
+"124
+[e :U 125 ]
+"125
+[e ( _dashboard_render ..  ]
+"126
+[e $U 123  ]
+"128
+[e :U 126 ]
+"129
+[e ( _login_render ..  ]
+"130
+[e $U 123  ]
+"132
+[e :U 127 ]
+"133
+[e ( _menu_render ..  ]
+"134
+[e $U 123  ]
+"136
+[e :U 128 ]
+"137
+[e ( _view_logs_render ..  ]
+"138
+[e $U 123  ]
+"140
+[e :U 129 ]
+"141
+[e ( _set_password_render ..  ]
+"142
+[e $U 123  ]
+"144
+[e :U 130 ]
+"145
+[e ( _set_time_render ..  ]
+"146
+[e $U 123  ]
+"148
+[e :U 131 ]
+"149
+[e ( _clear_logs ..  ]
+"150
+[e ( _menu_reset ..  ]
+"151
+[e ( _set_status (1 . `E1096 2 ]
+"152
+[e $U 123  ]
+"154
+[e :U 132 ]
+"155
+[e ( _download_logs ..  ]
+"156
+[e $U 123  ]
+"157
+}
+[e $U 123  ]
+[e :U 124 ]
+[e [\ -> ( _get_status ..  `ui , $ -> . `E1096 0 `ui 125
+ , $ -> . `E1096 1 `ui 126
+ , $ -> . `E1096 2 `ui 127
+ , $ -> . `E1096 3 `ui 128
+ , $ -> . `E1096 7 `ui 129
+ , $ -> . `E1096 6 `ui 130
+ , $ -> . `E1096 4 `ui 131
+ , $ -> . `E1096 5 `ui 132
+ 123 ]
+[e :U 123 ]
+"160
+[e $ ! != -> . _sys 6 `i -> 0 `i 133  ]
+"161
+{
+"162
+[e = . _sys 6 -> -> 0 `i `uc ]
+"163
+[e ( _log_entry_from_sys (1 &U _pending_entry ]
+"164
+[e $ ! != -> ( _eeprom_write_log (1 -> &U _pending_entry `*CS1 `i -> 0 `i 134  ]
+"165
+[e ( _uart_puts (1 :s 4C ]
+[e $U 135  ]
+"166
+[e :U 134 ]
+"167
+[e ( _uart_puts (1 :s 5C ]
+[e :U 135 ]
+"168
+}
+[e :U 133 ]
+"169
+}
+[e :U 104 ]
+[e $U 105  ]
+[e :U 106 ]
+"170
+[e :UE 103 ]
+}
+[a 5C 91 76 79 71 93 32 69 69 80 82 79 77 32 70 65 73 76 13 10 0 ]
+[a 4C 91 76 79 71 93 32 69 69 80 82 79 77 32 79 75 13 10 0 ]
+[a 2C 91 83 84 65 84 69 93 32 68 65 83 72 66 79 65 82 68 13 10 0 ]
+[a 3C 91 76 79 71 73 78 93 32 67 65 78 67 69 76 76 69 68 13 10 0 ]
+[a 1C 61 61 61 32 67 65 82 32 66 76 65 67 75 32 66 79 88 32 83 84 65 82 84 69 68 32 61 61 61 13 10 0 ]
