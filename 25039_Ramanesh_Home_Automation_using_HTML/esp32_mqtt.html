@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ESP32 Home Automation</title>
+
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f2f2f2;
+            text-align:center;
+            margin:0;
+            padding:30px;
+        }
+
+        .container{
+            width:500px;
+            margin:auto;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0px 0px 10px gray;
+        }
+
+        h1{
+            color:#333;
+        }
+
+        .device{
+            margin:20px;
+        }
+
+        button{
+            width:120px;
+            height:45px;
+            margin:5px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        #status{
+            color:green;
+            font-weight:bold;
+        }
+
+        #log{
+            border:1px solid gray;
+            height:150px;
+            overflow:auto;
+            padding:10px;
+            text-align:left;
+            margin-top:20px;
+            background:#fafafa;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>ESP32 Home Automation</h1>
+
+<p id="status">Connecting...</p>
+
+<div class="device">
+    <h2>Light</h2>
+
+    <button onclick="publishMessage('Hall/light','ON')">
+        ON
+    </button>
+
+    <button onclick="publishMessage('Hall/light','OFF')">
+        OFF
+    </button>
+</div>
+
+<div class="device">
+    <h2>Fan</h2>
+
+    <button onclick="publishMessage('Hall/fan','ON')">
+        ON
+    </button>
+
+    <button onclick="publishMessage('Hall/fan','OFF')">
+        OFF
+    </button>
+</div>
+
+<div class="device">
+    <h2>TV</h2>
+
+    <button onclick="publishMessage('Hall/TV','ON')">
+        ON
+    </button>
+
+    <button onclick="publishMessage('Hall/TV','OFF')">
+        OFF
+    </button>
+</div>
+
+<h3>Activity Log</h3>
+
+<div id="log"></div>
+
+</div>
+
+<script>
+
+const client = mqtt.connect("wss://broker.emqx.io:8084/mqtt");
+
+client.on("connect",function(){
+
+    document.getElementById("status").innerHTML="Connected to EMQX Broker";
+
+    logMessage("Connected Successfully");
+
+});
+
+client.on("error",function(err){
+
+    document.getElementById("status").innerHTML="Connection Failed";
+
+    logMessage("Error : "+err);
+
+});
+
+function publishMessage(topic,message)
+{
+    client.publish(topic,message);
+
+    logMessage("Published -> "+topic+" : "+message);
+}
+
+function logMessage(text)
+{
+    let log=document.getElementById("log");
+
+    log.innerHTML += text+"<br>";
+
+    log.scrollTop=log.scrollHeight;
+}
+
+</script>
+
+</body>
+</html>

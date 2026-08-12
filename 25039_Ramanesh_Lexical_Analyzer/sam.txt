@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main()
+{
+    int x = 10;
+    scanf("%d",&x); // scanning the element
+    float p=153.35;
+    char ch="sample check";
+    return 0;
+}

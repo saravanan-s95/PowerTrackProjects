@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Source To HTML</title>
+<style>
+body{background:white;font-family:Consolas,monospace;white-space:pre;font-size:15px;}
+.keyword{color:blue;font-weight:bold;}
+.identifier{color:black;}
+.number{color:red;}
+.string{color:green;}
+.comment{color:gray;font-style:italic;}
+.operator{color:purple;}
+.preprocessor{color:brown;}
+</style>
+</head>
+<body>
+<span class="preprocessor">#include<stdio.h></span>
+
+<span class="preprocessor">#define MAX 100</span>
+
+<span class="keyword">int</span> <span class="identifier">main</span>()
+{
+    <span class="keyword">int</span> <span class="identifier">a</span><span class="operator">=</span><span class="number">10</span>;
+    <span class="keyword">int</span> <span class="identifier">b</span><span class="operator">=</span><span class="number">20</span>;
+
+    <span class="identifier">printf</span>(<span class="string">"Sum = %d\n"</span>,<span class="identifier">a</span><span class="operator">+</span><span class="identifier">b</span>);
+
+    <span class="comment">/*
+        This is a
+        Multi Line Comment
+    */</span>
+
+    <span class="keyword">if</span>(<span class="identifier">a</span><span class="operator"><</span><span class="identifier">b</span>)
+    {
+        <span class="identifier">printf</span>(<span class="string">"a is smaller\n"</span>);
+    }
+
+    <span class="keyword">return</span> <span class="number">0</span>;
+}
+</body>
+</html>
