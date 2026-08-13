@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>sode2html</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:lightgrey;">
+<pre>
+
+#include <stdio.h>
+#include <span class="string">"s2html_event.h"</span>
+#include <span class="string">"s2html_conv.h"</span>
+<span class="comment">// #include "s2html_conv.c"
+</span><span class="comment">// #include "s2html_event.c"
+</span>
+<span class="comment">/********** main **********/</span>
+
+int main (int argc, char *argv[])
+{
+	FILE * sfp, *dfp; <span class="comment">// source and destination file descriptors 
+</span>	pevent_t *event;
+	char dest_file[<span class="numeric_constant">100</span>];
+
+	if(argc < <span class="numeric_constant">2</span>)
+	{
+		printf(<span class="string">"\nError ! please enter file name and mode\n"</span>);
+		printf(<span class="string">"Usage: <executable> <file name> \n"</span>);
+		printf(<span class="string">"Example : ./a.out abc.txt\n\n"</span>);
+		return <span class="numeric_constant">1</span>;
+	}
+#ifdef DEBUG
+	printf(<span class="string">"File to be opened : %s\n"</span>, argv[<span class="numeric_constant">1</span>]);
+#endif
+
+	<span class="comment">/* opnen the file */</span>
+
+	if(NULL == (sfp = fopen(argv[<span class="numeric_constant">1</span>], <span class="string">"r"</span>)))
+	{
+		printf(<span class="string">"Error! File %s could not be opened\n"</span>, argv[<span class="numeric_constant">1</span>]);
+		return <span class="numeric_constant">2</span>;
+	}
+	<span class="comment">/* Check for output file */</span>
+	if (argc > <span class="numeric_constant">2</span>)
+	{
+		sprintf(dest_file, <span class="string">"%s.html"</span>, argv[<span class="numeric_constant">2</span>]);
+	}
+	else
+	{
+		sprintf(dest_file, <span class="string">"%s.html"</span>, argv[<span class="numeric_constant">1</span>]);
+	}
+	<span class="comment">/* open dest file */</span>
+	if (NULL == (dfp = fopen(dest_file, <span class="string">"w"</span>)))
+	{
+		printf(<span class="string">"Error! could not create %s output file\n"</span>, dest_file);
+		return <span class="numeric_constant">3</span>;
+	}
+
+	<span class="comment">/* write HTML starting Tags */</span>
+	html_begin(dfp, HTML_OPEN);
+
+	<span class="comment">/* Read from src file convert into html and write to dest file */</span>
+
+	do
+	{
+		event = get_parser_event(sfp);
+		<span class="comment">/* call sourc_to_html */</span>
+		source_to_html(dfp, event);
+<span class="comment">//		printf("In main : Event = %d\n", event);
+</span>	} while (event->type != PEVENT_EOF);
+
+	<span class="comment">/* Call start_or_end_conv function for ending the convertation */</span>
+	html_end(dfp, HTML_CLOSE);
+	
+	printf(<span class="string">"\nOutput file %s generated\n"</span>, dest_file);
+<span class="comment">/* close file */</span>
+	fclose(sfp);
+	fclose(dfp);
+
+	return <span class="numeric_constant">0</span>;
+}
+</pre>
+</body>
+</html>
