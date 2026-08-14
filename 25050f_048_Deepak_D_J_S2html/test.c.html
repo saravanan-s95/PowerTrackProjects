@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>sode2html</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:lightgrey;">
+<pre>
+<span class="comment">/* this is multi-line comment */</span>
+<span class="preprocess_dir">#include </span><span class="header_file">&lt;stdio.h&gt;</span>
+<span class="preprocess_dir">#include </span><span class="header_file">&lt;stdlib.h&gt;</span>
+<span class="preprocess_dir">#include </span><span class="header_file">&lt;time.h&gt;</span>
+
+<span class="reserved_key1">int</span> main() {
+    <span class="reserved_key1">int</span> secret_number;
+    <span class="reserved_key1">int</span> user_guess;
+    <span class="reserved_key1">int</span> attempts = <span class="numeric_constant">0</span>;
+
+    <span class="comment">// Seed the random number generator using the current system time
+</span>    srand(time(NULL));
+    secret_number = (rand() % <span class="numeric_constant">100</span>) + <span class="numeric_constant">1</span>; <span class="comment">// Generates a number between 1 and 100
+</span>
+    printf(<span class="string">"Welcome to the Number Guessing Game!\n"</span>);
+    printf(<span class="string">"I have chosen a secret number between 1 and 100.\n\n"</span>);
+
+    <span class="comment">// Loop continues until the user guesses the correct number
+</span>    <span class="reserved_key2">do</span> {
+        printf(<span class="string">"Enter your guess: "</span>);
+        
+        <span class="comment">// Validate that the input is a valid integer
+</span>        <span class="reserved_key2">if</span> (scanf(<span class="string">"%d"</span>, &user_guess) != <span class="numeric_constant">1</span>) {
+            printf(<span class="string">"Invalid input. Please enter a valid number.\n"</span>);
+            <span class="reserved_key2">while</span> (getchar() != <span class="ascii_char">'\n'</span>); <span class="comment">// Clear the input buffer
+</span>            <span class="reserved_key2">continue</span>;
+        }
+
+        attempts++;
+
+        <span class="reserved_key2">if</span> (user_guess > secret_number) {
+            printf(<span class="string">"Too high! Try a lower number.\n\n"</span>);
+        } <span class="reserved_key2">else</span> <span class="reserved_key2">if</span> (user_guess < secret_number) {
+            printf(<span class="string">"Too low! Try a higher number.\n\n"</span>);
+        } <span class="reserved_key2">else</span> {
+            printf(<span class="string">"\nCongratulations! You guessed the number %d correctly.\n"</span>, secret_number);
+            printf(<span class="string">"Total attempts made: %d\n"</span>, attempts);
+        }
+
+    } <span class="reserved_key2">while</span> (user_guess != secret_number);
+
+    <span class="reserved_key2">return</span> <span class="numeric_constant">0</span>;
+}
+</pre>
+</body>
+</html>
