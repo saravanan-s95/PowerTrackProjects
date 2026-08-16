@@ -1,0 +1,51 @@
+# The following variables contains the files used by the different stages of the build process.
+set(Car_Black_Box_default_default_XC8_FILE_TYPE_assemble)
+set_source_files_properties(${Car_Black_Box_default_default_XC8_FILE_TYPE_assemble} PROPERTIES LANGUAGE ASM)
+
+# For assembly files, add "." to the include path for each file so that .include with a relative path works
+foreach(source_file ${Car_Black_Box_default_default_XC8_FILE_TYPE_assemble})
+        set_source_files_properties(${source_file} PROPERTIES INCLUDE_DIRECTORIES "$<PATH:NORMAL_PATH,$<PATH:REMOVE_FILENAME,${source_file}>>")
+endforeach()
+
+set(Car_Black_Box_default_default_XC8_FILE_TYPE_assemblePreprocess)
+set_source_files_properties(${Car_Black_Box_default_default_XC8_FILE_TYPE_assemblePreprocess} PROPERTIES LANGUAGE ASM)
+
+# For assembly files, add "." to the include path for each file so that .include with a relative path works
+foreach(source_file ${Car_Black_Box_default_default_XC8_FILE_TYPE_assemblePreprocess})
+        set_source_files_properties(${source_file} PROPERTIES INCLUDE_DIRECTORIES "$<PATH:NORMAL_PATH,$<PATH:REMOVE_FILENAME,${source_file}>>")
+endforeach()
+
+set(Car_Black_Box_default_default_XC8_FILE_TYPE_compile
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../blackbox_drivers.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../dashboard.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../eeprom.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../events.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../login.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../main.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../menu.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../set_password.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../set_time.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../state.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../timer.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../view_logs.c")
+set_source_files_properties(${Car_Black_Box_default_default_XC8_FILE_TYPE_compile} PROPERTIES LANGUAGE C)
+set(Car_Black_Box_default_default_XC8_FILE_TYPE_link)
+set(Car_Black_Box_default_image_name "default-production.elf")
+set(Car_Black_Box_default_image_base_name "default-production")
+
+# The output directory of the final image.
+set(Car_Black_Box_default_output_dir "${CMAKE_CURRENT_SOURCE_DIR}/../../../out/Car_Black_Box/production")
+
+# The full path to the final image.
+set(Car_Black_Box_default_full_path_to_image ${Car_Black_Box_default_output_dir}/${Car_Black_Box_default_image_name})
+
+# Potential output file extensions
+set(output_extensions
+    .hex
+    .hxl
+    .mum
+    .o
+    .sdb
+    .sym
+    .cmf)
+list(TRANSFORM output_extensions PREPEND "${Car_Black_Box_default_output_dir}/${Car_Black_Box_default_image_base_name}")
