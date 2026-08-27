@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int i1=0xABC;
+    int b=012345;
+    int a=12349;
+    char ch = 'S';
+    int j=1.1f;
+    int num=0xABCDEF;
+    printf("hello world\n";
+}
