@@ -1,0 +1,48 @@
+body
+{
+    background-color: lightgrey;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.reserved_key1
+{
+    color: blue;
+    font-weight: bold;
+}
+
+.reserved_key2
+{
+    color: darkmagenta;
+    font-weight: bold;
+}
+
+.comment
+{
+    color: green;
+}
+
+.preprocess_dir
+{
+    color: brown;
+}
+
+.header_file
+{
+    color: darkcyan;
+}
+
+.string
+{
+    color: crimson;
+}
+
+.numeric_constant
+{
+    color: darkorange;
+}
+
+.ascii_char
+{
+    color: purple;
+}
