@@ -1,0 +1,1694 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\Car_Black_Box.X.production.o
+cinit CODE 0 1D0E 1D0E 6E 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+text0 CODE 0 260C 260C D2 1 2
+text1 CODE 0 2982 2982 1A0 1 2
+text2 CODE 0 14A2 14A2 18 1 2
+text3 CODE 0 20CA 20CA 88 1 2
+text4 CODE 0 17EE 17EE 4E 1 2
+text5 CODE 0 1B68 1B68 64 1 2
+text6 CODE 0 1DEE 1DEE 72 1 2
+text7 CODE 0 1D7C 1D7C 72 1 2
+text8 CODE 0 1986 1986 5C 1 2
+text9 CODE 0 1760 1760 46 1 2
+text10 CODE 0 1BCC 1BCC 6A 1 2
+text11 CODE 0 21DC 21DC A4 1 2
+text12 CODE 0 2326 2326 A6 1 2
+text13 CODE 0 1B04 1B04 64 1 2
+text14 CODE 0 16A0 16A0 3E 1 2
+text15 CODE 0 1662 1662 3E 1 2
+text16 CODE 0 1624 1624 3E 1 2
+text17 CODE 0 18DC 18DC 50 1 2
+text18 CODE 0 2D18 2D18 234 1 2
+text19 CODE 0 1F4A 1F4A 76 1 2
+text20 CODE 0 1ED4 1ED4 76 1 2
+text21 CODE 0 192C 192C 5A 1 2
+text22 CODE 0 1FC0 1FC0 82 1 2
+text23 CODE 0 1584 1584 32 1 2
+text24 CODE 0 1E60 1E60 74 1 2
+text25 CODE 0 26DE 26DE 108 1 2
+text26 CODE 0 14D6 14D6 1C 1 2
+text27 CODE 0 1510 1510 20 1 2
+text28 CODE 0 1456 1456 E 1 2
+text29 CODE 0 148C 148C 16 1 2
+text30 CODE 0 17A6 17A6 48 1 2
+text31 CODE 0 14F2 14F2 1E 1 2
+text32 CODE 0 155A 155A 2A 1 2
+text33 CODE 0 2280 2280 A6 1 2
+text34 CODE 0 14BA 14BA 1C 1 2
+text35 CODE 0 2B22 2B22 1F6 1 2
+text36 CODE 0 19E2 19E2 5E 1 2
+text37 CODE 0 1476 1476 16 1 2
+text38 CODE 0 1AA2 1AA2 62 1 2
+text39 CODE 0 247A 247A C0 1 2
+text40 CODE 0 253A 253A D2 1 2
+text41 CODE 0 1A40 1A40 62 1 2
+text42 CODE 0 188C 188C 50 1 2
+text43 CODE 0 183C 183C 50 1 2
+text44 CODE 0 1CA2 1CA2 6C 1 2
+text45 CODE 0 1530 1530 2A 1 2
+text46 CODE 0 142C 142C 8 1 2
+text47 CODE 0 144A 144A C 1 2
+text48 CODE 0 1424 1424 8 1 2
+text49 CODE 0 1434 1434 A 1 2
+text50 CODE 0 2042 2042 88 1 2
+text51 CODE 0 23CC 23CC AE 1 2
+text52 CODE 0 27E6 27E6 19C 1 2
+text53 CODE 0 2152 2152 8A 1 2
+text54 CODE 0 15B6 15B6 34 1 2
+text55 CODE 0 16DE 16DE 40 1 2
+text56 CODE 0 143E 143E C 1 2
+text57 CODE 0 141C 141C 8 1 2
+text58 CODE 0 1414 1414 8 1 2
+text59 CODE 0 1464 1464 12 1 2
+text60 CODE 0 1C36 1C36 6C 1 2
+text61 CODE 0 15EA 15EA 3A 1 2
+idataCOMRAM CODE 0 140E 140E 6 1 1
+cstackCOMRAM COMRAM 1 1 1 41 1 1
+bssBANK0 BANK0 1 60 60 4B 1 1
+bssBANK1 BANK1 1 100 100 5A 1 1
+idataBANK0 CODE 0 171F 171F 41 1 1
+dataBANK0 BANK0 1 AB AB 41 1 1
+dataCOMRAM COMRAM 1 58 58 6 1 1
+bssCOMRAM COMRAM 1 42 42 16 1 1
+mediumconst MEDIUMCONST 0 2F4C 2F4C B0 1 2
+config CONFIG 4 300000 300000 E 1 1
+$C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 2FFC 2FFC 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM EC-FF 1
+RAM 15A-5FF 1
+SFR D00-FFF 1
+BANK0 EC-FF 1
+BANK1 15A-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-140D 1
+CONST 171E-171E 1
+CONST 3000-3000 1
+SMALLCONST 600-140D 1
+SMALLCONST 171E-171E 1
+SMALLCONST 3000-3000 1
+CODE 4-140D 1
+CODE 171E-171E 1
+CODE 3000-3000 1
+BIGRAM 5E-5F 1
+BIGRAM EC-FF 1
+BIGRAM 15A-5FF 1
+BIGSFR D00-FFF 1
+COMRAM 5E-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 600-140D 1
+MEDIUMCONST 171E-171E 1
+MEDIUMCONST 3000-3000 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Car_Black_Box.X.production.o
+15EA text61 CODE >11:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+15EC text61 CODE >12:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+15FE text61 CODE >13:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+1602 text61 CODE >16:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+1604 text61 CODE >17:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+1606 text61 CODE >19:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+1608 text61 CODE >20:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+160A text61 CODE >21:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+160C text61 CODE >24:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+160E text61 CODE >25:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+1610 text61 CODE >26:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+161E text61 CODE >28:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+1620 text61 CODE >29:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+1622 text61 CODE >30:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+1C36 text60 CODE >62:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+1C36 text60 CODE >63:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+1C40 text60 CODE >64:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+1C44 text60 CODE >65:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+1C70 text60 CODE >64:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+1CA0 text60 CODE >67:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+1464 text59 CODE >27:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1464 text59 CODE >28:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1472 text59 CODE >29:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1474 text59 CODE >30:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1414 text58 CODE >38:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1414 text58 CODE >39:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1416 text58 CODE >40:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+141A text58 CODE >41:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+141C text57 CODE >43:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+141C text57 CODE >44:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+141E text57 CODE >45:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1422 text57 CODE >46:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+143E text56 CODE >53:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1440 text56 CODE >54:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1444 text56 CODE >55:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1448 text56 CODE >56:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+16DE text55 CODE >3:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+16E0 text55 CODE >4:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+16E4 text55 CODE >5:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+16EA text55 CODE >6:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+16F0 text55 CODE >7:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+16F6 text55 CODE >8:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+16FA text55 CODE >11:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+171C text55 CODE >12:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+15B6 text54 CODE >48:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+15B6 text54 CODE >49:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+15BA text54 CODE >50:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+15BC text54 CODE >51:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+15C8 text54 CODE >52:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+15D6 text54 CODE >53:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+15E8 text54 CODE >54:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2152 text53 CODE >271:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2152 text53 CODE >273:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2162 text53 CODE >274:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2178 text53 CODE >275:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2188 text53 CODE >276:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+219C text53 CODE >277:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+21B6 text53 CODE >278:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+21BC text53 CODE >279:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+21C0 text53 CODE >280:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+21CA text53 CODE >282:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+21DA text53 CODE >283:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+27E6 text52 CODE >5:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+27E6 text52 CODE >11:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+27F6 text52 CODE >12:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+27F8 text52 CODE >13:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+27FA text52 CODE >15:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+280C text52 CODE >22:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+282E text52 CODE >23:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+2834 text52 CODE >24:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+2854 text52 CODE >25:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+285A text52 CODE >26:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+286C text52 CODE >27:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+2876 text52 CODE >28:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+287A text52 CODE >29:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+2880 text52 CODE >32:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+2896 text52 CODE >34:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+289E text52 CODE >35:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+28A6 text52 CODE >36:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+28AE text52 CODE >37:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+28B6 text52 CODE >38:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+28BA text52 CODE >39:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+28C2 text52 CODE >39:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+28CA text52 CODE >39:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+28D2 text52 CODE >39:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+28DA text52 CODE >39:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+28E4 text52 CODE >40:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+28F2 text52 CODE >43:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+290C text52 CODE >44:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+292E text52 CODE >45:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+293C text52 CODE >46:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+294C text52 CODE >47:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+295C text52 CODE >48:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+2960 text52 CODE >49:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+2970 text52 CODE >50:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+2980 text52 CODE >52:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\menu.c
+23CC text51 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+23CC text51 CODE >12:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+23CE text51 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+23DC text51 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+23E4 text51 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+23E8 text51 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+23F6 text51 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+23FE text51 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+2410 text51 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+2414 text51 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+2418 text51 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+241E text51 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+2420 text51 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+242E text51 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+2444 text51 CODE >27:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+244C text51 CODE >28:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+2452 text51 CODE >29:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+2458 text51 CODE >31:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+2468 text51 CODE >32:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+2470 text51 CODE >33:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+2478 text51 CODE >34:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+2042 text50 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+2042 text50 CODE >12:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+2058 text50 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+205C text50 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+2060 text50 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+206A text50 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+206C text50 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+207A text50 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+2098 text50 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+20A8 text50 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+20B2 text50 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+20B8 text50 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+20B8 text50 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+20C8 text50 CODE >25:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+1434 text49 CODE >63:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1434 text49 CODE >64:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1436 text49 CODE >65:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1438 text49 CODE >66:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+143C text49 CODE >67:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1424 text48 CODE >58:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1424 text48 CODE >59:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1426 text48 CODE >60:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+142A text48 CODE >61:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+144A text47 CODE >69:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+144A text47 CODE >70:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+144E text47 CODE >71:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1452 text47 CODE >73:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1454 text47 CODE >74:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+142C text46 CODE >48:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+142C text46 CODE >49:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+142E text46 CODE >50:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1432 text46 CODE >51:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1530 text45 CODE >14:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+1532 text45 CODE >15:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+1536 text45 CODE >16:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+153C text45 CODE >17:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+1542 text45 CODE >18:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+1546 text45 CODE >19:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+154C text45 CODE >20:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+1552 text45 CODE >21:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+1556 text45 CODE >22:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+1558 text45 CODE >23:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\e_eeprom.c
+1CA2 text44 CODE >56:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1CA2 text44 CODE >57:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1CA6 text44 CODE >58:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1CB6 text44 CODE >59:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1CB8 text44 CODE >60:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1CC2 text44 CODE >61:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1CFA text44 CODE >62:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1D0C text44 CODE >63:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+183C text43 CODE >40:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+183E text43 CODE >41:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1844 text43 CODE >42:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+187C text43 CODE >43:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+188A text43 CODE >44:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+188C text42 CODE >34:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+188E text42 CODE >35:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1894 text42 CODE >36:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+18CC text42 CODE >37:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+18DA text42 CODE >38:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1A40 text41 CODE >28:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1A42 text41 CODE >29:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1A48 text41 CODE >30:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1A8E text41 CODE >31:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1AA0 text41 CODE >32:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+253A text40 CODE >84:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+253A text40 CODE >85:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+25A0 text40 CODE >86:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+25A6 text40 CODE >87:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+25C4 text40 CODE >88:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+25CE text40 CODE >89:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+25DA text40 CODE >90:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+25E6 text40 CODE >91:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2606 text40 CODE >92:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+260A text40 CODE >93:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+247A text39 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+247A text39 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+247C text39 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+248A text39 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+2492 text39 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+2496 text39 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+24A4 text39 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+24AC text39 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+24B0 text39 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+24B6 text39 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+24C8 text39 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+24CC text39 CODE >25:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+24D0 text39 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+24D6 text39 CODE >27:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+24D8 text39 CODE >25:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+24E6 text39 CODE >30:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+24EC text39 CODE >31:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+2502 text39 CODE >32:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+250A text39 CODE >33:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+250C text39 CODE >35:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+2512 text39 CODE >36:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+2518 text39 CODE >38:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+2528 text39 CODE >39:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+2530 text39 CODE >40:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+2538 text39 CODE >41:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+1AA2 text38 CODE >65:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1AA2 text38 CODE >66:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1AA8 text38 CODE >67:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1AC8 text38 CODE >68:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1AE2 text38 CODE >69:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1AF6 text38 CODE >70:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1B02 text38 CODE >71:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1476 text37 CODE >40:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+1478 text37 CODE >42:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+1486 text37 CODE >44:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+148A text37 CODE >45:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+19E2 text36 CODE >47:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+19E2 text36 CODE >48:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+19E6 text36 CODE >49:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+1A0E text36 CODE >48:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+1A3E text36 CODE >50:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+2B22 text35 CODE >232:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2B22 text35 CODE >235:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2B38 text35 CODE >236:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2B48 text35 CODE >237:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2B4C text35 CODE >238:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2B4E text35 CODE >240:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2B5A text35 CODE >242:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2BA8 text35 CODE >243:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2BB2 text35 CODE >244:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2BBE text35 CODE >245:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2C00 text35 CODE >246:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2C0A text35 CODE >247:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2C12 text35 CODE >248:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2C1E text35 CODE >249:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2C40 text35 CODE >250:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2C46 text35 CODE >251:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2C5A text35 CODE >252:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2C60 text35 CODE >253:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2C74 text35 CODE >254:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2C80 text35 CODE >255:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2CA8 text35 CODE >256:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2CB8 text35 CODE >257:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2CC4 text35 CODE >258:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2CC4 text35 CODE >259:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2CD4 text35 CODE >260:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2CEE text35 CODE >261:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2CF4 text35 CODE >262:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2CF8 text35 CODE >263:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2CFC text35 CODE >264:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2D06 text35 CODE >266:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2D16 text35 CODE >267:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+14BA text34 CODE >10:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+14BA text34 CODE >12:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+14BC text34 CODE >18:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+14BE text34 CODE >19:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+14C0 text34 CODE >20:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+14C2 text34 CODE >26:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+14C4 text34 CODE >27:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+14C6 text34 CODE >28:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+14C8 text34 CODE >31:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+14CA text34 CODE >36:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+14CC text34 CODE >38:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+14CE text34 CODE >41:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+14D0 text34 CODE >42:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+14D2 text34 CODE >45:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+14D4 text34 CODE >46:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+2280 text33 CODE >32:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+2280 text33 CODE >34:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+2282 text33 CODE >36:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+2288 text33 CODE >38:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+228A text33 CODE >42:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+229A text33 CODE >45:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+22A4 text33 CODE >46:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+22B4 text33 CODE >47:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+22BE text33 CODE >48:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+22C6 text33 CODE >49:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+22D0 text33 CODE >50:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+22D6 text33 CODE >52:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+22E0 text33 CODE >53:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+22E8 text33 CODE >54:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+22F2 text33 CODE >55:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+22FA text33 CODE >56:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+2304 text33 CODE >57:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+2312 text33 CODE >58:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+231C text33 CODE >59:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+2324 text33 CODE >60:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+155A text32 CODE >60:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+155C text32 CODE >63:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1560 text32 CODE >64:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1566 text32 CODE >65:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+156C text32 CODE >66:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1570 text32 CODE >67:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1576 text32 CODE >68:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+157C text32 CODE >69:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1580 text32 CODE >71:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1582 text32 CODE >72:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+14F2 text31 CODE >52:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+14F4 text31 CODE >53:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+14F8 text31 CODE >54:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+14FE text31 CODE >55:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1504 text31 CODE >56:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+150A text31 CODE >57:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+150E text31 CODE >58:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+17A6 text30 CODE >20:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+17A6 text30 CODE >24:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+17AE text30 CODE >25:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+17BA text30 CODE >28:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+17C2 text30 CODE >29:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+17CE text30 CODE >44:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+17D8 text30 CODE >47:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+17E0 text30 CODE >48:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+17EC text30 CODE >50:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+148C text29 CODE >9:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+148C text29 CODE >11:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+148E text29 CODE >12:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1490 text29 CODE >14:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1494 text29 CODE >16:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1498 text29 CODE >18:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+149A text29 CODE >20:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+149C text29 CODE >22:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+149E text29 CODE >24:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+14A0 text29 CODE >25:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\i2c.c
+1456 text28 CODE >10:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+1456 text28 CODE >12:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+145A text28 CODE >15:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+145C text28 CODE >17:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+1462 text28 CODE >18:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+1510 text27 CODE >3:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+1510 text27 CODE >5:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+1512 text27 CODE >6:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+1514 text27 CODE >9:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+1516 text27 CODE >11:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+1518 text27 CODE >13:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+151A text27 CODE >15:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+151C text27 CODE >18:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+151E text27 CODE >20:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+1520 text27 CODE >25:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+1522 text27 CODE >27:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+1526 text27 CODE >29:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+1528 text27 CODE >31:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+152A text27 CODE >33:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+152C text27 CODE >35:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+152E text27 CODE >36:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\uart.c
+14D6 text26 CODE >15:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+14D6 text26 CODE >16:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+14D8 text26 CODE >17:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+14DC text26 CODE >18:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+14E0 text26 CODE >19:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+14E4 text26 CODE >20:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+14E8 text26 CODE >21:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+14EC text26 CODE >22:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+14F0 text26 CODE >23:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+26DE text25 CODE >20:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+26DE text25 CODE >21:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+26E0 text25 CODE >22:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+26E2 text25 CODE >23:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+26E4 text25 CODE >25:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+26F2 text25 CODE >26:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+26F8 text25 CODE >27:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+2706 text25 CODE >28:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+270C text25 CODE >29:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+271A text25 CODE >30:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+2720 text25 CODE >31:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+272E text25 CODE >32:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+2734 text25 CODE >33:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+2734 text25 CODE >35:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+2736 text25 CODE >36:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+2738 text25 CODE >37:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+273A text25 CODE >39:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+2748 text25 CODE >40:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+274E text25 CODE >41:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+275C text25 CODE >42:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+2762 text25 CODE >43:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+2770 text25 CODE >44:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+2776 text25 CODE >45:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+2784 text25 CODE >46:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+278A text25 CODE >47:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+278A text25 CODE >49:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+278C text25 CODE >50:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+278E text25 CODE >51:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+2790 text25 CODE >53:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+2792 text25 CODE >55:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+27A0 text25 CODE >56:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+27A6 text25 CODE >57:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+27B4 text25 CODE >58:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+27BA text25 CODE >59:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+27C8 text25 CODE >60:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+27CE text25 CODE >61:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+27DC text25 CODE >62:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+27E2 text25 CODE >65:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+27E4 text25 CODE >66:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+1E60 text24 CODE >68:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+1E62 text24 CODE >71:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+1E72 text24 CODE >72:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+1E78 text24 CODE >73:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+1E98 text24 CODE >74:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+1E9A text24 CODE >75:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+1EA0 text24 CODE >76:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+1EB0 text24 CODE >77:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+1EB8 text24 CODE >79:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+1EC8 text24 CODE >80:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+1ED0 text24 CODE >83:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+1ED2 text24 CODE >84:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\matrix_keypad.c
+1584 text23 CODE >156:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1586 text23 CODE >157:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+15B4 text23 CODE >158:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1FC0 text22 CODE >86:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1FC0 text22 CODE >87:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1FC8 text22 CODE >88:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1FD0 text22 CODE >89:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1FD8 text22 CODE >91:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1FE6 text22 CODE >92:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1FF2 text22 CODE >93:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1FFA text22 CODE >94:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1FFE text22 CODE >95:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+200A text22 CODE >96:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+2012 text22 CODE >98:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+2016 text22 CODE >99:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+2020 text22 CODE >100:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+2028 text22 CODE >101:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+202C text22 CODE >102:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+2036 text22 CODE >103:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+203E text22 CODE >104:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+2040 text22 CODE >105:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+192C text21 CODE >149:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+192C text21 CODE >150:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+193A text21 CODE >151:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1954 text21 CODE >152:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+196C text21 CODE >153:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1984 text21 CODE >154:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1ED4 text20 CODE >142:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1ED4 text20 CODE >143:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1EF6 text20 CODE >144:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1F14 text20 CODE >145:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1F2E text20 CODE >146:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1F48 text20 CODE >147:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1F4A text19 CODE >135:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1F4A text19 CODE >136:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1F6C text19 CODE >137:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1F8A text19 CODE >138:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1FA4 text19 CODE >139:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1FBE text19 CODE >140:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2D18 text18 CODE >160:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2D18 text18 CODE >166:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2D28 text18 CODE >168:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2D2C text18 CODE >169:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2D3C text18 CODE >170:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2D3E text18 CODE >171:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2D44 text18 CODE >172:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2D48 text18 CODE >174:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2D66 text18 CODE >176:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2D76 text18 CODE >177:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2D7A text18 CODE >178:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2D8A text18 CODE >179:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2D8E text18 CODE >180:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2D9E text18 CODE >181:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2DA2 text18 CODE >182:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2DA6 text18 CODE >182:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2DAE text18 CODE >182:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2DB6 text18 CODE >182:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2DC0 text18 CODE >183:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2DD6 text18 CODE >184:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2DE0 text18 CODE >186:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2DEE text18 CODE >188:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E02 text18 CODE >190:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E06 text18 CODE >191:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E0A text18 CODE >192:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E0E text18 CODE >193:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E12 text18 CODE >194:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E16 text18 CODE >195:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E1A text18 CODE >196:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E1E text18 CODE >196:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E26 text18 CODE >196:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E2E text18 CODE >196:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E38 text18 CODE >197:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E4A text18 CODE >198:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E5C text18 CODE >199:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E64 text18 CODE >201:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E6C text18 CODE >202:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E7E text18 CODE >206:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E8C text18 CODE >207:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2E98 text18 CODE >208:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2EA4 text18 CODE >210:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2EB2 text18 CODE >211:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2EC0 text18 CODE >212:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2ECE text18 CODE >214:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2ED8 text18 CODE >215:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2EE8 text18 CODE >216:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2F00 text18 CODE >219:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2F04 text18 CODE >220:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2F08 text18 CODE >221:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2F12 text18 CODE >222:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2F28 text18 CODE >223:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2F2C text18 CODE >224:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2F30 text18 CODE >225:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2F3A text18 CODE >227:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2F4A text18 CODE >228:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+18DC text17 CODE >74:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+18DC text17 CODE >75:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+18EA text17 CODE >77:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+18F8 text17 CODE >78:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1906 text17 CODE >79:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1916 text17 CODE >80:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+191A text17 CODE >81:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+192A text17 CODE >84:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\ds1307.c
+1624 text16 CODE >23:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1626 text16 CODE >24:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+162C text16 CODE >25:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1660 text16 CODE >26:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1662 text15 CODE >18:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1664 text15 CODE >19:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+166A text15 CODE >20:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+169E text15 CODE >21:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+16A0 text14 CODE >13:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+16A2 text14 CODE >14:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+16A8 text14 CODE >15:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+16DC text14 CODE >16:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1B04 text13 CODE >73:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1B04 text13 CODE >74:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1B30 text13 CODE >75:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1B3C text13 CODE >76:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1B42 text13 CODE >77:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1B4A text13 CODE >78:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1B52 text13 CODE >79:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+1B66 text13 CODE >80:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2326 text12 CODE >22:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+2326 text12 CODE >23:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+233A text12 CODE >25:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+235E text12 CODE >26:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+2366 text12 CODE >29:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+2386 text12 CODE >30:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+238C text12 CODE >31:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+23AE text12 CODE >32:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+23B4 text12 CODE >33:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+23C6 text12 CODE >34:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+23CA text12 CODE >35:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+21DC text11 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+21DC text11 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+21EC text11 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+2202 text11 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+2206 text11 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+220A text11 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+2214 text11 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+2216 text11 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+2224 text11 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+222E text11 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+224C text11 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+225C text11 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+225E text11 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+2268 text11 CODE >27:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+226E text11 CODE >28:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+226E text11 CODE >29:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+227E text11 CODE >30:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+1BCC text10 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+1BCC text10 CODE >119:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+1BDC text10 CODE >121:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+1BEA text10 CODE >122:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+1BFA text10 CODE >123:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+1C04 text10 CODE >124:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+1C0E text10 CODE >125:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+1C24 text10 CODE >128:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+1C34 text10 CODE >129:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+1760 text9 CODE >48:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+1762 text9 CODE >52:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+1776 text9 CODE >55:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+1778 text9 CODE >56:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+1786 text9 CODE >57:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+179C text9 CODE >59:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+17A4 text9 CODE >60:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\adc.c
+1986 text8 CODE >37:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+1986 text8 CODE >38:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+1994 text8 CODE >39:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+19E0 text8 CODE >40:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+1D7C text7 CODE >48:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+1D7C text7 CODE >49:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+1DCA text7 CODE >50:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+1DE0 text7 CODE >51:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+1DEC text7 CODE >52:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+1DEE text6 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1DEE text6 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1DF4 text6 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E06 text6 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E0A text6 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E0E text6 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E14 text6 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E16 text6 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E24 text6 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E2A text6 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E40 text6 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E48 text6 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E4A text6 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E50 text6 CODE >27:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E56 text6 CODE >28:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E56 text6 CODE >29:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1E5E text6 CODE >30:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+1B68 text5 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1B68 text5 CODE >12:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1B7A text5 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1B7E text5 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1B82 text5 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1B88 text5 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1B8A text5 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1B98 text5 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1BAE text5 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1BB6 text5 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1BBC text5 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1BC2 text5 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1BC2 text5 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+1BCA text5 CODE >25:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+17EE text4 CODE >42:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+17EE text4 CODE >43:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+180C text4 CODE >44:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+182E text4 CODE >45:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+183A text4 CODE >46:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+20CA text3 CODE >54:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+20CA text3 CODE >55:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+20DA text3 CODE >58:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+20DE text3 CODE >59:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+20E2 text3 CODE >61:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+20E6 text3 CODE >62:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+20EE text3 CODE >63:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+20FC text3 CODE >65:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+2100 text3 CODE >66:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+2108 text3 CODE >67:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+2116 text3 CODE >69:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+2128 text3 CODE >70:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+212C text3 CODE >71:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+2130 text3 CODE >74:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+2142 text3 CODE >75:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+214C text3 CODE >76:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+2150 text3 CODE >79:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\dashboard.c
+14A2 text2 CODE >69:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+14A4 text2 CODE >70:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+14AE text2 CODE >71:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+14B8 text2 CODE >72:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\clcd.c
+2982 text1 CODE >98:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2982 text1 CODE >100:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2992 text1 CODE >102:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+29A8 text1 CODE >103:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+29B8 text1 CODE >104:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+29CA text1 CODE >105:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+29D4 text1 CODE >106:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+29DC text1 CODE >111:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2A22 text1 CODE >112:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2A32 text1 CODE >113:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2A34 text1 CODE >114:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2A38 text1 CODE >115:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2A3A text1 CODE >117:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2A46 text1 CODE >118:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2A5E text1 CODE >119:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2A76 text1 CODE >120:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2A8E text1 CODE >121:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2AD0 text1 CODE >122:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2AD6 text1 CODE >123:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2AF6 text1 CODE >124:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2AFC text1 CODE >125:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2B0E text1 CODE >126:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2B18 text1 CODE >127:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+2B20 text1 CODE >131:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\event_logs.c
+260C text0 CODE >25:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+260C text0 CODE >26:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+2610 text0 CODE >27:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+2614 text0 CODE >28:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+2630 text0 CODE >29:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+2640 text0 CODE >30:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+2654 text0 CODE >34:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+265C text0 CODE >35:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+2660 text0 CODE >38:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+2664 text0 CODE >39:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+2668 text0 CODE >43:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+266C text0 CODE >44:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+2670 text0 CODE >48:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+2674 text0 CODE >49:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+2678 text0 CODE >52:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+267C text0 CODE >53:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+2680 text0 CODE >56:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+2684 text0 CODE >57:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+2688 text0 CODE >61:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+268C text0 CODE >62:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+2690 text0 CODE >64:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+269A text0 CODE >64:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+26A8 text0 CODE >64:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+26B0 text0 CODE >64:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+26B8 text0 CODE >64:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+26C0 text0 CODE >64:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+26C8 text0 CODE >64:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+26D0 text0 CODE >64:C:\Users\bmeno\MPLABXProjects\Car_Black_Box.X\main.c
+1D0E cinit CODE >9793:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D0E cinit CODE >9795:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D0E cinit CODE >9798:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D0E cinit CODE >9909:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D10 cinit CODE >9910:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D12 cinit CODE >9911:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D14 cinit CODE >9912:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D16 cinit CODE >9913:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D18 cinit CODE >9914:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D1A cinit CODE >9915:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D1E cinit CODE >9916:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D22 cinit CODE >9917:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D22 cinit CODE >9918:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D24 cinit CODE >9919:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D28 cinit CODE >9920:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D2A cinit CODE >9921:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D2C cinit CODE >9922:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D2E cinit CODE >9926:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D30 cinit CODE >9927:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D32 cinit CODE >9928:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D34 cinit CODE >9929:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D36 cinit CODE >9930:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D38 cinit CODE >9931:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D3A cinit CODE >9932:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D3E cinit CODE >9933:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D42 cinit CODE >9934:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D42 cinit CODE >9935:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D44 cinit CODE >9936:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D48 cinit CODE >9937:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D4A cinit CODE >9938:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D4C cinit CODE >9939:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D4E cinit CODE >9943:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D52 cinit CODE >9944:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D54 cinit CODE >9945:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D54 cinit CODE >9946:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D56 cinit CODE >9947:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D58 cinit CODE >9948:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D5A cinit CODE >9951:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D5E cinit CODE >9952:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D60 cinit CODE >9953:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D60 cinit CODE >9954:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D62 cinit CODE >9955:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D64 cinit CODE >9956:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D66 cinit CODE >9959:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D6A cinit CODE >9960:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D6C cinit CODE >9961:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D6C cinit CODE >9962:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D6E cinit CODE >9963:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D70 cinit CODE >9964:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D72 cinit CODE >9970:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D72 cinit CODE >9973:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D74 cinit CODE >9974:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D76 cinit CODE >9975:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+1D78 cinit CODE >9976:C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+store_speed@address 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+___awdiv@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+___lwmod@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\Car_Black_Box.X.production.o
+__Lmediumconst 2F4C 0 MEDIUMCONST 0 mediumconst dist/default/production\Car_Black_Box.X.production.o
+__Hspace_0 3000 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__Hspace_1 15A 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\Car_Black_Box.X.production.o
+__end_of_scan_key 27E6 0 CODE 0 text25 dist/default/production\Car_Black_Box.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Car_Black_Box.X.production.o
+read_gear@address 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+display_main_menu@once 5C 0 COMRAM 1 dataCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__mediumconst 2F4C 0 MEDIUMCONST 0 mediumconst dist/default/production\Car_Black_Box.X.production.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Car_Black_Box.X.production.o
+__end_of_increment_seconds 1FC0 0 CODE 0 text19 dist/default/production\Car_Black_Box.X.production.o
+_i2c_idle 1464 0 CODE 0 text59 dist/default/production\Car_Black_Box.X.production.o
+_i2c_read 144A 0 CODE 0 text47 dist/default/production\Car_Black_Box.X.production.o
+_i2c_stop 141C 0 CODE 0 text57 dist/default/production\Car_Black_Box.X.production.o
+_GO 7E11 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__L__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\Car_Black_Box.X.production.o
+load_speed_buffer@speed_buffer 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+clcd_write@control_bit 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\Car_Black_Box.X.production.o
+_ADFM 7E07 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_ADON 7E10 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_BRGH 7D62 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_CREN 7D5C 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_RBPU 7F8F 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_RCEN 7E2B 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_RCIF 7CF5 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_RSEN 7E29 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_SPEN 7D5F 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_SYNC 7D64 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_TXEN 7D65 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_TXIF 7CF4 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+_gear 55 0 COMRAM 1 bssCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_main 260C 0 CODE 0 text0 dist/default/production\Car_Black_Box.X.production.o
+_time 9C 0 BANK0 1 bssBANK0 dist/default/production\Car_Black_Box.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+start 2FFC 0 CODE 0 init C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+__end_of_i2c_idle 1476 0 CODE 0 text59 dist/default/production\Car_Black_Box.X.production.o
+__end_of_i2c_read 1456 0 CODE 0 text47 dist/default/production\Car_Black_Box.X.production.o
+__end_of_i2c_stop 1424 0 CODE 0 text57 dist/default/production\Car_Black_Box.X.production.o
+_view_log$471 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Car_Black_Box.X.production.o
+?___lmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+read_speed@i 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of_dec_to_bcd 15B6 0 CODE 0 text23 dist/default/production\Car_Black_Box.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\Car_Black_Box.X.production.o
+_load_speed_buffer 17EE 0 CODE 0 text4 dist/default/production\Car_Black_Box.X.production.o
+uart_transmit_char@byte 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\Car_Black_Box.X.production.o
+___awmod@sign 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_i2c_rx_mode 1424 0 CODE 0 text48 dist/default/production\Car_Black_Box.X.production.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\Car_Black_Box.X.production.o
+uart_transmit_str@bytes 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+read_switches@once 5D 0 COMRAM 1 dataCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+intlevel0 0 0 CODE 0 text C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+store_gear@i 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_init_adc 14BA 0 CODE 0 text34 dist/default/production\Car_Black_Box.X.production.o
+_init_i2c 148C 0 CODE 0 text29 dist/default/production\Car_Black_Box.X.production.o
+__end_of_init_matrix_keypad 1464 0 CODE 0 text28 dist/default/production\Car_Black_Box.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Car_Black_Box.X.production.o
+store_speed@i 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+___llmod@divisor 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+read_switches@key 53 0 COMRAM 1 bssCOMRAM dist/default/production\Car_Black_Box.X.production.o
+load_gear_buffer@gear_buffer 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of_event_reader 260C 0 CODE 0 text40 dist/default/production\Car_Black_Box.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\Car_Black_Box.X.production.o
+_read_external_eeprom 1530 0 CODE 0 text45 dist/default/production\Car_Black_Box.X.production.o
+__end_of_i2c_rep_start 1434 0 CODE 0 text46 dist/default/production\Car_Black_Box.X.production.o
+_read_event_count 1CA2 0 CODE 0 text44 dist/default/production\Car_Black_Box.X.production.o
+___awdiv@sign 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\Car_Black_Box.X.production.o
+__end_of_init_adc 14D6 0 CODE 0 text34 dist/default/production\Car_Black_Box.X.production.o
+__end_of_init_i2c 14A2 0 CODE 0 text29 dist/default/production\Car_Black_Box.X.production.o
+store_event_count@num 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+event_reader@i 12 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__pidataCOMRAM 140E 0 CODE 0 idataCOMRAM dist/default/production\Car_Black_Box.X.production.o
+read_adc@channel 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_write_ds1307 14F2 0 CODE 0 text31 dist/default/production\Car_Black_Box.X.production.o
+_ADCON0 FC2 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_ADRESH FC4 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_ADRESL FC3 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+___awdiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+increment_minutes@min B 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+__end_of_write_external_eeprom 171E 0 CODE 0 text55 dist/default/production\Car_Black_Box.X.production.o
+view_log@curr_event 51 0 COMRAM 1 bssCOMRAM dist/default/production\Car_Black_Box.X.production.o
+increment_hours@hrs 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of_read_switches 1ED4 0 CODE 0 text24 dist/default/production\Car_Black_Box.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\Car_Black_Box.X.production.o
+__end_of___lmul 1C36 0 CODE 0 text10 dist/default/production\Car_Black_Box.X.production.o
+_increment_seconds 1F4A 0 CODE 0 text19 dist/default/production\Car_Black_Box.X.production.o
+__end_of_uart_transmit_char 148C 0 CODE 0 text37 dist/default/production\Car_Black_Box.X.production.o
+read_event_count@i B 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_init_matrix_keypad 1456 0 CODE 0 text28 dist/default/production\Car_Black_Box.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Car_Black_Box.X.production.o
+_store_speed 1662 0 CODE 0 text15 dist/default/production\Car_Black_Box.X.production.o
+_event_count 42 0 COMRAM 1 bssCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of_i2c_start 141C 0 CODE 0 text58 dist/default/production\Car_Black_Box.X.production.o
+__end_of_i2c_write 144A 0 CODE 0 text56 dist/default/production\Car_Black_Box.X.production.o
+__Hmediumconst 2FFC 0 MEDIUMCONST 0 mediumconst dist/default/production\Car_Black_Box.X.production.o
+_event_store 1B04 0 CODE 0 text13 dist/default/production\Car_Black_Box.X.production.o
+display_main_menu@curr_option 52 0 COMRAM 1 bssCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Hintcodelo 18 0 CODE 0 intcodelo dist/default/production\Car_Black_Box.X.production.o
+___awdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_GODONE 7E11 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+___lwmod@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of___awdiv 253A 0 CODE 0 text39 dist/default/production\Car_Black_Box.X.production.o
+__end_of___awmod 247A 0 CODE 0 text51 dist/default/production\Car_Black_Box.X.production.o
+store_time@i 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of___lldiv 2280 0 CODE 0 text11 dist/default/production\Car_Black_Box.X.production.o
+__end_of___llmod 20CA 0 CODE 0 text50 dist/default/production\Car_Black_Box.X.production.o
+__end_of___lwdiv 1E60 0 CODE 0 text6 dist/default/production\Car_Black_Box.X.production.o
+__end_of___lwmod 1BCC 0 CODE 0 text5 dist/default/production\Car_Black_Box.X.production.o
+_write_external_eeprom 16DE 0 CODE 0 text55 dist/default/production\Car_Black_Box.X.production.o
+__end_of_increment_minutes 1F4A 0 CODE 0 text20 dist/default/production\Car_Black_Box.X.production.o
+_stored_time 100 0 BANK1 1 bssBANK1 dist/default/production\Car_Black_Box.X.production.o
+_init_config 14D6 0 CODE 0 text26 dist/default/production\Car_Black_Box.X.production.o
+_init_ds1307 17A6 0 CODE 0 text30 dist/default/production\Car_Black_Box.X.production.o
+___lwdiv@quotient 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_i2c_start 1414 0 CODE 0 text58 dist/default/production\Car_Black_Box.X.production.o
+_i2c_write 143E 0 CODE 0 text56 dist/default/production\Car_Black_Box.X.production.o
+_uart_transmit_char 1476 0 CODE 0 text37 dist/default/production\Car_Black_Box.X.production.o
+___lwmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+___lldiv@counter 19 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\Car_Black_Box.X.production.o
+itostr@i C 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+start_initialization 1D0E 0 CODE 0 cinit dist/default/production\Car_Black_Box.X.production.o
+__end_of_itostr 1B04 0 CODE 0 text38 dist/default/production\Car_Black_Box.X.production.o
+_key_pressed 57 0 COMRAM 1 bssCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Car_Black_Box.X.production.o
+_ACKSTAT 7E2E 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+___lldiv@dividend D 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+dec_to_bcd@val B 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of_read_event_count 1D0E 0 CODE 0 text44 dist/default/production\Car_Black_Box.X.production.o
+__end_of_uart_transmit_str 1A40 0 CODE 0 text36 dist/default/production\Car_Black_Box.X.production.o
+_load_gear_buffer$105 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_load_gear_buffer$106 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of_write_ds1307 1510 0 CODE 0 text31 dist/default/production\Car_Black_Box.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+read_time@curr_event 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+set_time@update_flag 5A 0 COMRAM 1 dataCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_SSPADD FC8 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_SSPBUF FC9 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+download_log@i 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_TRISC3 7CA3 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_TRISC4 7CA4 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_TRISC6 7CA6 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_TRISC7 7CA7 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_TRISD7 7CAF 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+display_main_menu@F10547 AB 0 BANK0 1 dataBANK0 dist/default/production\Car_Black_Box.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+event_reader@start_slot 10 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\Car_Black_Box.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\Car_Black_Box.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\Car_Black_Box.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\Car_Black_Box.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\Car_Black_Box.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\Car_Black_Box.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\Car_Black_Box.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\Car_Black_Box.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\Car_Black_Box.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\Car_Black_Box.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\Car_Black_Box.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\Car_Black_Box.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\Car_Black_Box.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\Car_Black_Box.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\Car_Black_Box.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\Car_Black_Box.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\Car_Black_Box.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\Car_Black_Box.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\Car_Black_Box.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\Car_Black_Box.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\Car_Black_Box.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\Car_Black_Box.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\Car_Black_Box.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\Car_Black_Box.X.production.o
+___lwdiv@counter 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Car_Black_Box.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\Car_Black_Box.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\Car_Black_Box.X.production.o
+__smallconst 2F4C 0 MEDIUMCONST 0 mediumconst dist/default/production\Car_Black_Box.X.production.o
+__end_of_store_event_count 15EA 0 CODE 0 text54 dist/default/production\Car_Black_Box.X.production.o
+store_time@address 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_read_ds1307 155A 0 CODE 0 text32 dist/default/production\Car_Black_Box.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\Car_Black_Box.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\Car_Black_Box.X.production.o
+_view_dashboard 20CA 0 CODE 0 text3 dist/default/production\Car_Black_Box.X.production.o
+read_ds1307@data 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\Car_Black_Box.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\Car_Black_Box.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\Car_Black_Box.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\Car_Black_Box.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\Car_Black_Box.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\Car_Black_Box.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\Car_Black_Box.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\Car_Black_Box.X.production.o
+read_switches@detection_type 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\Car_Black_Box.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\Car_Black_Box.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\Car_Black_Box.X.production.o
+_display_time 18DC 0 CODE 0 text17 dist/default/production\Car_Black_Box.X.production.o
+_clcd_print 1C36 0 CODE 0 text60 dist/default/production\Car_Black_Box.X.production.o
+_clcd_putch 14A2 0 CODE 0 text2 dist/default/production\Car_Black_Box.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\Car_Black_Box.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\Car_Black_Box.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\Car_Black_Box.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\Car_Black_Box.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\Car_Black_Box.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\Car_Black_Box.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\Car_Black_Box.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\Car_Black_Box.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\Car_Black_Box.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\Car_Black_Box.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\Car_Black_Box.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\Car_Black_Box.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\Car_Black_Box.X.production.o
+_clcd_write 15EA 0 CODE 0 text61 dist/default/production\Car_Black_Box.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\Car_Black_Box.X.production.o
+_increment_minutes 1ED4 0 CODE 0 text20 dist/default/production\Car_Black_Box.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\Car_Black_Box.X.production.o
+_PORTBbits F81 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+event_store@address C 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of_display_main_menu 2982 0 CODE 0 text52 dist/default/production\Car_Black_Box.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\Car_Black_Box.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\Car_Black_Box.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\Car_Black_Box.X.production.o
+__Hinit 3000 0 CODE 0 init dist/default/production\Car_Black_Box.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\Car_Black_Box.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\Car_Black_Box.X.production.o
+__Htemp 0 0 COMRAM 1 temp dist/default/production\Car_Black_Box.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\Car_Black_Box.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\Car_Black_Box.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\Car_Black_Box.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\Car_Black_Box.X.production.o
+__Linit 2FFC 0 CODE 0 init dist/default/production\Car_Black_Box.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\Car_Black_Box.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\Car_Black_Box.X.production.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\Car_Black_Box.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\Car_Black_Box.X.production.o
+___lmul 1BCC 0 CODE 0 text10 dist/default/production\Car_Black_Box.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\Car_Black_Box.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\Car_Black_Box.X.production.o
+_CKE 7E3E 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_PEN 7E2A 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_RC0 7C10 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_RC1 7C11 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_RC2 7C12 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_RD7 7C1F 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_RX9 7D5E 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_SEN 7E28 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_SMP 7E3F 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_TX9 7D66 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_WUE 7DC1 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__S0 3000 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__S1 15A 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_event_reader$459 C 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+write_external_eeprom@data 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+read_external_eeprom@data 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of_get_speed 19E2 0 CODE 0 text8 dist/default/production\Car_Black_Box.X.production.o
+_gear_pos E3 0 BANK0 1 dataBANK0 dist/default/production\Car_Black_Box.X.production.o
+clcd_write@byte 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of_i2c_rx_mode 142C 0 CODE 0 text48 dist/default/production\Car_Black_Box.X.production.o
+_uart_transmit_str 19E2 0 CODE 0 text36 dist/default/production\Car_Black_Box.X.production.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Car_Black_Box.X.production.o
+_stored_speed_buffer 7E 0 BANK0 1 bssBANK0 dist/default/production\Car_Black_Box.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\Car_Black_Box.X.production.o
+download_log@once 58 0 COMRAM 1 dataCOMRAM dist/default/production\Car_Black_Box.X.production.o
+store_event_count@i B 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_speed_buffer A8 0 BANK0 1 bssBANK0 dist/default/production\Car_Black_Box.X.production.o
+__end_of_view_dashboard 2152 0 CODE 0 text3 dist/default/production\Car_Black_Box.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\Car_Black_Box.X.production.o
+___lldiv@divisor 11 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Hramtop 600 0 RAM 0 ramtop dist/default/production\Car_Black_Box.X.production.o
+view_dashboard@prev_gear 54 0 COMRAM 1 bssCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_get_speed 1986 0 CODE 0 text8 dist/default/production\Car_Black_Box.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\Car_Black_Box.X.production.o
+_itostr 1AA2 0 CODE 0 text38 dist/default/production\Car_Black_Box.X.production.o
+__pdataBANK0 AB 0 BANK0 1 dataBANK0 dist/default/production\Car_Black_Box.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\Car_Black_Box.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\Car_Black_Box.X.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\Car_Black_Box.X.production.o
+__end_of_clcd_print 1CA2 0 CODE 0 text60 dist/default/production\Car_Black_Box.X.production.o
+__end_of_clcd_putch 14BA 0 CODE 0 text2 dist/default/production\Car_Black_Box.X.production.o
+__end_of_clcd_write 1624 0 CODE 0 text61 dist/default/production\Car_Black_Box.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\Car_Black_Box.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\Car_Black_Box.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\Car_Black_Box.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\Car_Black_Box.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\Car_Black_Box.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\Car_Black_Box.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\Car_Black_Box.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\Car_Black_Box.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\Car_Black_Box.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\Car_Black_Box.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\Car_Black_Box.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\Car_Black_Box.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\Car_Black_Box.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\Car_Black_Box.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production\Car_Black_Box.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production\Car_Black_Box.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production\Car_Black_Box.X.production.o
+__Htext27 0 0 ABS 0 text27 dist/default/production\Car_Black_Box.X.production.o
+__Htext28 0 0 ABS 0 text28 dist/default/production\Car_Black_Box.X.production.o
+__Htext29 0 0 ABS 0 text29 dist/default/production\Car_Black_Box.X.production.o
+__Htext30 0 0 ABS 0 text30 dist/default/production\Car_Black_Box.X.production.o
+__Htext31 0 0 ABS 0 text31 dist/default/production\Car_Black_Box.X.production.o
+__Htext32 0 0 ABS 0 text32 dist/default/production\Car_Black_Box.X.production.o
+__Htext33 0 0 ABS 0 text33 dist/default/production\Car_Black_Box.X.production.o
+__Htext34 0 0 ABS 0 text34 dist/default/production\Car_Black_Box.X.production.o
+__Htext35 0 0 ABS 0 text35 dist/default/production\Car_Black_Box.X.production.o
+__Htext36 0 0 ABS 0 text36 dist/default/production\Car_Black_Box.X.production.o
+__Htext37 0 0 ABS 0 text37 dist/default/production\Car_Black_Box.X.production.o
+__Htext38 0 0 ABS 0 text38 dist/default/production\Car_Black_Box.X.production.o
+__Htext39 0 0 ABS 0 text39 dist/default/production\Car_Black_Box.X.production.o
+__Htext40 0 0 ABS 0 text40 dist/default/production\Car_Black_Box.X.production.o
+__Htext41 0 0 ABS 0 text41 dist/default/production\Car_Black_Box.X.production.o
+__Htext42 0 0 ABS 0 text42 dist/default/production\Car_Black_Box.X.production.o
+__Htext43 0 0 ABS 0 text43 dist/default/production\Car_Black_Box.X.production.o
+__Htext44 0 0 ABS 0 text44 dist/default/production\Car_Black_Box.X.production.o
+__Htext45 0 0 ABS 0 text45 dist/default/production\Car_Black_Box.X.production.o
+__Htext46 0 0 ABS 0 text46 dist/default/production\Car_Black_Box.X.production.o
+__Htext47 0 0 ABS 0 text47 dist/default/production\Car_Black_Box.X.production.o
+__Htext48 0 0 ABS 0 text48 dist/default/production\Car_Black_Box.X.production.o
+__Htext49 0 0 ABS 0 text49 dist/default/production\Car_Black_Box.X.production.o
+__Htext50 0 0 ABS 0 text50 dist/default/production\Car_Black_Box.X.production.o
+__Htext51 0 0 ABS 0 text51 dist/default/production\Car_Black_Box.X.production.o
+__Htext52 0 0 ABS 0 text52 dist/default/production\Car_Black_Box.X.production.o
+__Htext53 0 0 ABS 0 text53 dist/default/production\Car_Black_Box.X.production.o
+__Htext54 0 0 ABS 0 text54 dist/default/production\Car_Black_Box.X.production.o
+__Htext55 0 0 ABS 0 text55 dist/default/production\Car_Black_Box.X.production.o
+__Htext56 0 0 ABS 0 text56 dist/default/production\Car_Black_Box.X.production.o
+__Htext57 0 0 ABS 0 text57 dist/default/production\Car_Black_Box.X.production.o
+__Htext58 0 0 ABS 0 text58 dist/default/production\Car_Black_Box.X.production.o
+__Htext59 0 0 ABS 0 text59 dist/default/production\Car_Black_Box.X.production.o
+__Htext60 0 0 ABS 0 text60 dist/default/production\Car_Black_Box.X.production.o
+__Htext61 0 0 ABS 0 text61 dist/default/production\Car_Black_Box.X.production.o
+store_gear@address 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+read_ds1307@address 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+read_event_count@address 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+___awmod@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+write_ds1307@address D 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+download_log@delay 4B 0 COMRAM 1 bssCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_view_log 2982 0 CODE 0 text1 dist/default/production\Car_Black_Box.X.production.o
+download_log@limit 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_gear_buffer A5 0 BANK0 1 bssBANK0 dist/default/production\Car_Black_Box.X.production.o
+__end_of_init_clcd 2326 0 CODE 0 text33 dist/default/production\Car_Black_Box.X.production.o
+__end_of_init_uart 1530 0 CODE 0 text27 dist/default/production\Car_Black_Box.X.production.o
+__end_of_display_time 192C 0 CODE 0 text17 dist/default/production\Car_Black_Box.X.production.o
+__ptext10 1BCC 0 CODE 0 text10 dist/default/production\Car_Black_Box.X.production.o
+__ptext11 21DC 0 CODE 0 text11 dist/default/production\Car_Black_Box.X.production.o
+__ptext12 2326 0 CODE 0 text12 dist/default/production\Car_Black_Box.X.production.o
+__ptext13 1B04 0 CODE 0 text13 dist/default/production\Car_Black_Box.X.production.o
+__ptext14 16A0 0 CODE 0 text14 dist/default/production\Car_Black_Box.X.production.o
+__ptext15 1662 0 CODE 0 text15 dist/default/production\Car_Black_Box.X.production.o
+__ptext16 1624 0 CODE 0 text16 dist/default/production\Car_Black_Box.X.production.o
+__ptext17 18DC 0 CODE 0 text17 dist/default/production\Car_Black_Box.X.production.o
+__ptext18 2D18 0 CODE 0 text18 dist/default/production\Car_Black_Box.X.production.o
+__ptext19 1F4A 0 CODE 0 text19 dist/default/production\Car_Black_Box.X.production.o
+__ptext20 1ED4 0 CODE 0 text20 dist/default/production\Car_Black_Box.X.production.o
+__ptext21 192C 0 CODE 0 text21 dist/default/production\Car_Black_Box.X.production.o
+__ptext22 1FC0 0 CODE 0 text22 dist/default/production\Car_Black_Box.X.production.o
+__ptext23 1584 0 CODE 0 text23 dist/default/production\Car_Black_Box.X.production.o
+__ptext24 1E60 0 CODE 0 text24 dist/default/production\Car_Black_Box.X.production.o
+__ptext25 26DE 0 CODE 0 text25 dist/default/production\Car_Black_Box.X.production.o
+__ptext26 14D6 0 CODE 0 text26 dist/default/production\Car_Black_Box.X.production.o
+__ptext27 1510 0 CODE 0 text27 dist/default/production\Car_Black_Box.X.production.o
+__ptext28 1456 0 CODE 0 text28 dist/default/production\Car_Black_Box.X.production.o
+__ptext29 148C 0 CODE 0 text29 dist/default/production\Car_Black_Box.X.production.o
+__ptext30 17A6 0 CODE 0 text30 dist/default/production\Car_Black_Box.X.production.o
+__ptext31 14F2 0 CODE 0 text31 dist/default/production\Car_Black_Box.X.production.o
+__ptext32 155A 0 CODE 0 text32 dist/default/production\Car_Black_Box.X.production.o
+__ptext33 2280 0 CODE 0 text33 dist/default/production\Car_Black_Box.X.production.o
+__ptext34 14BA 0 CODE 0 text34 dist/default/production\Car_Black_Box.X.production.o
+__ptext35 2B22 0 CODE 0 text35 dist/default/production\Car_Black_Box.X.production.o
+__ptext36 19E2 0 CODE 0 text36 dist/default/production\Car_Black_Box.X.production.o
+__ptext37 1476 0 CODE 0 text37 dist/default/production\Car_Black_Box.X.production.o
+__ptext38 1AA2 0 CODE 0 text38 dist/default/production\Car_Black_Box.X.production.o
+__ptext39 247A 0 CODE 0 text39 dist/default/production\Car_Black_Box.X.production.o
+__ptext40 253A 0 CODE 0 text40 dist/default/production\Car_Black_Box.X.production.o
+__ptext41 1A40 0 CODE 0 text41 dist/default/production\Car_Black_Box.X.production.o
+__ptext42 188C 0 CODE 0 text42 dist/default/production\Car_Black_Box.X.production.o
+__ptext43 183C 0 CODE 0 text43 dist/default/production\Car_Black_Box.X.production.o
+__ptext44 1CA2 0 CODE 0 text44 dist/default/production\Car_Black_Box.X.production.o
+__ptext45 1530 0 CODE 0 text45 dist/default/production\Car_Black_Box.X.production.o
+__ptext46 142C 0 CODE 0 text46 dist/default/production\Car_Black_Box.X.production.o
+__ptext47 144A 0 CODE 0 text47 dist/default/production\Car_Black_Box.X.production.o
+__ptext48 1424 0 CODE 0 text48 dist/default/production\Car_Black_Box.X.production.o
+__ptext49 1434 0 CODE 0 text49 dist/default/production\Car_Black_Box.X.production.o
+__ptext50 2042 0 CODE 0 text50 dist/default/production\Car_Black_Box.X.production.o
+__ptext51 23CC 0 CODE 0 text51 dist/default/production\Car_Black_Box.X.production.o
+__ptext52 27E6 0 CODE 0 text52 dist/default/production\Car_Black_Box.X.production.o
+__ptext53 2152 0 CODE 0 text53 dist/default/production\Car_Black_Box.X.production.o
+__ptext54 15B6 0 CODE 0 text54 dist/default/production\Car_Black_Box.X.production.o
+__ptext55 16DE 0 CODE 0 text55 dist/default/production\Car_Black_Box.X.production.o
+__ptext56 143E 0 CODE 0 text56 dist/default/production\Car_Black_Box.X.production.o
+__ptext57 141C 0 CODE 0 text57 dist/default/production\Car_Black_Box.X.production.o
+__ptext58 1414 0 CODE 0 text58 dist/default/production\Car_Black_Box.X.production.o
+__ptext59 1464 0 CODE 0 text59 dist/default/production\Car_Black_Box.X.production.o
+__ptext60 1C36 0 CODE 0 text60 dist/default/production\Car_Black_Box.X.production.o
+__ptext61 15EA 0 CODE 0 text61 dist/default/production\Car_Black_Box.X.production.o
+_store_event_count 15B6 0 CODE 0 text54 dist/default/production\Car_Black_Box.X.production.o
+___awdiv 247A 0 CODE 0 text39 dist/default/production\Car_Black_Box.X.production.o
+___awmod 23CC 0 CODE 0 text51 dist/default/production\Car_Black_Box.X.production.o
+_load_gear_buffer 1D7C 0 CODE 0 text7 dist/default/production\Car_Black_Box.X.production.o
+___lldiv 21DC 0 CODE 0 text11 dist/default/production\Car_Black_Box.X.production.o
+___llmod 2042 0 CODE 0 text50 dist/default/production\Car_Black_Box.X.production.o
+___lwdiv 1DEE 0 CODE 0 text6 dist/default/production\Car_Black_Box.X.production.o
+___lwmod 1B68 0 CODE 0 text5 dist/default/production\Car_Black_Box.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Car_Black_Box.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\Car_Black_Box.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\Car_Black_Box.X.production.o
+___lmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of_view_log 2B22 0 CODE 0 text1 dist/default/production\Car_Black_Box.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\Car_Black_Box.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\Car_Black_Box.X.production.o
+__end_of_store_speed 16A0 0 CODE 0 text15 dist/default/production\Car_Black_Box.X.production.o
+__end_of_event_store 1B68 0 CODE 0 text13 dist/default/production\Car_Black_Box.X.production.o
+__Lsivt_hi 0 0 CODE 0 sivt_hi dist/default/production\Car_Black_Box.X.production.o
+__Lsivt_lo 18 0 CODE 0 sivt_lo dist/default/production\Car_Black_Box.X.production.o
+_display_main_menu 27E6 0 CODE 0 text52 dist/default/production\Car_Black_Box.X.production.o
+clear_log@delay 49 0 COMRAM 1 bssCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_read_speed 188C 0 CODE 0 text42 dist/default/production\Car_Black_Box.X.production.o
+read_external_eeprom@address 2 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Car_Black_Box.X.production.o
+__end_of_clear_log 21DC 0 CODE 0 text53 dist/default/production\Car_Black_Box.X.production.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+___lwdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_init_clcd 2280 0 CODE 0 text33 dist/default/production\Car_Black_Box.X.production.o
+_init_uart 1510 0 CODE 0 text27 dist/default/production\Car_Black_Box.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\Car_Black_Box.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+_read_adc 1760 0 CODE 0 text9 dist/default/production\Car_Black_Box.X.production.o
+__end_of_increment_hours 1986 0 CODE 0 text21 dist/default/production\Car_Black_Box.X.production.o
+read_adc@reg_val 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+init_ds1307@dummy E 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_store_gear 1624 0 CODE 0 text16 dist/default/production\Car_Black_Box.X.production.o
+_store_time 16A0 0 CODE 0 text14 dist/default/production\Car_Black_Box.X.production.o
+__end_of_init_config 14F2 0 CODE 0 text26 dist/default/production\Car_Black_Box.X.production.o
+store_event_count@address A 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+read_speed@address 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\Car_Black_Box.X.production.o
+_get_gear 2326 0 CODE 0 text12 dist/default/production\Car_Black_Box.X.production.o
+_get_time 1FC0 0 CODE 0 text22 dist/default/production\Car_Black_Box.X.production.o
+__end_of_init_ds1307 17EE 0 CODE 0 text30 dist/default/production\Car_Black_Box.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\Car_Black_Box.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\Car_Black_Box.X.production.o
+write_ds1307@data C 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of_read_adc 17A6 0 CODE 0 text9 dist/default/production\Car_Black_Box.X.production.o
+write_external_eeprom@i 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__pbssCOMRAM 42 0 COMRAM 1 bssCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of_get_gear 23CC 0 CODE 0 text12 dist/default/production\Car_Black_Box.X.production.o
+__end_of_get_time 2042 0 CODE 0 text22 dist/default/production\Car_Black_Box.X.production.o
+_clear_log 2152 0 CODE 0 text53 dist/default/production\Car_Black_Box.X.production.o
+_download_log 2B22 0 CODE 0 text35 dist/default/production\Car_Black_Box.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+set_time@once 59 0 COMRAM 1 dataCOMRAM dist/default/production\Car_Black_Box.X.production.o
+download_log@buffer 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+end_of_initialization 1D72 0 CODE 0 cinit dist/default/production\Car_Black_Box.X.production.o
+__end_of_read_external_eeprom 155A 0 CODE 0 text45 dist/default/production\Car_Black_Box.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\Car_Black_Box.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\Car_Black_Box.X.production.o
+_clock_reg 46 0 COMRAM 1 bssCOMRAM dist/default/production\Car_Black_Box.X.production.o
+clcd_print@addr 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+clcd_print@data 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+___awdiv@quotient 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+?___awdiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+?___awmod 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+i2c_write@data 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+___lwdiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+?___lldiv D 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+?___llmod 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+?___lwdiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+?___lwmod 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\Car_Black_Box.X.production.o
+itostr@num A 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_set_time 2D18 0 CODE 0 text18 dist/default/production\Car_Black_Box.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\Car_Black_Box.X.production.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\Car_Black_Box.X.production.o
+___awmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Lramtop 600 0 RAM 0 ramtop dist/default/production\Car_Black_Box.X.production.o
+write_external_eeprom@address 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\Car_Black_Box.X.production.o
+__pcinit 1D0E 0 CODE 0 cinit dist/default/production\Car_Black_Box.X.production.o
+read_speed@curr_event 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__ptext0 260C 0 CODE 0 text0 dist/default/production\Car_Black_Box.X.production.o
+__ptext1 2982 0 CODE 0 text1 dist/default/production\Car_Black_Box.X.production.o
+__ptext2 14A2 0 CODE 0 text2 dist/default/production\Car_Black_Box.X.production.o
+__ptext3 20CA 0 CODE 0 text3 dist/default/production\Car_Black_Box.X.production.o
+__ptext4 17EE 0 CODE 0 text4 dist/default/production\Car_Black_Box.X.production.o
+__ptext5 1B68 0 CODE 0 text5 dist/default/production\Car_Black_Box.X.production.o
+__ptext6 1DEE 0 CODE 0 text6 dist/default/production\Car_Black_Box.X.production.o
+__ptext7 1D7C 0 CODE 0 text7 dist/default/production\Car_Black_Box.X.production.o
+__ptext8 1986 0 CODE 0 text8 dist/default/production\Car_Black_Box.X.production.o
+__ptext9 1760 0 CODE 0 text9 dist/default/production\Car_Black_Box.X.production.o
+_increment_hours 192C 0 CODE 0 text21 dist/default/production\Car_Black_Box.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\Car_Black_Box.X.production.o
+_i2c_no_ack 1434 0 CODE 0 text49 dist/default/production\Car_Black_Box.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\Car_Black_Box.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\Car_Black_Box.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\Car_Black_Box.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\Car_Black_Box.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\Car_Black_Box.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\Car_Black_Box.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\Car_Black_Box.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\Car_Black_Box.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\Car_Black_Box.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\Car_Black_Box.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\Car_Black_Box.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\Car_Black_Box.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\Car_Black_Box.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\Car_Black_Box.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production\Car_Black_Box.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production\Car_Black_Box.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production\Car_Black_Box.X.production.o
+__Ltext27 0 0 ABS 0 text27 dist/default/production\Car_Black_Box.X.production.o
+__Ltext28 0 0 ABS 0 text28 dist/default/production\Car_Black_Box.X.production.o
+__Ltext29 0 0 ABS 0 text29 dist/default/production\Car_Black_Box.X.production.o
+__Ltext30 0 0 ABS 0 text30 dist/default/production\Car_Black_Box.X.production.o
+__Ltext31 0 0 ABS 0 text31 dist/default/production\Car_Black_Box.X.production.o
+__Ltext32 0 0 ABS 0 text32 dist/default/production\Car_Black_Box.X.production.o
+__Ltext33 0 0 ABS 0 text33 dist/default/production\Car_Black_Box.X.production.o
+__Ltext34 0 0 ABS 0 text34 dist/default/production\Car_Black_Box.X.production.o
+__Ltext35 0 0 ABS 0 text35 dist/default/production\Car_Black_Box.X.production.o
+__Ltext36 0 0 ABS 0 text36 dist/default/production\Car_Black_Box.X.production.o
+__Ltext37 0 0 ABS 0 text37 dist/default/production\Car_Black_Box.X.production.o
+__Ltext38 0 0 ABS 0 text38 dist/default/production\Car_Black_Box.X.production.o
+__Ltext39 0 0 ABS 0 text39 dist/default/production\Car_Black_Box.X.production.o
+__Ltext40 0 0 ABS 0 text40 dist/default/production\Car_Black_Box.X.production.o
+__Ltext41 0 0 ABS 0 text41 dist/default/production\Car_Black_Box.X.production.o
+__Ltext42 0 0 ABS 0 text42 dist/default/production\Car_Black_Box.X.production.o
+__Ltext43 0 0 ABS 0 text43 dist/default/production\Car_Black_Box.X.production.o
+__Ltext44 0 0 ABS 0 text44 dist/default/production\Car_Black_Box.X.production.o
+__Ltext45 0 0 ABS 0 text45 dist/default/production\Car_Black_Box.X.production.o
+__Ltext46 0 0 ABS 0 text46 dist/default/production\Car_Black_Box.X.production.o
+__Ltext47 0 0 ABS 0 text47 dist/default/production\Car_Black_Box.X.production.o
+__Ltext48 0 0 ABS 0 text48 dist/default/production\Car_Black_Box.X.production.o
+__Ltext49 0 0 ABS 0 text49 dist/default/production\Car_Black_Box.X.production.o
+__Ltext50 0 0 ABS 0 text50 dist/default/production\Car_Black_Box.X.production.o
+__Ltext51 0 0 ABS 0 text51 dist/default/production\Car_Black_Box.X.production.o
+__Ltext52 0 0 ABS 0 text52 dist/default/production\Car_Black_Box.X.production.o
+__Ltext53 0 0 ABS 0 text53 dist/default/production\Car_Black_Box.X.production.o
+__Ltext54 0 0 ABS 0 text54 dist/default/production\Car_Black_Box.X.production.o
+__Ltext55 0 0 ABS 0 text55 dist/default/production\Car_Black_Box.X.production.o
+__Ltext56 0 0 ABS 0 text56 dist/default/production\Car_Black_Box.X.production.o
+__Ltext57 0 0 ABS 0 text57 dist/default/production\Car_Black_Box.X.production.o
+__Ltext58 0 0 ABS 0 text58 dist/default/production\Car_Black_Box.X.production.o
+__Ltext59 0 0 ABS 0 text59 dist/default/production\Car_Black_Box.X.production.o
+__Ltext60 0 0 ABS 0 text60 dist/default/production\Car_Black_Box.X.production.o
+__Ltext61 0 0 ABS 0 text61 dist/default/production\Car_Black_Box.X.production.o
+__end_of_read_speed 18DC 0 CODE 0 text42 dist/default/production\Car_Black_Box.X.production.o
+__end_of_set_time 2F4C 0 CODE 0 text18 dist/default/production\Car_Black_Box.X.production.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+__end_of_load_gear_buffer 1DEE 0 CODE 0 text7 dist/default/production\Car_Black_Box.X.production.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\Car_Black_Box.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Car_Black_Box.X.production.o
+__H__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\Car_Black_Box.X.production.o
+__end_of_store_gear 1662 0 CODE 0 text16 dist/default/production\Car_Black_Box.X.production.o
+__end_of_store_time 16DE 0 CODE 0 text14 dist/default/production\Car_Black_Box.X.production.o
+view_log@once 5B 0 COMRAM 1 dataCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\Car_Black_Box.X.production.o
+__end_of_read_ds1307 1584 0 CODE 0 text32 dist/default/production\Car_Black_Box.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+set_time@delay 4D 0 COMRAM 1 bssCOMRAM dist/default/production\Car_Black_Box.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\bmeno\AppData\Local\Temp\xcAs324.0\driver_tmp_9.o
+clcd_putch@addr 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Car_Black_Box.X.production.o
+clcd_putch@data 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+set_time@set_h 10 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+set_time@set_m 11 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+set_time@set_s 12 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of__initialization 1D72 0 CODE 0 cinit dist/default/production\Car_Black_Box.X.production.o
+___awmod@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of_read_gear 188C 0 CODE 0 text43 dist/default/production\Car_Black_Box.X.production.o
+__end_of_read_time 1AA2 0 CODE 0 text41 dist/default/production\Car_Black_Box.X.production.o
+event_reader@address 11 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\Car_Black_Box.X.production.o
+__pidataBANK0 171F 0 CODE 0 idataBANK0 dist/default/production\Car_Black_Box.X.production.o
+read_gear@i 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\Car_Black_Box.X.production.o
+___lmul@product 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_download_log$504 22 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_download_log$507 26 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+read_time@address 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+___lmul@multiplicand 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of_download_log 2D18 0 CODE 0 text35 dist/default/production\Car_Black_Box.X.production.o
+___lldiv@quotient 15 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_i2c_rep_start 142C 0 CODE 0 text46 dist/default/production\Car_Black_Box.X.production.o
+view_log@limit 19 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__pmediumconst 2F4C 0 MEDIUMCONST 0 mediumconst dist/default/production\Car_Black_Box.X.production.o
+_SSPCON1 FC6 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+___llmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_read_gear 183C 0 CODE 0 text43 dist/default/production\Car_Black_Box.X.production.o
+_read_time 1A40 0 CODE 0 text41 dist/default/production\Car_Black_Box.X.production.o
+___llmod@counter 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+read_gear@curr_event 4 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of_main 26DE 0 CODE 0 text0 dist/default/production\Car_Black_Box.X.production.o
+increment_seconds@sec B 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_ABDEN 7DC0 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_ACKDT 7E2D 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_ACKEN 7E2C 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_ACQT0 7E03 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_ACQT1 7E04 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_ACQT2 7E05 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_ADCS0 7E00 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_ADCS1 7E01 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_ADCS2 7E02 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_BCLIF 7D0B 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_BRG16 7DC3 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__end_of_i2c_no_ack 143E 0 CODE 0 text49 dist/default/production\Car_Black_Box.X.production.o
+display_main_menu@menu_options 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__end_of_load_speed_buffer 183C 0 CODE 0 text4 dist/default/production\Car_Black_Box.X.production.o
+_PORTB F81 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_PORTD F83 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_RCREG FAE 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_SENDB 7D63 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_SPBRG FAF 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_SSPIF 7CF3 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_TRISB F93 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_TRISC F94 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_TXREG FAD 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_VCFG0 7E0C 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+_VCFG1 7E0D 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+?_read_adc 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\Car_Black_Box.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\Car_Black_Box.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\Car_Black_Box.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\Car_Black_Box.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\Car_Black_Box.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\Car_Black_Box.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\Car_Black_Box.X.production.o
+_speed 4F 0 COMRAM 1 bssCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_state 56 0 COMRAM 1 bssCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_read_switches 1E60 0 CODE 0 text24 dist/default/production\Car_Black_Box.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\Car_Black_Box.X.production.o
+read_event_count@byte A 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Hsivt_hi 0 0 CODE 0 sivt_hi dist/default/production\Car_Black_Box.X.production.o
+__Hsivt_lo 18 0 CODE 0 sivt_lo dist/default/production\Car_Black_Box.X.production.o
+__initialization 1D0E 0 CODE 0 cinit dist/default/production\Car_Black_Box.X.production.o
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\Car_Black_Box.X.production.o
+__pbssBANK1 100 0 BANK1 1 bssBANK1 dist/default/production\Car_Black_Box.X.production.o
+__pdataCOMRAM 58 0 COMRAM 1 dataCOMRAM dist/default/production\Car_Black_Box.X.production.o
+itostr@buffer 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+_stored_gear_buffer 60 0 BANK0 1 bssBANK0 dist/default/production\Car_Black_Box.X.production.o
+_dec_to_bcd 1584 0 CODE 0 text23 dist/default/production\Car_Black_Box.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\Car_Black_Box.X.production.o
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\Car_Black_Box.X.production.o
+read_time@i 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Car_Black_Box.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\Car_Black_Box.X.production.o
+_scan_key 26DE 0 CODE 0 text25 dist/default/production\Car_Black_Box.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Car_Black_Box.X.production.o
+__Hintcode 8 0 CODE 0 intcode dist/default/production\Car_Black_Box.X.production.o
+_event_reader 253A 0 CODE 0 text40 dist/default/production\Car_Black_Box.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 1D0E 1D0E 6E 1
+text0 0 260C 260C D2 1
+text1 0 2982 2982 1A0 1
+text2 0 14A2 14A2 18 1
+text3 0 20CA 20CA 88 1
+text4 0 17EE 17EE 4E 1
+text5 0 1B68 1B68 64 1
+text6 0 1DEE 1DEE 72 1
+text7 0 1D7C 1D7C 72 1
+text8 0 1986 1986 5C 1
+text9 0 1760 1760 46 1
+text10 0 1BCC 1BCC 6A 1
+text11 0 21DC 21DC A4 1
+text12 0 2326 2326 A6 1
+text13 0 1B04 1B04 64 1
+text14 0 16A0 16A0 3E 1
+text15 0 1662 1662 3E 1
+text16 0 1624 1624 3E 1
+text17 0 18DC 18DC 50 1
+text18 0 2D18 2D18 234 1
+text19 0 1F4A 1F4A 76 1
+text20 0 1ED4 1ED4 76 1
+text21 0 192C 192C 5A 1
+text22 0 1FC0 1FC0 82 1
+text23 0 1584 1584 32 1
+text24 0 1E60 1E60 74 1
+text25 0 26DE 26DE 108 1
+text26 0 14D6 14D6 1C 1
+text27 0 1510 1510 20 1
+text28 0 1456 1456 E 1
+text29 0 148C 148C 16 1
+text30 0 17A6 17A6 48 1
+text31 0 14F2 14F2 1E 1
+text32 0 155A 155A 2A 1
+text33 0 2280 2280 A6 1
+text34 0 14BA 14BA 1C 1
+text35 0 2B22 2B22 1F6 1
+text36 0 19E2 19E2 5E 1
+text37 0 1476 1476 16 1
+text38 0 1AA2 1AA2 62 1
+text39 0 247A 247A C0 1
+text40 0 253A 253A D2 1
+text41 0 1A40 1A40 62 1
+text42 0 188C 188C 50 1
+text43 0 183C 183C 50 1
+text44 0 1CA2 1CA2 6C 1
+text45 0 1530 1530 2A 1
+text46 0 142C 142C 8 1
+text47 0 144A 144A C 1
+text48 0 1424 1424 8 1
+text49 0 1434 1434 A 1
+text50 0 2042 2042 88 1
+text51 0 23CC 23CC AE 1
+text52 0 27E6 27E6 19C 1
+text53 0 2152 2152 8A 1
+text54 0 15B6 15B6 34 1
+text55 0 16DE 16DE 40 1
+text56 0 143E 143E C 1
+text57 0 141C 141C 8 1
+text58 0 1414 1414 8 1
+text59 0 1464 1464 12 1
+text60 0 1C36 1C36 6C 1
+text61 0 15EA 15EA 3A 1
+idataCOMRAM 0 140E 140E 6 1
+cstackCOMRAM 1 1 1 5D 1
+init 0 2FFC 2FFC 4 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 60 60 8C 1
+bssBANK1 1 100 100 5A 1
+idataBANK0 0 171F 171F 41 1
+mediumconst 0 2F4C 2F4C B0 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/k0r0/Projects/MP3_TagReader/debug",
+  "command": "/usr/bin/cc   -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/MP3_TagReader.dir/main.c.o -c /home/k0r0/Projects/MP3_TagReader/main.c",
+  "file": "/home/k0r0/Projects/MP3_TagReader/main.c",
+  "output": "CMakeFiles/MP3_TagReader.dir/main.c.o"
+},
+{
+  "directory": "/home/k0r0/Projects/MP3_TagReader/debug",
+  "command": "/usr/bin/cc   -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/MP3_TagReader.dir/view.c.o -c /home/k0r0/Projects/MP3_TagReader/view.c",
+  "file": "/home/k0r0/Projects/MP3_TagReader/view.c",
+  "output": "CMakeFiles/MP3_TagReader.dir/view.c.o"
+},
+{
+  "directory": "/home/k0r0/Projects/MP3_TagReader/debug",
+  "command": "/usr/bin/cc   -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/MP3_TagReader.dir/edit.c.o -c /home/k0r0/Projects/MP3_TagReader/edit.c",
+  "file": "/home/k0r0/Projects/MP3_TagReader/edit.c",
+  "output": "CMakeFiles/MP3_TagReader.dir/edit.c.o"
+},
+{
+  "directory": "/home/k0r0/Projects/MP3_TagReader/debug",
+  "command": "/usr/bin/cc   -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/MP3_TagReader.dir/mp3.c.o -c /home/k0r0/Projects/MP3_TagReader/mp3.c",
+  "file": "/home/k0r0/Projects/MP3_TagReader/mp3.c",
+  "output": "CMakeFiles/MP3_TagReader.dir/mp3.c.o"
+},
+{
+  "directory": "/home/k0r0/Projects/MP3_TagReader/debug",
+  "command": "/usr/bin/cc   -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/MP3_TagReader.dir/render.c.o -c /home/k0r0/Projects/MP3_TagReader/render.c",
+  "file": "/home/k0r0/Projects/MP3_TagReader/render.c",
+  "output": "CMakeFiles/MP3_TagReader.dir/render.c.o"
+},
+{
+  "directory": "/home/k0r0/Projects/MP3_TagReader/debug",
+  "command": "/usr/bin/cc   -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/MP3_TagReader.dir/helpers.c.o -c /home/k0r0/Projects/MP3_TagReader/helpers.c",
+  "file": "/home/k0r0/Projects/MP3_TagReader/helpers.c",
+  "output": "CMakeFiles/MP3_TagReader.dir/helpers.c.o"
+}
+]

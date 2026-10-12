@@ -1,0 +1,3 @@
+/home/k0r0/Projects/PowerTrackProjects/MP3_TagReader/build/CMakeFiles/MP3_TagReader.dir
+/home/k0r0/Projects/PowerTrackProjects/MP3_TagReader/build/CMakeFiles/edit_cache.dir
+/home/k0r0/Projects/PowerTrackProjects/MP3_TagReader/build/CMakeFiles/rebuild_cache.dir

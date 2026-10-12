@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>sode2html</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:lightgrey;">
+<pre>
+ 1 
+ 2 <span class="preprocess_dir">#include</span> <span class="header_file">"s2html_conv.h"</span>
+ 3 <span class="preprocess_dir">#include</span> <span class="header_file">"s2html_event.h"</span>
+ 4 <span class="preprocess_dir">#include</span> <span class="header_file">&lt;stdio.h&gt;</span>
+ 5 <span class="preprocess_dir">#include</span> <span class="header_file">&lt;string.h&gt;</span>
+ 6 <span class="comment">// #include "s2html_conv.c"
+</span> 7 <span class="comment">// #include "s2html_event.c"
+</span> 8 
+ 9 <span class="comment">/********** main **********/</span>
+10 
+11 <span class="reserved_key1">int</span> main(<span class="reserved_key1">int</span> argc, <span class="reserved_key1">char</span> *argv[]) {
+12     FILE *sfp, *dfp; <span class="comment">// source and destination file descriptors
+</span>13     pevent_t *event;
+14     <span class="reserved_key1">char</span> dest_file[<span class="numeric_constant">100</span>];
+15     <span class="reserved_key1">char</span> *src_file = NULL;
+16     <span class="reserved_key1">char</span> *out_file = NULL;
+17     <span class="reserved_key1">int</span> line_num_enabled = <span class="numeric_constant">0</span>;
+18 
+19     <span class="reserved_key2">if</span> (argc &lt; <span class="numeric_constant">2</span>) {
+20         printf(<span class="string">"\nError ! please enter file name and mode\n"</span>);
+21         printf(<span class="string">"Usage: %s &lt;file name&gt; [output file] [-n]\n"</span>, argv[<span class="numeric_constant">0</span>]);
+22         printf(<span class="string">"Example : ./s2html abc.c abc.html -n\n\n"</span>);
+23         <span class="reserved_key2">return</span> <span class="numeric_constant">1</span>;
+24     }
+25 
+26     <span class="comment">/* Parse command line arguments */</span>
+27     <span class="reserved_key2">for</span> (<span class="reserved_key1">int</span> i = <span class="numeric_constant">1</span>; i &lt; argc; i++) {
+28         <span class="reserved_key2">if</span> (strcmp(argv[i], <span class="string">"-n"</span>) == <span class="numeric_constant">0</span>) {
+29             line_num_enabled = <span class="numeric_constant">1</span>;
+30         } <span class="reserved_key2">else</span> <span class="reserved_key2">if</span> (src_file == NULL) {
+31             src_file = argv[i];
+32         } <span class="reserved_key2">else</span> <span class="reserved_key2">if</span> (out_file == NULL) {
+33             out_file = argv[i];
+34         }
+35     }
+36 
+37     <span class="reserved_key2">if</span> (src_file == NULL) {
+38         printf(<span class="string">"Error! No input file specified\n"</span>);
+39         <span class="reserved_key2">return</span> <span class="numeric_constant">1</span>;
+40     }
+41 
+42 <span class="preprocess_dir">#ifdef</span> DEBUG
+43     printf(<span class="string">"File to be opened : %s\n"</span>, src_file);
+44 <span class="preprocess_dir">#endif</span>
+45 
+46     <span class="comment">/* open the file */</span>
+47     <span class="reserved_key2">if</span> (NULL == (sfp = fopen(src_file, <span class="string">"r"</span>))) {
+48         printf(<span class="string">"Error! File %s could not be opened\n"</span>, src_file);
+49         <span class="reserved_key2">return</span> <span class="numeric_constant">2</span>;
+50     }
+51 
+52     <span class="comment">/* Check for output file */</span>
+53     <span class="reserved_key2">if</span> (out_file != NULL) {
+54         <span class="reserved_key2">if</span> (strstr(out_file, <span class="string">".html"</span>) || strstr(out_file, <span class="string">".htm"</span>)) {
+55             snprintf(dest_file, <span class="reserved_key2">sizeof</span>(dest_file), <span class="string">"%s"</span>, out_file);
+56         } <span class="reserved_key2">else</span> {
+57             snprintf(dest_file, <span class="reserved_key2">sizeof</span>(dest_file), <span class="string">"%s.html"</span>, out_file);
+58         }
+59     } <span class="reserved_key2">else</span> {
+60         snprintf(dest_file, <span class="reserved_key2">sizeof</span>(dest_file), <span class="string">"%s.html"</span>, src_file);
+61     }
+62 
+63     <span class="comment">/* open dest file */</span>
+64     <span class="reserved_key2">if</span> (NULL == (dfp = fopen(dest_file, <span class="string">"w"</span>))) {
+65         printf(<span class="string">"Error! could not create %s output file\n"</span>, dest_file);
+66         fclose(sfp);
+67         <span class="reserved_key2">return</span> <span class="numeric_constant">3</span>;
+68     }
+69 
+70     <span class="comment">/* configure line numbers */</span>
+71     set_line_number_flag(line_num_enabled);
+72 
+73     <span class="comment">/* write HTML starting Tags */</span>
+74     html_begin(dfp, HTML_OPEN);
+75 
+76     <span class="comment">/* Read from src file convert into html and write to dest file */</span>
+77     <span class="reserved_key2">do</span> {
+78         event = get_parser_event(sfp);
+79         <span class="comment">/* call source_to_html */</span>
+80         source_to_html(dfp, event);
+81     } <span class="reserved_key2">while</span> (event-&gt;type != PEVENT_EOF);
+82 
+83     <span class="comment">/* Call start_or_end_conv function for ending the conversion */</span>
+84     html_end(dfp, HTML_CLOSE);
+85 
+86     printf(<span class="string">"\nOutput file %s generated\n"</span>, dest_file);
+87     <span class="comment">/* close file */</span>
+88     fclose(sfp);
+89     fclose(dfp);
+90 
+91     <span class="reserved_key2">return</span> <span class="numeric_constant">0</span>;
+92 }
+</pre>
+</body>
+</html>
