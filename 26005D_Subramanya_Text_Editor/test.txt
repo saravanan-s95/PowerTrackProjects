@@ -1,0 +1,28 @@
+Hello World!
+This is a sample file for testing my text editor project in C.
+
+Line 3 contains numbers: 12345 67890
+Line 4 contains special characters: ! @ # $ % ^ & * ( ) _ + - =
+
+Testing punctuation: hello, world. How are you? "Fine!" she said.
+
+Testing indentation:
+    This line has 4 spaces.
+        This line has 8 spaces.
+	This line begins with a tab.
+
+Testing empty lines:
+
+
+There are two blank lines above this sentence.
+
+
+UPPERCASE lowercase MiXeD CaSe
+
+Repeated characters: aaaaa bbbbb !!!!! 11111
+
+Testing brackets: () [] {} <> 
+
+Testing backslashes: \ \n \t \\
+
+Final line without anything special.
