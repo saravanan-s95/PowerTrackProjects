@@ -1,0 +1,3 @@
+again|sample2.txt:1
+world|sample2.txt:1|sample1.txt:1
+hello|sample1.txt:2
