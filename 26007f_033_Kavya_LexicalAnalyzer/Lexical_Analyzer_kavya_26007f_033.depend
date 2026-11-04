@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1791820826 source:d:\c program\lexical_analyzer_kavya_26007f_033\lexical.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	"lexical.h"
+
+1791820681 d:\c program\lexical_analyzer_kavya_26007f_033\lexical.h
+	<stdio.h>
+
+1791820942 source:d:\c program\lexical_analyzer_kavya_26007f_033\main.c
+	<stdio.h>
+	"lexical.h"
+
