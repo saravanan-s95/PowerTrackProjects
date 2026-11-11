@@ -1,0 +1,45 @@
+# 26007_Gayathri_Text_Editor
+
+A Command-Based Text Editor developed in C language as a part of PowerTrack Projects.
+
+This editor works in the terminal using simple commands. Users can insert text, delete text, display content in a box format, undo/redo changes, and perform file operations like open, save and close. The editor stores each line as a node in a Linked List.
+
+## Features
+
+### 1. Text Operations
+- `insert <text>` - Insert text at cursor position
+- `delete <n>` - Delete N characters before cursor
+
+### 2. Cursor Navigation
+- Cursor moves using `cursor_nav` module
+- Tracks Line and Column position
+- Cursor position displayed inside the editor box
+
+### 3. Undo / Redo
+- `undo` - Undo the last change
+- `redo` - Redo the undone change
+- Uses Stack for Undo and Redo operations
+
+### 4. Display
+- `print` - Display editor content inside a box
+- Shows Line Numbers for each line
+- Shows Cursor Position: Line and Column
+- Shows `(empty)` message when editor is empty
+
+### 5. File Operations
+- `open <filename>` - Open an existing file
+- `save <filename>` - Save content to a file
+- `close` - Close current file and clear editor
+
+### 6. Search and Replace
+- `find <word>` - Find a word in the file
+- `replace <old> <new>` - Replace a word with a new word
+
+### 7. Other Commands
+- `help` - Show list of all available commands
+- `exit` - Exit the editor
+
+
+
+
+
