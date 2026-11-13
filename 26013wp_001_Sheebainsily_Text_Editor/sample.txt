@@ -1,0 +1,3 @@
+This is a sample file.
+You can edit these lines.
+Try find sample and replace sample|example.
